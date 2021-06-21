@@ -1,0 +1,110 @@
+resnet56 Quantization 1
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+#################result####################
+Compressed model size: 1.2715MB
+Compress Coef: 2.56
+Compressed time: 3.73s.
+Top1 after quantization: 87.180, Top5 after quantization: 99.020
+
+resnet56 Quantization 2
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+#################result####################
+Compressed model size: 1.1932MB
+Compress Coef: 2.73
+Compressed time: 4.50s.
+Top1 after quantization: 85.840, Top5 after quantization: 98.930
+
+resnet56 Quantization 3
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+#################result####################
+Compressed model size: 1.1149MB
+Compress Coef: 2.92
+Compressed time: 4.91s.
+Top1 after quantization: 85.640, Top5 after quantization: 98.960
+
+resnet56 Quantization 4
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+#################result####################
+Compressed model size: 1.0366MB
+Compress Coef: 3.14
+Compressed time: 4.86s.
+Top1 after quantization: 81.180, Top5 after quantization: 98.810
+
+resnet56 Quantization 5
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+#################result####################
+Compressed model size: 0.9583MB
+Compress Coef: 3.40
+Compressed time: 4.54s.
+Top1 after quantization: 76.940, Top5 after quantization: 98.700
+
+resnet56 Quantization 6
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+#################result####################
+Compressed model size: 0.8800MB
+Compress Coef: 3.70
+Compressed time: 4.43s.
+Top1 after quantization: 74.000, Top5 after quantization: 98.340
+
+resnet56 Quantization 7
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+#################result####################
+Compressed model size: 0.8017MB
+Compress Coef: 4.06
+Compressed time: 4.21s.
+Top1 after quantization: 67.340, Top5 after quantization: 97.790
+
+resnet56 Quantization 8
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+#################result####################
+Compressed model size: 0.7234MB
+Compress Coef: 4.50
+Compressed time: 4.24s.
+Top1 after quantization: 55.800, Top5 after quantization: 96.570
+
+resnet56 Quantization 9
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+#################result####################
+Compressed model size: 0.6451MB
+Compress Coef: 5.04
+Compressed time: 4.21s.
+Top1 after quantization: 42.530, Top5 after quantization: 93.670
+
+resnet56 Quantization 10
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+#################result####################
+Compressed model size: 0.5668MB
+Compress Coef: 5.74
+Compressed time: 4.28s.
+Top1 after quantization: 39.470, Top5 after quantization: 93.240
+
+resnet56 Quantization 11
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+#################result####################
+Compressed model size: 0.4884MB
+Compress Coef: 6.66
+Compressed time: 4.13s.
+Top1 after quantization: 28.810, Top5 after quantization: 85.820
+

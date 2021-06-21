@@ -1,0 +1,1304 @@
+vgg16_bn Quantization 1
+convwords: 64, fcwords: 80
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 53.0763MB
+Compress Coef: 9.94
+Compressed time: 16.72s.
+Top1 after quantization: 54.348, Top5 after quantization: 80.748
+
+vgg16_bn Quantization 2
+convwords: 72, fcwords: 80
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 54.4591MB
+Compress Coef: 9.69
+Compressed time: 18.45s.
+Top1 after quantization: 59.870, Top5 after quantization: 84.486
+
+vgg16_bn Quantization 3
+convwords: 80, fcwords: 80
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 55.8419MB
+Compress Coef: 9.45
+Compressed time: 18.32s.
+Top1 after quantization: 63.076, Top5 after quantization: 86.698
+
+vgg16_bn Quantization 4
+convwords: 88, fcwords: 80
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 57.2248MB
+Compress Coef: 9.22
+Compressed time: 18.70s.
+Top1 after quantization: 65.396, Top5 after quantization: 87.876
+
+vgg16_bn Quantization 5
+convwords: 96, fcwords: 80
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 58.6076MB
+Compress Coef: 9.01
+Compressed time: 18.64s.
+Top1 after quantization: 66.742, Top5 after quantization: 88.598
+
+vgg16_bn Quantization 6
+convwords: 104, fcwords: 80
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 59.9904MB
+Compress Coef: 8.80
+Compressed time: 20.46s.
+Top1 after quantization: 67.446, Top5 after quantization: 89.026
+
+vgg16_bn Quantization 7
+convwords: 112, fcwords: 80
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 61.3732MB
+Compress Coef: 8.60
+Compressed time: 20.37s.
+Top1 after quantization: 67.912, Top5 after quantization: 89.274
+
+vgg16_bn Quantization 8
+convwords: 120, fcwords: 80
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 62.7560MB
+Compress Coef: 8.41
+Compressed time: 21.02s.
+Top1 after quantization: 68.238, Top5 after quantization: 89.428
+
+vgg16_bn Quantization 9
+convwords: 128, fcwords: 80
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 64.1388MB
+Compress Coef: 8.23
+Compressed time: 20.71s.
+Top1 after quantization: 68.426, Top5 after quantization: 89.562
+
+vgg16_bn Quantization 10
+convwords: 136, fcwords: 80
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 65.5216MB
+Compress Coef: 8.06
+Compressed time: 23.17s.
+Top1 after quantization: 68.404, Top5 after quantization: 89.648
+
+vgg16_bn Quantization 11
+convwords: 144, fcwords: 80
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 66.9044MB
+Compress Coef: 7.89
+Compressed time: 23.20s.
+Top1 after quantization: 68.626, Top5 after quantization: 89.692
+
+vgg16_bn Quantization 12
+convwords: 152, fcwords: 80
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 68.2873MB
+Compress Coef: 7.73
+Compressed time: 23.57s.
+Top1 after quantization: 68.702, Top5 after quantization: 89.760
+
+vgg16_bn Quantization 13
+convwords: 160, fcwords: 80
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 69.6701MB
+Compress Coef: 7.58
+Compressed time: 23.22s.
+Top1 after quantization: 68.684, Top5 after quantization: 89.784
+
+vgg16_bn Quantization 14
+convwords: 168, fcwords: 80
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 71.0529MB
+Compress Coef: 7.43
+Compressed time: 24.81s.
+Top1 after quantization: 68.650, Top5 after quantization: 89.804
+
+vgg16_bn Quantization 15
+convwords: 176, fcwords: 80
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 72.4357MB
+Compress Coef: 7.29
+Compressed time: 24.88s.
+Top1 after quantization: 68.734, Top5 after quantization: 89.774
+
+vgg16_bn Quantization 16
+convwords: 184, fcwords: 80
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 73.8185MB
+Compress Coef: 7.15
+Compressed time: 25.15s.
+Top1 after quantization: 68.620, Top5 after quantization: 89.832
+
+----------------------------------------------------------
+vgg16_bn Quantization 1
+convwords: 64, fcwords: 90
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 58.3168MB
+Compress Coef: 9.05
+Compressed time: 16.85s.
+Top1 after quantization: 55.184, Top5 after quantization: 81.096
+
+vgg16_bn Quantization 2
+convwords: 72, fcwords: 90
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 59.6996MB
+Compress Coef: 8.84
+Compressed time: 18.85s.
+Top1 after quantization: 60.926, Top5 after quantization: 85.226
+
+vgg16_bn Quantization 3
+convwords: 80, fcwords: 90
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 61.0824MB
+Compress Coef: 8.64
+Compressed time: 18.80s.
+Top1 after quantization: 64.334, Top5 after quantization: 87.156
+
+vgg16_bn Quantization 4
+convwords: 88, fcwords: 90
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 62.4652MB
+Compress Coef: 8.45
+Compressed time: 19.28s.
+Top1 after quantization: 66.236, Top5 after quantization: 88.362
+
+vgg16_bn Quantization 5
+convwords: 96, fcwords: 90
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 63.8481MB
+Compress Coef: 8.27
+Compressed time: 19.06s.
+Top1 after quantization: 67.768, Top5 after quantization: 88.992
+
+vgg16_bn Quantization 6
+convwords: 104, fcwords: 90
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 65.2309MB
+Compress Coef: 8.09
+Compressed time: 20.88s.
+Top1 after quantization: 68.228, Top5 after quantization: 89.380
+
+vgg16_bn Quantization 7
+convwords: 112, fcwords: 90
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 66.6137MB
+Compress Coef: 7.92
+Compressed time: 20.98s.
+Top1 after quantization: 68.706, Top5 after quantization: 89.624
+
+vgg16_bn Quantization 8
+convwords: 120, fcwords: 90
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 67.9965MB
+Compress Coef: 7.76
+Compressed time: 21.76s.
+Top1 after quantization: 69.060, Top5 after quantization: 89.840
+
+vgg16_bn Quantization 9
+convwords: 128, fcwords: 90
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 69.3793MB
+Compress Coef: 7.61
+Compressed time: 21.05s.
+Top1 after quantization: 69.264, Top5 after quantization: 89.912
+
+vgg16_bn Quantization 10
+convwords: 136, fcwords: 90
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 70.7621MB
+Compress Coef: 7.46
+Compressed time: 23.56s.
+Top1 after quantization: 69.384, Top5 after quantization: 89.988
+
+vgg16_bn Quantization 11
+convwords: 144, fcwords: 90
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 72.1449MB
+Compress Coef: 7.32
+Compressed time: 23.69s.
+Top1 after quantization: 69.456, Top5 after quantization: 90.020
+
+vgg16_bn Quantization 12
+convwords: 152, fcwords: 90
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 73.5277MB
+Compress Coef: 7.18
+Compressed time: 23.91s.
+Top1 after quantization: 69.500, Top5 after quantization: 90.088
+
+vgg16_bn Quantization 13
+convwords: 160, fcwords: 90
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 74.9106MB
+Compress Coef: 7.05
+Compressed time: 23.66s.
+Top1 after quantization: 69.558, Top5 after quantization: 90.112
+
+vgg16_bn Quantization 14
+convwords: 168, fcwords: 90
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 76.2934MB
+Compress Coef: 6.92
+Compressed time: 25.29s.
+Top1 after quantization: 69.622, Top5 after quantization: 90.102
+
+vgg16_bn Quantization 15
+convwords: 176, fcwords: 90
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 77.6762MB
+Compress Coef: 6.80
+Compressed time: 25.31s.
+Top1 after quantization: 69.590, Top5 after quantization: 90.136
+
+vgg16_bn Quantization 16
+convwords: 184, fcwords: 90
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 79.0590MB
+Compress Coef: 6.68
+Compressed time: 25.64s.
+Top1 after quantization: 69.708, Top5 after quantization: 90.148
+
+----------------------------------------------------------
+vgg16_bn Quantization 1
+convwords: 64, fcwords: 100
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 63.5573MB
+Compress Coef: 8.30
+Compressed time: 17.39s.
+Top1 after quantization: 56.446, Top5 after quantization: 81.910
+
+vgg16_bn Quantization 2
+convwords: 72, fcwords: 100
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 64.9401MB
+Compress Coef: 8.13
+Compressed time: 19.05s.
+Top1 after quantization: 61.744, Top5 after quantization: 85.496
+
+vgg16_bn Quantization 3
+convwords: 80, fcwords: 100
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 66.3229MB
+Compress Coef: 7.96
+Compressed time: 19.35s.
+Top1 after quantization: 64.722, Top5 after quantization: 87.376
+
+vgg16_bn Quantization 4
+convwords: 88, fcwords: 100
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 67.7057MB
+Compress Coef: 7.80
+Compressed time: 19.67s.
+Top1 after quantization: 67.068, Top5 after quantization: 88.760
+
+vgg16_bn Quantization 5
+convwords: 96, fcwords: 100
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 69.0885MB
+Compress Coef: 7.64
+Compressed time: 19.61s.
+Top1 after quantization: 68.206, Top5 after quantization: 89.360
+
+vgg16_bn Quantization 6
+convwords: 104, fcwords: 100
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 70.4713MB
+Compress Coef: 7.49
+Compressed time: 21.19s.
+Top1 after quantization: 68.860, Top5 after quantization: 89.692
+
+vgg16_bn Quantization 7
+convwords: 112, fcwords: 100
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 71.8542MB
+Compress Coef: 7.35
+Compressed time: 21.30s.
+Top1 after quantization: 69.356, Top5 after quantization: 89.938
+
+vgg16_bn Quantization 8
+convwords: 120, fcwords: 100
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 73.2370MB
+Compress Coef: 7.21
+Compressed time: 21.90s.
+Top1 after quantization: 69.726, Top5 after quantization: 90.138
+
+vgg16_bn Quantization 9
+convwords: 128, fcwords: 100
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 74.6198MB
+Compress Coef: 7.07
+Compressed time: 21.82s.
+Top1 after quantization: 69.906, Top5 after quantization: 90.192
+
+vgg16_bn Quantization 10
+convwords: 136, fcwords: 100
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 76.0026MB
+Compress Coef: 6.94
+Compressed time: 23.93s.
+Top1 after quantization: 70.078, Top5 after quantization: 90.332
+
+vgg16_bn Quantization 11
+convwords: 144, fcwords: 100
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 77.3854MB
+Compress Coef: 6.82
+Compressed time: 24.14s.
+Top1 after quantization: 70.070, Top5 after quantization: 90.310
+
+vgg16_bn Quantization 12
+convwords: 152, fcwords: 100
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 78.7682MB
+Compress Coef: 6.70
+Compressed time: 24.21s.
+Top1 after quantization: 70.188, Top5 after quantization: 90.348
+
+vgg16_bn Quantization 13
+convwords: 160, fcwords: 100
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 80.1510MB
+Compress Coef: 6.59
+Compressed time: 23.95s.
+Top1 after quantization: 70.228, Top5 after quantization: 90.292
+
+vgg16_bn Quantization 14
+convwords: 168, fcwords: 100
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 81.5338MB
+Compress Coef: 6.47
+Compressed time: 25.97s.
+Top1 after quantization: 70.198, Top5 after quantization: 90.360
+
+vgg16_bn Quantization 15
+convwords: 176, fcwords: 100
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 82.9167MB
+Compress Coef: 6.37
+Compressed time: 25.70s.
+Top1 after quantization: 70.240, Top5 after quantization: 90.382
+
+vgg16_bn Quantization 16
+convwords: 184, fcwords: 100
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 84.2995MB
+Compress Coef: 6.26
+Compressed time: 25.68s.
+Top1 after quantization: 70.374, Top5 after quantization: 90.346
+
+----------------------------------------------------------
+vgg16_bn Quantization 1
+convwords: 64, fcwords: 110
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 68.7978MB
+Compress Coef: 7.67
+Compressed time: 17.44s.
+Top1 after quantization: 57.086, Top5 after quantization: 82.238
+
+vgg16_bn Quantization 2
+convwords: 72, fcwords: 110
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 70.1806MB
+Compress Coef: 7.52
+Compressed time: 19.39s.
+Top1 after quantization: 61.674, Top5 after quantization: 85.422
+
+vgg16_bn Quantization 3
+convwords: 80, fcwords: 110
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 71.5634MB
+Compress Coef: 7.38
+Compressed time: 19.51s.
+Top1 after quantization: 65.180, Top5 after quantization: 87.576
+
+vgg16_bn Quantization 4
+convwords: 88, fcwords: 110
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 72.9462MB
+Compress Coef: 7.24
+Compressed time: 19.84s.
+Top1 after quantization: 67.424, Top5 after quantization: 88.954
+
+vgg16_bn Quantization 5
+convwords: 96, fcwords: 110
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 74.3290MB
+Compress Coef: 7.10
+Compressed time: 19.61s.
+Top1 after quantization: 68.790, Top5 after quantization: 89.588
+
+vgg16_bn Quantization 6
+convwords: 104, fcwords: 110
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 75.7118MB
+Compress Coef: 6.97
+Compressed time: 21.38s.
+Top1 after quantization: 69.312, Top5 after quantization: 89.956
+
+vgg16_bn Quantization 7
+convwords: 112, fcwords: 110
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 77.0946MB
+Compress Coef: 6.85
+Compressed time: 21.49s.
+Top1 after quantization: 69.856, Top5 after quantization: 90.150
+
+vgg16_bn Quantization 8
+convwords: 120, fcwords: 110
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 78.4774MB
+Compress Coef: 6.73
+Compressed time: 22.02s.
+Top1 after quantization: 70.256, Top5 after quantization: 90.380
+
+vgg16_bn Quantization 9
+convwords: 128, fcwords: 110
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 79.8603MB
+Compress Coef: 6.61
+Compressed time: 21.89s.
+Top1 after quantization: 70.450, Top5 after quantization: 90.466
+
+vgg16_bn Quantization 10
+convwords: 136, fcwords: 110
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 81.2431MB
+Compress Coef: 6.50
+Compressed time: 24.04s.
+Top1 after quantization: 70.582, Top5 after quantization: 90.504
+
+vgg16_bn Quantization 11
+convwords: 144, fcwords: 110
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 82.6259MB
+Compress Coef: 6.39
+Compressed time: 24.25s.
+Top1 after quantization: 70.650, Top5 after quantization: 90.576
+
+vgg16_bn Quantization 12
+convwords: 152, fcwords: 110
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 84.0087MB
+Compress Coef: 6.28
+Compressed time: 24.56s.
+Top1 after quantization: 70.720, Top5 after quantization: 90.518
+
+vgg16_bn Quantization 13
+convwords: 160, fcwords: 110
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 85.3915MB
+Compress Coef: 6.18
+Compressed time: 24.38s.
+Top1 after quantization: 70.756, Top5 after quantization: 90.532
+
+vgg16_bn Quantization 14
+convwords: 168, fcwords: 110
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 86.7743MB
+Compress Coef: 6.08
+Compressed time: 25.92s.
+Top1 after quantization: 70.800, Top5 after quantization: 90.616
+
+vgg16_bn Quantization 15
+convwords: 176, fcwords: 110
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 88.1571MB
+Compress Coef: 5.99
+Compressed time: 26.08s.
+Top1 after quantization: 70.790, Top5 after quantization: 90.546
+
+vgg16_bn Quantization 16
+convwords: 184, fcwords: 110
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 89.5399MB
+Compress Coef: 5.89
+Compressed time: 26.03s.
+Top1 after quantization: 70.776, Top5 after quantization: 90.608
+
+----------------------------------------------------------
+vgg16_bn Quantization 1
+convwords: 64, fcwords: 120
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 74.0382MB
+Compress Coef: 7.13
+Compressed time: 17.70s.
+Top1 after quantization: 57.072, Top5 after quantization: 82.264
+
+vgg16_bn Quantization 2
+convwords: 72, fcwords: 120
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 75.4211MB
+Compress Coef: 7.00
+Compressed time: 19.31s.
+Top1 after quantization: 62.294, Top5 after quantization: 85.644
+
+vgg16_bn Quantization 3
+convwords: 80, fcwords: 120
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 76.8039MB
+Compress Coef: 6.87
+Compressed time: 19.38s.
+Top1 after quantization: 65.702, Top5 after quantization: 87.790
+
+vgg16_bn Quantization 4
+convwords: 88, fcwords: 120
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 78.1867MB
+Compress Coef: 6.75
+Compressed time: 19.88s.
+Top1 after quantization: 68.034, Top5 after quantization: 89.108
+
+vgg16_bn Quantization 5
+convwords: 96, fcwords: 120
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 79.5695MB
+Compress Coef: 6.63
+Compressed time: 19.85s.
+Top1 after quantization: 69.174, Top5 after quantization: 89.732
+
+vgg16_bn Quantization 6
+convwords: 104, fcwords: 120
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 80.9523MB
+Compress Coef: 6.52
+Compressed time: 21.43s.
+Top1 after quantization: 69.828, Top5 after quantization: 90.070
+
+vgg16_bn Quantization 7
+convwords: 112, fcwords: 120
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 82.3351MB
+Compress Coef: 6.41
+Compressed time: 21.72s.
+Top1 after quantization: 70.254, Top5 after quantization: 90.340
+
+vgg16_bn Quantization 8
+convwords: 120, fcwords: 120
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 83.7179MB
+Compress Coef: 6.30
+Compressed time: 22.19s.
+Top1 after quantization: 70.672, Top5 after quantization: 90.508
+
+vgg16_bn Quantization 9
+convwords: 128, fcwords: 120
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 85.1007MB
+Compress Coef: 6.20
+Compressed time: 21.96s.
+Top1 after quantization: 70.798, Top5 after quantization: 90.536
+
+vgg16_bn Quantization 10
+convwords: 136, fcwords: 120
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 86.4836MB
+Compress Coef: 6.10
+Compressed time: 24.07s.
+Top1 after quantization: 70.986, Top5 after quantization: 90.592
+
+vgg16_bn Quantization 11
+convwords: 144, fcwords: 120
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 87.8664MB
+Compress Coef: 6.01
+Compressed time: 24.27s.
+Top1 after quantization: 71.018, Top5 after quantization: 90.704
+
+vgg16_bn Quantization 12
+convwords: 152, fcwords: 120
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 89.2492MB
+Compress Coef: 5.91
+Compressed time: 24.60s.
+Top1 after quantization: 71.044, Top5 after quantization: 90.708
+
+vgg16_bn Quantization 13
+convwords: 160, fcwords: 120
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 90.6320MB
+Compress Coef: 5.82
+Compressed time: 24.36s.
+Top1 after quantization: 71.010, Top5 after quantization: 90.698
+
+vgg16_bn Quantization 14
+convwords: 168, fcwords: 120
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 92.0148MB
+Compress Coef: 5.74
+Compressed time: 26.10s.
+Top1 after quantization: 71.116, Top5 after quantization: 90.740
+
+vgg16_bn Quantization 15
+convwords: 176, fcwords: 120
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 93.3976MB
+Compress Coef: 5.65
+Compressed time: 25.96s.
+Top1 after quantization: 71.144, Top5 after quantization: 90.730
+
+vgg16_bn Quantization 16
+convwords: 184, fcwords: 120
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 94.7804MB
+Compress Coef: 5.57
+Compressed time: 25.98s.
+Top1 after quantization: 71.190, Top5 after quantization: 90.782
+
+----------------------------------------------------------
+vgg16_bn Quantization 1
+convwords: 64, fcwords: 130
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 79.2787MB
+Compress Coef: 6.66
+Compressed time: 18.26s.
+Top1 after quantization: 57.636, Top5 after quantization: 82.444
+
+vgg16_bn Quantization 2
+convwords: 72, fcwords: 130
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 80.6615MB
+Compress Coef: 6.54
+Compressed time: 20.21s.
+Top1 after quantization: 63.008, Top5 after quantization: 86.046
+
+vgg16_bn Quantization 3
+convwords: 80, fcwords: 130
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 82.0443MB
+Compress Coef: 6.43
+Compressed time: 20.46s.
+Top1 after quantization: 66.042, Top5 after quantization: 87.900
+
+vgg16_bn Quantization 4
+convwords: 88, fcwords: 130
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 83.4272MB
+Compress Coef: 6.33
+Compressed time: 20.78s.
+Top1 after quantization: 68.266, Top5 after quantization: 89.190
+
+vgg16_bn Quantization 5
+convwords: 96, fcwords: 130
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 84.8100MB
+Compress Coef: 6.22
+Compressed time: 20.38s.
+Top1 after quantization: 69.404, Top5 after quantization: 89.800
+
+vgg16_bn Quantization 6
+convwords: 104, fcwords: 130
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 86.1928MB
+Compress Coef: 6.12
+Compressed time: 22.31s.
+Top1 after quantization: 70.014, Top5 after quantization: 90.074
+
+vgg16_bn Quantization 7
+convwords: 112, fcwords: 130
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 87.5756MB
+Compress Coef: 6.03
+Compressed time: 22.52s.
+Top1 after quantization: 70.706, Top5 after quantization: 90.452
+
+vgg16_bn Quantization 8
+convwords: 120, fcwords: 130
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 88.9584MB
+Compress Coef: 5.93
+Compressed time: 23.07s.
+Top1 after quantization: 71.024, Top5 after quantization: 90.592
+
+vgg16_bn Quantization 9
+convwords: 128, fcwords: 130
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 90.3412MB
+Compress Coef: 5.84
+Compressed time: 22.67s.
+Top1 after quantization: 71.114, Top5 after quantization: 90.688
+
+vgg16_bn Quantization 10
+convwords: 136, fcwords: 130
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 91.7240MB
+Compress Coef: 5.75
+Compressed time: 24.84s.
+Top1 after quantization: 71.224, Top5 after quantization: 90.758
+
+vgg16_bn Quantization 11
+convwords: 144, fcwords: 130
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 93.1068MB
+Compress Coef: 5.67
+Compressed time: 25.17s.
+Top1 after quantization: 71.332, Top5 after quantization: 90.800
+
+vgg16_bn Quantization 12
+convwords: 152, fcwords: 130
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 94.4897MB
+Compress Coef: 5.59
+Compressed time: 25.25s.
+Top1 after quantization: 71.366, Top5 after quantization: 90.804
+
+vgg16_bn Quantization 13
+convwords: 160, fcwords: 130
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 95.8725MB
+Compress Coef: 5.51
+Compressed time: 25.26s.
+Top1 after quantization: 71.412, Top5 after quantization: 90.840
+
+vgg16_bn Quantization 14
+convwords: 168, fcwords: 130
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 97.2553MB
+Compress Coef: 5.43
+Compressed time: 26.99s.
+Top1 after quantization: 71.494, Top5 after quantization: 90.822
+
+vgg16_bn Quantization 15
+convwords: 176, fcwords: 130
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 98.6381MB
+Compress Coef: 5.35
+Compressed time: 26.74s.
+Top1 after quantization: 71.430, Top5 after quantization: 90.878
+
+vgg16_bn Quantization 16
+convwords: 184, fcwords: 130
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 100.0209MB
+Compress Coef: 5.28
+Compressed time: 26.86s.
+Top1 after quantization: 71.544, Top5 after quantization: 90.898
+
+----------------------------------------------------------
+vgg16_bn Quantization 1
+convwords: 64, fcwords: 140
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 84.5192MB
+Compress Coef: 6.25
+Compressed time: 18.64s.
+Top1 after quantization: 57.726, Top5 after quantization: 82.584
+
+vgg16_bn Quantization 2
+convwords: 72, fcwords: 140
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 85.9020MB
+Compress Coef: 6.14
+Compressed time: 20.31s.
+Top1 after quantization: 63.414, Top5 after quantization: 86.234
+
+vgg16_bn Quantization 3
+convwords: 80, fcwords: 140
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 87.2848MB
+Compress Coef: 6.05
+Compressed time: 20.45s.
+Top1 after quantization: 66.386, Top5 after quantization: 88.058
+
+vgg16_bn Quantization 4
+convwords: 88, fcwords: 140
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 88.6676MB
+Compress Coef: 5.95
+Compressed time: 20.93s.
+Top1 after quantization: 68.622, Top5 after quantization: 89.358
+
+vgg16_bn Quantization 5
+convwords: 96, fcwords: 140
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 90.0504MB
+Compress Coef: 5.86
+Compressed time: 20.64s.
+Top1 after quantization: 69.630, Top5 after quantization: 89.808
+
+vgg16_bn Quantization 6
+convwords: 104, fcwords: 140
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 91.4333MB
+Compress Coef: 5.77
+Compressed time: 22.70s.
+Top1 after quantization: 70.368, Top5 after quantization: 90.214
+
+vgg16_bn Quantization 7
+convwords: 112, fcwords: 140
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 92.8161MB
+Compress Coef: 5.69
+Compressed time: 22.64s.
+Top1 after quantization: 70.974, Top5 after quantization: 90.526
+
+vgg16_bn Quantization 8
+convwords: 120, fcwords: 140
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 94.1989MB
+Compress Coef: 5.60
+Compressed time: 23.16s.
+Top1 after quantization: 71.196, Top5 after quantization: 90.714
+
+vgg16_bn Quantization 9
+convwords: 128, fcwords: 140
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 95.5817MB
+Compress Coef: 5.52
+Compressed time: 22.87s.
+Top1 after quantization: 71.394, Top5 after quantization: 90.770
+
+vgg16_bn Quantization 10
+convwords: 136, fcwords: 140
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 96.9645MB
+Compress Coef: 5.44
+Compressed time: 25.22s.
+Top1 after quantization: 71.450, Top5 after quantization: 90.828
+
+vgg16_bn Quantization 11
+convwords: 144, fcwords: 140
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 98.3473MB
+Compress Coef: 5.37
+Compressed time: 25.29s.
+Top1 after quantization: 71.514, Top5 after quantization: 90.900
+
+vgg16_bn Quantization 12
+convwords: 152, fcwords: 140
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 99.7301MB
+Compress Coef: 5.29
+Compressed time: 25.68s.
+Top1 after quantization: 71.692, Top5 after quantization: 90.966
+
+vgg16_bn Quantization 13
+convwords: 160, fcwords: 140
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 101.1129MB
+Compress Coef: 5.22
+Compressed time: 25.61s.
+Top1 after quantization: 71.678, Top5 after quantization: 90.896
+
+vgg16_bn Quantization 14
+convwords: 168, fcwords: 140
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 102.4958MB
+Compress Coef: 5.15
+Compressed time: 27.03s.
+Top1 after quantization: 71.734, Top5 after quantization: 90.938
+
+vgg16_bn Quantization 15
+convwords: 176, fcwords: 140
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 103.8786MB
+Compress Coef: 5.08
+Compressed time: 27.01s.
+Top1 after quantization: 71.728, Top5 after quantization: 90.978
+
+vgg16_bn Quantization 16
+convwords: 184, fcwords: 140
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 105.2614MB
+Compress Coef: 5.01
+Compressed time: 26.98s.
+Top1 after quantization: 71.738, Top5 after quantization: 90.940
+
+----------------------------------------------------------
+vgg16_bn Quantization 1
+convwords: 64, fcwords: 150
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 89.7597MB
+Compress Coef: 5.88
+Compressed time: 18.68s.
+Top1 after quantization: 57.986, Top5 after quantization: 82.784
+
+vgg16_bn Quantization 2
+convwords: 72, fcwords: 150
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 91.1425MB
+Compress Coef: 5.79
+Compressed time: 20.59s.
+Top1 after quantization: 63.698, Top5 after quantization: 86.478
+
+vgg16_bn Quantization 3
+convwords: 80, fcwords: 150
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 92.5253MB
+Compress Coef: 5.70
+Compressed time: 20.80s.
+Top1 after quantization: 66.632, Top5 after quantization: 88.188
+
+vgg16_bn Quantization 4
+convwords: 88, fcwords: 150
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 93.9081MB
+Compress Coef: 5.62
+Compressed time: 21.07s.
+Top1 after quantization: 68.750, Top5 after quantization: 89.328
+
+vgg16_bn Quantization 5
+convwords: 96, fcwords: 150
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 95.2909MB
+Compress Coef: 5.54
+Compressed time: 20.97s.
+Top1 after quantization: 69.934, Top5 after quantization: 90.040
+
+vgg16_bn Quantization 6
+convwords: 104, fcwords: 150
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 96.6737MB
+Compress Coef: 5.46
+Compressed time: 22.60s.
+Top1 after quantization: 70.604, Top5 after quantization: 90.318
+
+vgg16_bn Quantization 7
+convwords: 112, fcwords: 150
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 98.0565MB
+Compress Coef: 5.38
+Compressed time: 22.79s.
+Top1 after quantization: 71.010, Top5 after quantization: 90.596
+
+vgg16_bn Quantization 8
+convwords: 120, fcwords: 150
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 99.4394MB
+Compress Coef: 5.31
+Compressed time: 23.53s.
+Top1 after quantization: 71.384, Top5 after quantization: 90.760
+
+vgg16_bn Quantization 9
+convwords: 128, fcwords: 150
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 100.8222MB
+Compress Coef: 5.24
+Compressed time: 23.04s.
+Top1 after quantization: 71.594, Top5 after quantization: 90.846
+
+vgg16_bn Quantization 10
+convwords: 136, fcwords: 150
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 102.2050MB
+Compress Coef: 5.16
+Compressed time: 25.45s.
+Top1 after quantization: 71.726, Top5 after quantization: 90.922
+
+vgg16_bn Quantization 11
+convwords: 144, fcwords: 150
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 103.5878MB
+Compress Coef: 5.10
+Compressed time: 25.65s.
+Top1 after quantization: 71.678, Top5 after quantization: 90.962
+
+vgg16_bn Quantization 12
+convwords: 152, fcwords: 150
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 104.9706MB
+Compress Coef: 5.03
+Compressed time: 26.04s.
+Top1 after quantization: 71.752, Top5 after quantization: 90.940
+
+vgg16_bn Quantization 13
+convwords: 160, fcwords: 150
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 106.3534MB
+Compress Coef: 4.96
+Compressed time: 25.65s.
+Top1 after quantization: 71.890, Top5 after quantization: 90.966
+
+vgg16_bn Quantization 14
+convwords: 168, fcwords: 150
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 107.7362MB
+Compress Coef: 4.90
+Compressed time: 27.21s.
+Top1 after quantization: 71.914, Top5 after quantization: 91.010
+
+vgg16_bn Quantization 15
+convwords: 176, fcwords: 150
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 109.1190MB
+Compress Coef: 4.84
+Compressed time: 27.22s.
+Top1 after quantization: 71.914, Top5 after quantization: 90.970
+
+vgg16_bn Quantization 16
+convwords: 184, fcwords: 150
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 110.5019MB
+Compress Coef: 4.78
+Compressed time: 27.07s.
+Top1 after quantization: 71.960, Top5 after quantization: 90.972
+
+----------------------------------------------------------
+vgg16_bn Quantization 1
+convwords: 64, fcwords: 160
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 95.0002MB
+Compress Coef: 5.56
+Compressed time: 18.79s.
+Top1 after quantization: 58.144, Top5 after quantization: 82.730
+
+vgg16_bn Quantization 2
+convwords: 72, fcwords: 160
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 96.3830MB
+Compress Coef: 5.48
+Compressed time: 20.52s.
+Top1 after quantization: 63.216, Top5 after quantization: 85.970
+
+vgg16_bn Quantization 3
+convwords: 80, fcwords: 160
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 97.7658MB
+Compress Coef: 5.40
+Compressed time: 20.43s.
+Top1 after quantization: 67.144, Top5 after quantization: 88.402
+
+vgg16_bn Quantization 4
+convwords: 88, fcwords: 160
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 99.1486MB
+Compress Coef: 5.32
+Compressed time: 21.18s.
+Top1 after quantization: 69.062, Top5 after quantization: 89.566
+
+vgg16_bn Quantization 5
+convwords: 96, fcwords: 160
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 100.5314MB
+Compress Coef: 5.25
+Compressed time: 21.20s.
+Top1 after quantization: 70.148, Top5 after quantization: 90.102
+
+vgg16_bn Quantization 6
+convwords: 104, fcwords: 160
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 101.9142MB
+Compress Coef: 5.18
+Compressed time: 22.73s.
+Top1 after quantization: 70.878, Top5 after quantization: 90.382
+
+vgg16_bn Quantization 7
+convwords: 112, fcwords: 160
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 103.2970MB
+Compress Coef: 5.11
+Compressed time: 22.76s.
+Top1 after quantization: 71.262, Top5 after quantization: 90.728
+
+vgg16_bn Quantization 8
+convwords: 120, fcwords: 160
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 104.6798MB
+Compress Coef: 5.04
+Compressed time: 23.58s.
+Top1 after quantization: 71.556, Top5 after quantization: 90.850
+
+vgg16_bn Quantization 9
+convwords: 128, fcwords: 160
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 106.0627MB
+Compress Coef: 4.98
+Compressed time: 22.93s.
+Top1 after quantization: 71.690, Top5 after quantization: 90.932
+
+vgg16_bn Quantization 10
+convwords: 136, fcwords: 160
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 107.4455MB
+Compress Coef: 4.91
+Compressed time: 25.39s.
+Top1 after quantization: 71.862, Top5 after quantization: 90.914
+
+vgg16_bn Quantization 11
+convwords: 144, fcwords: 160
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 108.8283MB
+Compress Coef: 4.85
+Compressed time: 25.55s.
+Top1 after quantization: 71.872, Top5 after quantization: 90.980
+
+vgg16_bn Quantization 12
+convwords: 152, fcwords: 160
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 110.2111MB
+Compress Coef: 4.79
+Compressed time: 25.75s.
+Top1 after quantization: 71.952, Top5 after quantization: 91.008
+
+vgg16_bn Quantization 13
+convwords: 160, fcwords: 160
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 111.5939MB
+Compress Coef: 4.73
+Compressed time: 25.72s.
+Top1 after quantization: 72.114, Top5 after quantization: 91.022
+
+vgg16_bn Quantization 14
+convwords: 168, fcwords: 160
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 112.9767MB
+Compress Coef: 4.67
+Compressed time: 27.27s.
+Top1 after quantization: 72.050, Top5 after quantization: 91.036
+
+vgg16_bn Quantization 15
+convwords: 176, fcwords: 160
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 114.3595MB
+Compress Coef: 4.62
+Compressed time: 27.05s.
+Top1 after quantization: 72.126, Top5 after quantization: 91.034
+
+vgg16_bn Quantization 16
+convwords: 184, fcwords: 160
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 115.7423MB
+Compress Coef: 4.56
+Compressed time: 27.23s.
+Top1 after quantization: 72.108, Top5 after quantization: 91.048
+

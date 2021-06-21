@@ -1,0 +1,1023 @@
+resnet50 Quantization 1
+---------------Dataset: imagenet--------------
+Size of uncompressed model : 97.4923MB.
+#################result####################
+Compressed model size: 55.6901MB
+Compress Coef: 1.75
+Compressed time: 24.24s.
+Top1 after quantization: 75.914, Top5 after quantization: 92.832
+
+----------------------------------------------------------
+2021年 06月 09日 星期三 22:22:57 CST
+resnet50 Quantization 1
+---------------Dataset: imagenet--------------
+Size of uncompressed model : 97.4923MB.
+#################result####################
+Compressed model size: 54.1901MB
+Compress Coef: 1.80
+Compressed time: 23.65s.
+Top1 after quantization: 75.916, Top5 after quantization: 92.758
+
+----------------------------------------------------------
+2021年 06月 09日 星期三 22:30:48 CST
+resnet50 Quantization 1
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 53.1979MB
+Compress Coef: 1.83
+Compressed time: 24.97s.
+Top1 after quantization: 75.860, Top5 after quantization: 92.764
+
+----------------------------------------------------------
+2021年 06月 09日 星期三 22:37:49 CST
+resnet50 Quantization 1
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 51.4479MB
+Compress Coef: 1.89
+Compressed time: 20.69s.
+Top1 after quantization: 75.766, Top5 after quantization: 92.766
+
+----------------------------------------------------------
+2021年 06月 09日 星期三 22:45:33 CST
+resnet50 Quantization 1
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 50.5177MB
+Compress Coef: 1.93
+Compressed time: 22.15s.
+Top1 after quantization: 75.764, Top5 after quantization: 92.794
+
+----------------------------------------------------------
+2021年 06月 09日 星期三 22:52:26 CST
+resnet50 Quantization 1
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 50.2511MB
+Compress Coef: 1.94
+Compressed time: 26.08s.
+Top1 after quantization: 75.744, Top5 after quantization: 92.798
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 114
+layer2.0.downsample.0 = 225
+layer2.1.conv1 = 114
+layer2.1.conv2 = 114
+layer2.1.conv3 = 114
+layer2.2.conv1 = 114
+layer2.2.conv2 = 114
+layer2.2.conv3 = 114
+layer2.3.conv1 = 114
+layer2.3.conv2 = 114
+layer2.3.conv3 = 114
+layer3.0.conv1 = 225
+layer3.0.conv2 = 225
+layer3.0.conv3 = 225
+layer3.0.downsample.0 = 225
+layer3.1.conv1 = 225
+layer3.1.conv2 = 225
+layer3.1.conv3 = 225
+layer3.2.conv1 = 225
+layer3.2.conv2 = 225
+layer3.2.conv3 = 225
+layer3.3.conv1 = 225
+layer3.3.conv2 = 225
+layer3.3.conv3 = 225
+layer3.4.conv1 = 225
+layer3.4.conv2 = 225
+layer3.4.conv3 = 225
+layer3.5.conv1 = 225
+layer3.5.conv2 = 225
+layer3.5.conv3 = 225
+layer4.0.conv1 = 460
+layer4.0.conv2 = 460
+layer4.0.conv3 = 460
+layer4.0.downsample.0 = 460
+layer4.1.conv1 = 460
+layer4.1.conv2 = 460
+layer4.1.conv3 = 460
+layer4.2.conv1 = 460
+layer4.2.conv2 = 460
+layer4.2.conv3 = 460
+fc = 800
+
+
+----------------------------------------------------------
+2021年 06月 09日 星期三 23:05:56 CST
+resnet50 Quantization 1
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 50.2209MB
+Compress Coef: 1.94
+Compressed time: 24.74s.
+Top1 after quantization: 75.642, Top5 after quantization: 92.778
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 60
+layer1.0.conv2 = 60
+layer1.0.conv3 = 60
+layer1.0.downsample.0 = 60
+layer1.1.conv1 = 60
+layer1.1.conv2 = 60
+layer1.1.conv3 = 60
+layer1.2.conv1 = 60
+layer1.2.conv2 = 60
+layer1.2.conv3 = 60
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 114
+layer2.0.downsample.0 = 225
+layer2.1.conv1 = 114
+layer2.1.conv2 = 114
+layer2.1.conv3 = 114
+layer2.2.conv1 = 114
+layer2.2.conv2 = 114
+layer2.2.conv3 = 114
+layer2.3.conv1 = 114
+layer2.3.conv2 = 114
+layer2.3.conv3 = 114
+layer3.0.conv1 = 225
+layer3.0.conv2 = 225
+layer3.0.conv3 = 225
+layer3.0.downsample.0 = 225
+layer3.1.conv1 = 225
+layer3.1.conv2 = 225
+layer3.1.conv3 = 225
+layer3.2.conv1 = 225
+layer3.2.conv2 = 225
+layer3.2.conv3 = 225
+layer3.3.conv1 = 225
+layer3.3.conv2 = 225
+layer3.3.conv3 = 225
+layer3.4.conv1 = 225
+layer3.4.conv2 = 225
+layer3.4.conv3 = 225
+layer3.5.conv1 = 225
+layer3.5.conv2 = 225
+layer3.5.conv3 = 225
+layer4.0.conv1 = 460
+layer4.0.conv2 = 460
+layer4.0.conv3 = 460
+layer4.0.downsample.0 = 460
+layer4.1.conv1 = 460
+layer4.1.conv2 = 460
+layer4.1.conv3 = 460
+layer4.2.conv1 = 460
+layer4.2.conv2 = 460
+layer4.2.conv3 = 460
+fc = 800
+
+----------------------------------------------------------
+2021年 06月 09日 星期三 23:13:43 CST
+resnet50 Quantization 1
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 49.0636MB
+Compress Coef: 1.99
+Compressed time: 22.78s.
+Top1 after quantization: 75.682, Top5 after quantization: 92.698
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 114
+layer2.0.downsample.0 = 225
+layer2.1.conv1 = 114
+layer2.1.conv2 = 114
+layer2.1.conv3 = 114
+layer2.2.conv1 = 114
+layer2.2.conv2 = 114
+layer2.2.conv3 = 114
+layer2.3.conv1 = 114
+layer2.3.conv2 = 114
+layer2.3.conv3 = 114
+layer3.0.conv1 = 225
+layer3.0.conv2 = 225
+layer3.0.conv3 = 225
+layer3.0.downsample.0 = 225
+layer3.1.conv1 = 225
+layer3.1.conv2 = 225
+layer3.1.conv3 = 225
+layer3.2.conv1 = 225
+layer3.2.conv2 = 225
+layer3.2.conv3 = 225
+layer3.3.conv1 = 225
+layer3.3.conv2 = 225
+layer3.3.conv3 = 225
+layer3.4.conv1 = 225
+layer3.4.conv2 = 225
+layer3.4.conv3 = 225
+layer3.5.conv1 = 225
+layer3.5.conv2 = 225
+layer3.5.conv3 = 225
+layer4.0.conv1 = 441
+layer4.0.conv2 = 441
+layer4.0.conv3 = 441
+layer4.0.downsample.0 = 441
+layer4.1.conv1 = 441
+layer4.1.conv2 = 441
+layer4.1.conv3 = 441
+layer4.2.conv1 = 441
+layer4.2.conv2 = 441
+layer4.2.conv3 = 441
+fc = 800
+
+----------------------------------------------------------
+2021年 06月 09日 星期三 23:21:11 CST
+resnet50 Quantization 1
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 48.5985MB
+Compress Coef: 2.01
+Compressed time: 21.61s.
+Top1 after quantization: 75.618, Top5 after quantization: 92.724
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 114
+layer2.0.downsample.0 = 225
+layer2.1.conv1 = 114
+layer2.1.conv2 = 114
+layer2.1.conv3 = 114
+layer2.2.conv1 = 114
+layer2.2.conv2 = 114
+layer2.2.conv3 = 114
+layer2.3.conv1 = 114
+layer2.3.conv2 = 114
+layer2.3.conv3 = 114
+layer3.0.conv1 = 225
+layer3.0.conv2 = 225
+layer3.0.conv3 = 225
+layer3.0.downsample.0 = 225
+layer3.1.conv1 = 225
+layer3.1.conv2 = 225
+layer3.1.conv3 = 225
+layer3.2.conv1 = 225
+layer3.2.conv2 = 225
+layer3.2.conv3 = 225
+layer3.3.conv1 = 225
+layer3.3.conv2 = 225
+layer3.3.conv3 = 225
+layer3.4.conv1 = 225
+layer3.4.conv2 = 225
+layer3.4.conv3 = 225
+layer3.5.conv1 = 225
+layer3.5.conv2 = 225
+layer3.5.conv3 = 225
+layer4.0.conv1 = 441
+layer4.0.conv2 = 441
+layer4.0.conv3 = 441
+layer4.0.downsample.0 = 441
+layer4.1.conv1 = 441
+layer4.1.conv2 = 441
+layer4.1.conv3 = 441
+layer4.2.conv1 = 441
+layer4.2.conv2 = 441
+layer4.2.conv3 = 441
+fc = 720
+
+----------------------------------------------------------
+2021年 06月 09日 星期三 23:29:41 CST
+resnet50 Quantization 1
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 47.2847MB
+Compress Coef: 2.06
+Compressed time: 20.57s.
+Top1 after quantization: 75.436, Top5 after quantization: 92.740
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 114
+layer2.0.downsample.0 = 201
+layer2.1.conv1 = 114
+layer2.1.conv2 = 114
+layer2.1.conv3 = 114
+layer2.2.conv1 = 114
+layer2.2.conv2 = 114
+layer2.2.conv3 = 114
+layer2.3.conv1 = 114
+layer2.3.conv2 = 114
+layer2.3.conv3 = 114
+layer3.0.conv1 = 201
+layer3.0.conv2 = 201
+layer3.0.conv3 = 201
+layer3.0.downsample.0 = 201
+layer3.1.conv1 = 201
+layer3.1.conv2 = 201
+layer3.1.conv3 = 201
+layer3.2.conv1 = 201
+layer3.2.conv2 = 201
+layer3.2.conv3 = 201
+layer3.3.conv1 = 201
+layer3.3.conv2 = 201
+layer3.3.conv3 = 201
+layer3.4.conv1 = 201
+layer3.4.conv2 = 201
+layer3.4.conv3 = 201
+layer3.5.conv1 = 201
+layer3.5.conv2 = 201
+layer3.5.conv3 = 201
+layer4.0.conv1 = 441
+layer4.0.conv2 = 441
+layer4.0.conv3 = 441
+layer4.0.downsample.0 = 441
+layer4.1.conv1 = 441
+layer4.1.conv2 = 441
+layer4.1.conv3 = 441
+layer4.2.conv1 = 441
+layer4.2.conv2 = 441
+layer4.2.conv3 = 441
+fc = 750
+
+----------------------------------------------------------
+2021年 06月 09日 星期三 23:36:39 CST
+resnet50 Quantization 1
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 47.2847MB
+Compress Coef: 2.06
+Compressed time: 21.71s.
+Top1 after quantization: 75.422, Top5 after quantization: 92.684
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 114
+layer2.0.downsample.0 = 201
+layer2.1.conv1 = 114
+layer2.1.conv2 = 114
+layer2.1.conv3 = 114
+layer2.2.conv1 = 114
+layer2.2.conv2 = 114
+layer2.2.conv3 = 114
+layer2.3.conv1 = 114
+layer2.3.conv2 = 114
+layer2.3.conv3 = 114
+layer3.0.conv1 = 201
+layer3.0.conv2 = 201
+layer3.0.conv3 = 201
+layer3.0.downsample.0 = 201
+layer3.1.conv1 = 201
+layer3.1.conv2 = 201
+layer3.1.conv3 = 201
+layer3.2.conv1 = 201
+layer3.2.conv2 = 201
+layer3.2.conv3 = 201
+layer3.3.conv1 = 201
+layer3.3.conv2 = 201
+layer3.3.conv3 = 201
+layer3.4.conv1 = 201
+layer3.4.conv2 = 201
+layer3.4.conv3 = 201
+layer3.5.conv1 = 201
+layer3.5.conv2 = 201
+layer3.5.conv3 = 201
+layer4.0.conv1 = 441
+layer4.0.conv2 = 441
+layer4.0.conv3 = 441
+layer4.0.downsample.0 = 441
+layer4.1.conv1 = 441
+layer4.1.conv2 = 441
+layer4.1.conv3 = 441
+layer4.2.conv1 = 441
+layer4.2.conv2 = 441
+layer4.2.conv3 = 441
+fc = 750
+
+resnet50 Quantization 2
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 46.8943MB
+Compress Coef: 2.08
+Compressed time: 22.36s.
+Top1 after quantization: 75.562, Top5 after quantization: 92.644
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 111
+layer2.0.downsample.0 = 201
+layer2.1.conv1 = 111
+layer2.1.conv2 = 111
+layer2.1.conv3 = 111
+layer2.2.conv1 = 111
+layer2.2.conv2 = 111
+layer2.2.conv3 = 111
+layer2.3.conv1 = 111
+layer2.3.conv2 = 111
+layer2.3.conv3 = 111
+layer3.0.conv1 = 198
+layer3.0.conv2 = 198
+layer3.0.conv3 = 198
+layer3.0.downsample.0 = 201
+layer3.1.conv1 = 198
+layer3.1.conv2 = 198
+layer3.1.conv3 = 198
+layer3.2.conv1 = 198
+layer3.2.conv2 = 198
+layer3.2.conv3 = 198
+layer3.3.conv1 = 198
+layer3.3.conv2 = 198
+layer3.3.conv3 = 198
+layer3.4.conv1 = 198
+layer3.4.conv2 = 198
+layer3.4.conv3 = 198
+layer3.5.conv1 = 198
+layer3.5.conv2 = 198
+layer3.5.conv3 = 198
+layer4.0.conv1 = 438
+layer4.0.conv2 = 438
+layer4.0.conv3 = 438
+layer4.0.downsample.0 = 441
+layer4.1.conv1 = 438
+layer4.1.conv2 = 438
+layer4.1.conv3 = 438
+layer4.2.conv1 = 438
+layer4.2.conv2 = 438
+layer4.2.conv3 = 438
+fc = 750
+
+resnet50 Quantization 3
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 46.5039MB
+Compress Coef: 2.10
+Compressed time: 21.01s.
+Top1 after quantization: 75.436, Top5 after quantization: 92.562
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 108
+layer2.0.downsample.0 = 201
+layer2.1.conv1 = 108
+layer2.1.conv2 = 108
+layer2.1.conv3 = 108
+layer2.2.conv1 = 108
+layer2.2.conv2 = 108
+layer2.2.conv3 = 108
+layer2.3.conv1 = 108
+layer2.3.conv2 = 108
+layer2.3.conv3 = 108
+layer3.0.conv1 = 195
+layer3.0.conv2 = 195
+layer3.0.conv3 = 195
+layer3.0.downsample.0 = 201
+layer3.1.conv1 = 195
+layer3.1.conv2 = 195
+layer3.1.conv3 = 195
+layer3.2.conv1 = 195
+layer3.2.conv2 = 195
+layer3.2.conv3 = 195
+layer3.3.conv1 = 195
+layer3.3.conv2 = 195
+layer3.3.conv3 = 195
+layer3.4.conv1 = 195
+layer3.4.conv2 = 195
+layer3.4.conv3 = 195
+layer3.5.conv1 = 195
+layer3.5.conv2 = 195
+layer3.5.conv3 = 195
+layer4.0.conv1 = 435
+layer4.0.conv2 = 435
+layer4.0.conv3 = 435
+layer4.0.downsample.0 = 441
+layer4.1.conv1 = 435
+layer4.1.conv2 = 435
+layer4.1.conv3 = 435
+layer4.2.conv1 = 435
+layer4.2.conv2 = 435
+layer4.2.conv3 = 435
+fc = 750
+
+resnet50 Quantization 4
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 46.1135MB
+Compress Coef: 2.11
+Compressed time: 22.39s.
+Top1 after quantization: 75.368, Top5 after quantization: 92.550
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 105
+layer2.0.downsample.0 = 201
+layer2.1.conv1 = 105
+layer2.1.conv2 = 105
+layer2.1.conv3 = 105
+layer2.2.conv1 = 105
+layer2.2.conv2 = 105
+layer2.2.conv3 = 105
+layer2.3.conv1 = 105
+layer2.3.conv2 = 105
+layer2.3.conv3 = 105
+layer3.0.conv1 = 192
+layer3.0.conv2 = 192
+layer3.0.conv3 = 192
+layer3.0.downsample.0 = 201
+layer3.1.conv1 = 192
+layer3.1.conv2 = 192
+layer3.1.conv3 = 192
+layer3.2.conv1 = 192
+layer3.2.conv2 = 192
+layer3.2.conv3 = 192
+layer3.3.conv1 = 192
+layer3.3.conv2 = 192
+layer3.3.conv3 = 192
+layer3.4.conv1 = 192
+layer3.4.conv2 = 192
+layer3.4.conv3 = 192
+layer3.5.conv1 = 192
+layer3.5.conv2 = 192
+layer3.5.conv3 = 192
+layer4.0.conv1 = 432
+layer4.0.conv2 = 432
+layer4.0.conv3 = 432
+layer4.0.downsample.0 = 441
+layer4.1.conv1 = 432
+layer4.1.conv2 = 432
+layer4.1.conv3 = 432
+layer4.2.conv1 = 432
+layer4.2.conv2 = 432
+layer4.2.conv3 = 432
+fc = 750
+
+resnet50 Quantization 5
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 45.7231MB
+Compress Coef: 2.13
+Compressed time: 19.23s.
+Top1 after quantization: 75.348, Top5 after quantization: 92.606
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 102
+layer2.0.downsample.0 = 201
+layer2.1.conv1 = 102
+layer2.1.conv2 = 102
+layer2.1.conv3 = 102
+layer2.2.conv1 = 102
+layer2.2.conv2 = 102
+layer2.2.conv3 = 102
+layer2.3.conv1 = 102
+layer2.3.conv2 = 102
+layer2.3.conv3 = 102
+layer3.0.conv1 = 189
+layer3.0.conv2 = 189
+layer3.0.conv3 = 189
+layer3.0.downsample.0 = 201
+layer3.1.conv1 = 189
+layer3.1.conv2 = 189
+layer3.1.conv3 = 189
+layer3.2.conv1 = 189
+layer3.2.conv2 = 189
+layer3.2.conv3 = 189
+layer3.3.conv1 = 189
+layer3.3.conv2 = 189
+layer3.3.conv3 = 189
+layer3.4.conv1 = 189
+layer3.4.conv2 = 189
+layer3.4.conv3 = 189
+layer3.5.conv1 = 189
+layer3.5.conv2 = 189
+layer3.5.conv3 = 189
+layer4.0.conv1 = 429
+layer4.0.conv2 = 429
+layer4.0.conv3 = 429
+layer4.0.downsample.0 = 441
+layer4.1.conv1 = 429
+layer4.1.conv2 = 429
+layer4.1.conv3 = 429
+layer4.2.conv1 = 429
+layer4.2.conv2 = 429
+layer4.2.conv3 = 429
+fc = 750
+
+resnet50 Quantization 6
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 45.3328MB
+Compress Coef: 2.15
+Compressed time: 19.18s.
+Top1 after quantization: 75.298, Top5 after quantization: 92.502
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 99
+layer2.0.downsample.0 = 201
+layer2.1.conv1 = 99
+layer2.1.conv2 = 99
+layer2.1.conv3 = 99
+layer2.2.conv1 = 99
+layer2.2.conv2 = 99
+layer2.2.conv3 = 99
+layer2.3.conv1 = 99
+layer2.3.conv2 = 99
+layer2.3.conv3 = 99
+layer3.0.conv1 = 186
+layer3.0.conv2 = 186
+layer3.0.conv3 = 186
+layer3.0.downsample.0 = 201
+layer3.1.conv1 = 186
+layer3.1.conv2 = 186
+layer3.1.conv3 = 186
+layer3.2.conv1 = 186
+layer3.2.conv2 = 186
+layer3.2.conv3 = 186
+layer3.3.conv1 = 186
+layer3.3.conv2 = 186
+layer3.3.conv3 = 186
+layer3.4.conv1 = 186
+layer3.4.conv2 = 186
+layer3.4.conv3 = 186
+layer3.5.conv1 = 186
+layer3.5.conv2 = 186
+layer3.5.conv3 = 186
+layer4.0.conv1 = 426
+layer4.0.conv2 = 426
+layer4.0.conv3 = 426
+layer4.0.downsample.0 = 441
+layer4.1.conv1 = 426
+layer4.1.conv2 = 426
+layer4.1.conv3 = 426
+layer4.2.conv1 = 426
+layer4.2.conv2 = 426
+layer4.2.conv3 = 426
+fc = 750
+
+resnet50 Quantization 7
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 44.9424MB
+Compress Coef: 2.17
+Compressed time: 20.13s.
+Top1 after quantization: 75.476, Top5 after quantization: 92.624
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 96
+layer2.0.downsample.0 = 201
+layer2.1.conv1 = 96
+layer2.1.conv2 = 96
+layer2.1.conv3 = 96
+layer2.2.conv1 = 96
+layer2.2.conv2 = 96
+layer2.2.conv3 = 96
+layer2.3.conv1 = 96
+layer2.3.conv2 = 96
+layer2.3.conv3 = 96
+layer3.0.conv1 = 183
+layer3.0.conv2 = 183
+layer3.0.conv3 = 183
+layer3.0.downsample.0 = 201
+layer3.1.conv1 = 183
+layer3.1.conv2 = 183
+layer3.1.conv3 = 183
+layer3.2.conv1 = 183
+layer3.2.conv2 = 183
+layer3.2.conv3 = 183
+layer3.3.conv1 = 183
+layer3.3.conv2 = 183
+layer3.3.conv3 = 183
+layer3.4.conv1 = 183
+layer3.4.conv2 = 183
+layer3.4.conv3 = 183
+layer3.5.conv1 = 183
+layer3.5.conv2 = 183
+layer3.5.conv3 = 183
+layer4.0.conv1 = 423
+layer4.0.conv2 = 423
+layer4.0.conv3 = 423
+layer4.0.downsample.0 = 441
+layer4.1.conv1 = 423
+layer4.1.conv2 = 423
+layer4.1.conv3 = 423
+layer4.2.conv1 = 423
+layer4.2.conv2 = 423
+layer4.2.conv3 = 423
+fc = 750
+
+resnet50 Quantization 8
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 44.5520MB
+Compress Coef: 2.19
+Compressed time: 21.29s.
+Top1 after quantization: 75.154, Top5 after quantization: 92.484
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 93
+layer2.0.downsample.0 = 201
+layer2.1.conv1 = 93
+layer2.1.conv2 = 93
+layer2.1.conv3 = 93
+layer2.2.conv1 = 93
+layer2.2.conv2 = 93
+layer2.2.conv3 = 93
+layer2.3.conv1 = 93
+layer2.3.conv2 = 93
+layer2.3.conv3 = 93
+layer3.0.conv1 = 180
+layer3.0.conv2 = 180
+layer3.0.conv3 = 180
+layer3.0.downsample.0 = 201
+layer3.1.conv1 = 180
+layer3.1.conv2 = 180
+layer3.1.conv3 = 180
+layer3.2.conv1 = 180
+layer3.2.conv2 = 180
+layer3.2.conv3 = 180
+layer3.3.conv1 = 180
+layer3.3.conv2 = 180
+layer3.3.conv3 = 180
+layer3.4.conv1 = 180
+layer3.4.conv2 = 180
+layer3.4.conv3 = 180
+layer3.5.conv1 = 180
+layer3.5.conv2 = 180
+layer3.5.conv3 = 180
+layer4.0.conv1 = 420
+layer4.0.conv2 = 420
+layer4.0.conv3 = 420
+layer4.0.downsample.0 = 441
+layer4.1.conv1 = 420
+layer4.1.conv2 = 420
+layer4.1.conv3 = 420
+layer4.2.conv1 = 420
+layer4.2.conv2 = 420
+layer4.2.conv3 = 420
+fc = 750
+
+resnet50 Quantization 9
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 44.1616MB
+Compress Coef: 2.21
+Compressed time: 19.75s.
+Top1 after quantization: 75.160, Top5 after quantization: 92.490
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 90
+layer2.0.downsample.0 = 201
+layer2.1.conv1 = 90
+layer2.1.conv2 = 90
+layer2.1.conv3 = 90
+layer2.2.conv1 = 90
+layer2.2.conv2 = 90
+layer2.2.conv3 = 90
+layer2.3.conv1 = 90
+layer2.3.conv2 = 90
+layer2.3.conv3 = 90
+layer3.0.conv1 = 177
+layer3.0.conv2 = 177
+layer3.0.conv3 = 177
+layer3.0.downsample.0 = 201
+layer3.1.conv1 = 177
+layer3.1.conv2 = 177
+layer3.1.conv3 = 177
+layer3.2.conv1 = 177
+layer3.2.conv2 = 177
+layer3.2.conv3 = 177
+layer3.3.conv1 = 177
+layer3.3.conv2 = 177
+layer3.3.conv3 = 177
+layer3.4.conv1 = 177
+layer3.4.conv2 = 177
+layer3.4.conv3 = 177
+layer3.5.conv1 = 177
+layer3.5.conv2 = 177
+layer3.5.conv3 = 177
+layer4.0.conv1 = 417
+layer4.0.conv2 = 417
+layer4.0.conv3 = 417
+layer4.0.downsample.0 = 441
+layer4.1.conv1 = 417
+layer4.1.conv2 = 417
+layer4.1.conv3 = 417
+layer4.2.conv1 = 417
+layer4.2.conv2 = 417
+layer4.2.conv3 = 417
+fc = 750
+
+resnet50 Quantization 10
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 43.7712MB
+Compress Coef: 2.23
+Compressed time: 18.68s.
+Top1 after quantization: 75.034, Top5 after quantization: 92.448
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 87
+layer2.0.downsample.0 = 201
+layer2.1.conv1 = 87
+layer2.1.conv2 = 87
+layer2.1.conv3 = 87
+layer2.2.conv1 = 87
+layer2.2.conv2 = 87
+layer2.2.conv3 = 87
+layer2.3.conv1 = 87
+layer2.3.conv2 = 87
+layer2.3.conv3 = 87
+layer3.0.conv1 = 174
+layer3.0.conv2 = 174
+layer3.0.conv3 = 174
+layer3.0.downsample.0 = 201
+layer3.1.conv1 = 174
+layer3.1.conv2 = 174
+layer3.1.conv3 = 174
+layer3.2.conv1 = 174
+layer3.2.conv2 = 174
+layer3.2.conv3 = 174
+layer3.3.conv1 = 174
+layer3.3.conv2 = 174
+layer3.3.conv3 = 174
+layer3.4.conv1 = 174
+layer3.4.conv2 = 174
+layer3.4.conv3 = 174
+layer3.5.conv1 = 174
+layer3.5.conv2 = 174
+layer3.5.conv3 = 174
+layer4.0.conv1 = 414
+layer4.0.conv2 = 414
+layer4.0.conv3 = 414
+layer4.0.downsample.0 = 441
+layer4.1.conv1 = 414
+layer4.1.conv2 = 414
+layer4.1.conv3 = 414
+layer4.2.conv1 = 414
+layer4.2.conv2 = 414
+layer4.2.conv3 = 414
+fc = 750
+
+----------------------------------------------------------

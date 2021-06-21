@@ -1,0 +1,129 @@
+resnet18 Quantization 1
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 24.9707MB
+Compress Coef: 1.79
+Compressed time: 12.92s.
+
+Top1 after quantization: 68.944, Top5 after quantization: 88.712
+resnet18 Quantization 2
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 24.2869MB
+Compress Coef: 1.84
+Compressed time: 11.65s.
+
+Top1 after quantization: 69.046, Top5 after quantization: 88.718
+resnet18 Quantization 3
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 23.6324MB
+Compress Coef: 1.89
+Compressed time: 12.18s.
+
+Top1 after quantization: 67.882, Top5 after quantization: 88.070
+resnet18 Quantization 4
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 23.0072MB
+Compress Coef: 1.94
+Compressed time: 11.05s.
+
+Top1 after quantization: 67.972, Top5 after quantization: 88.154
+resnet18 Quantization 5
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 22.4166MB
+Compress Coef: 1.99
+Compressed time: 12.51s.
+
+Top1 after quantization: 67.926, Top5 after quantization: 88.186
+resnet18 Quantization 6
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 21.8554MB
+Compress Coef: 2.04
+Compressed time: 13.24s.
+
+Top1 after quantization: 67.810, Top5 after quantization: 88.078
+resnet18 Quantization 7
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 21.2942MB
+Compress Coef: 2.09
+Compressed time: 11.76s.
+
+Top1 after quantization: 67.310, Top5 after quantization: 87.794
+resnet18 Quantization 8
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 20.7622MB
+Compress Coef: 2.15
+Compressed time: 9.42s.
+
+Top1 after quantization: 66.604, Top5 after quantization: 87.252
+resnet18 Quantization 9
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 20.2596MB
+Compress Coef: 2.20
+Compressed time: 11.91s.
+
+Top1 after quantization: 66.372, Top5 after quantization: 87.148
+resnet18 Quantization 10
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 19.7570MB
+Compress Coef: 2.26
+Compressed time: 11.39s.
+
+Top1 after quantization: 66.302, Top5 after quantization: 87.128
+resnet18 Quantization 11
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 19.2836MB
+Compress Coef: 2.31
+Compressed time: 10.22s.
+
+Top1 after quantization: 66.056, Top5 after quantization: 86.916
+resnet18 Quantization 12
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 18.8103MB
+Compress Coef: 2.37
+Compressed time: 10.12s.
+
+Top1 after quantization: 65.152, Top5 after quantization: 86.414
+resnet18 Quantization 13
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 18.3662MB
+Compress Coef: 2.43
+Compressed time: 11.71s.
+
+Top1 after quantization: 65.048, Top5 after quantization: 86.354
+resnet18 Quantization 14
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 17.9515MB
+Compress Coef: 2.48
+Compressed time: 11.91s.
+
+Top1 after quantization: 63.362, Top5 after quantization: 85.308
+resnet18 Quantization 15
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 17.5367MB
+Compress Coef: 2.54
+Compressed time: 9.91s.
+
+Top1 after quantization: 63.188, Top5 after quantization: 85.502
+resnet18 Quantization 16
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 17.1513MB
+Compress Coef: 2.60
+Compressed time: 10.23s.
+
+Top1 after quantization: 62.816, Top5 after quantization: 85.150
+resnet18 Quantization 17

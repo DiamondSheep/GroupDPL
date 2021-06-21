@@ -1,0 +1,1078 @@
+2021年 06月 10日 星期四 09:57:14 CST
+resnet50 Quantization 1
+2021年 06月 10日 星期四 09:57:14 CST
+---------------Dataset: imagenet--------------
+
+Top1 before quantization: 76.130000, Top5 before quantization: 92.862000
+
+Size of uncompressed model : 97.4923MB.
+
+Layer: layer1.0.conv1, layer shape:torch.Size([64, 64, 1, 1]), uncompressed layer size: 0.015625MB. 
+blocksize: 64
+wordsize: 64
+layer shape (after reshape): torch.Size([64, 64])
+Top1 after quantization: 76.126000, Top5 after quantization: 92.878000
+Loss:0.0040
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.015625MB
+Time cost: 1.10s
+
+Layer: layer1.0.conv2, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 64
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 76.102000, Top5 after quantization: 92.862000
+Loss:0.0280
+*************modify the words in layer1.0.conv2.**************
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.37s
+
+Layer: layer1.0.conv3, layer shape:torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize: 64
+layer shape (after reshape): torch.Size([256, 64])
+Top1 after quantization: 76.092000, Top5 after quantization: 92.872000
+Loss:0.0380
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.08s
+
+Layer: layer1.0.downsample.0, layer shape:torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize: 64
+layer shape (after reshape): torch.Size([256, 64])
+Top1 after quantization: 76.100000, Top5 after quantization: 92.882000
+Loss:0.0300
+reduce the words!
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.10s
+
+Layer: layer1.1.conv1, layer shape:torch.Size([64, 256, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize: 64
+layer shape (after reshape): torch.Size([256, 64])
+Top1 after quantization: 76.124000, Top5 after quantization: 92.888000
+Loss:0.0060
+reduce the words!
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.09s
+
+Layer: layer1.1.conv2, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 64
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 76.114000, Top5 after quantization: 92.882000
+Loss:0.0160
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.30s
+
+Layer: layer1.1.conv3, layer shape:torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize: 64
+layer shape (after reshape): torch.Size([256, 64])
+Top1 after quantization: 76.120000, Top5 after quantization: 92.886000
+Loss:0.0100
+reduce the words!
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.08s
+
+Layer: layer1.2.conv1, layer shape:torch.Size([64, 256, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize: 64
+layer shape (after reshape): torch.Size([256, 64])
+Top1 after quantization: 76.092000, Top5 after quantization: 92.878000
+Loss:0.0380
+*************modify the words in layer1.2.conv1.**************
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.08s
+
+Layer: layer1.2.conv2, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 64
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 76.074000, Top5 after quantization: 92.870000
+Loss:0.0560
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.34s
+
+Layer: layer1.2.conv3, layer shape:torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize: 64
+layer shape (after reshape): torch.Size([256, 64])
+Top1 after quantization: 76.044000, Top5 after quantization: 92.878000
+Loss:0.0860
+*************modify the words in layer1.2.conv3.**************
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.08s
+
+Layer: layer2.0.conv1, layer shape:torch.Size([128, 256, 1, 1]), uncompressed layer size: 0.125000MB. 
+blocksize: 256
+wordsize: 114
+layer shape (after reshape): torch.Size([256, 128])
+Top1 after quantization: 76.050000, Top5 after quantization: 92.896000
+Loss:0.0800
+reduce the words!
+Dictionary Words: 114
+Blocks: 1
+Compressed layer size: 0.083496MB
+Time cost: 0.12s
+
+Layer: layer2.0.conv2, layer shape:torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 1152
+wordsize: 114
+layer shape (after reshape): torch.Size([1152, 128])
+Top1 after quantization: 76.036000, Top5 after quantization: 92.886000
+Loss:0.0940
+Dictionary Words: 114
+Blocks: 1
+Compressed layer size: 0.278320MB
+Time cost: 0.33s
+
+Layer: layer2.0.conv3, layer shape:torch.Size([512, 128, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize: 96
+layer shape (after reshape): torch.Size([512, 128])
+Top1 after quantization: 76.048000, Top5 after quantization: 92.892000
+Loss:0.0820
+reduce the words!
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.31s
+
+Layer: layer2.0.downsample.0, layer shape:torch.Size([512, 256, 1, 1]), uncompressed layer size: 0.500000MB. 
+blocksize: 512
+wordsize: 201
+layer shape (after reshape): torch.Size([512, 256])
+Top1 after quantization: 76.062000, Top5 after quantization: 92.920000
+Loss:0.0680
+reduce the words!
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.294434MB
+Time cost: 0.96s
+
+Layer: layer2.1.conv1, layer shape:torch.Size([128, 512, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize: 96
+layer shape (after reshape): torch.Size([512, 128])
+Top1 after quantization: 76.080000, Top5 after quantization: 92.914000
+Loss:0.0500
+reduce the words!
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.39s
+
+Layer: layer2.1.conv2, layer shape:torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 1152
+wordsize: 96
+layer shape (after reshape): torch.Size([1152, 128])
+Top1 after quantization: 76.074000, Top5 after quantization: 92.890000
+Loss:0.0560
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.234375MB
+Time cost: 0.39s
+
+Layer: layer2.1.conv3, layer shape:torch.Size([512, 128, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize: 96
+layer shape (after reshape): torch.Size([512, 128])
+Top1 after quantization: 76.054000, Top5 after quantization: 92.902000
+Loss:0.0760
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.43s
+
+Layer: layer2.2.conv1, layer shape:torch.Size([128, 512, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize: 96
+layer shape (after reshape): torch.Size([512, 128])
+Top1 after quantization: 76.080000, Top5 after quantization: 92.892000
+Loss:0.0500
+reduce the words!
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.38s
+
+Layer: layer2.2.conv2, layer shape:torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 1152
+wordsize: 96
+layer shape (after reshape): torch.Size([1152, 128])
+Top1 after quantization: 76.010000, Top5 after quantization: 92.890000
+Loss:0.1200
+*************modify the words in layer2.2.conv2.**************
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.234375MB
+Time cost: 0.30s
+
+Layer: layer2.2.conv3, layer shape:torch.Size([512, 128, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize: 96
+layer shape (after reshape): torch.Size([512, 128])
+Top1 after quantization: 76.014000, Top5 after quantization: 92.866000
+Loss:0.1160
+reduce the words!
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.41s
+
+Layer: layer2.3.conv1, layer shape:torch.Size([128, 512, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize: 96
+layer shape (after reshape): torch.Size([512, 128])
+Top1 after quantization: 75.994000, Top5 after quantization: 92.880000
+Loss:0.1360
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.09s
+
+Layer: layer2.3.conv2, layer shape:torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 1152
+wordsize: 96
+layer shape (after reshape): torch.Size([1152, 128])
+Top1 after quantization: 75.906000, Top5 after quantization: 92.882000
+Loss:0.2240
+*************modify the words in layer2.3.conv2.**************
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.234375MB
+Time cost: 0.30s
+
+Layer: layer2.3.conv3, layer shape:torch.Size([512, 128, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize: 96
+layer shape (after reshape): torch.Size([512, 128])
+Top1 after quantization: 75.926000, Top5 after quantization: 92.884000
+Loss:0.2040
+reduce the words!
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.35s
+
+Layer: layer3.0.conv1, layer shape:torch.Size([256, 512, 1, 1]), uncompressed layer size: 0.500000MB. 
+blocksize: 512
+wordsize: 183
+layer shape (after reshape): torch.Size([512, 256])
+Top1 after quantization: 75.864000, Top5 after quantization: 92.902000
+Loss:0.2660
+*************modify the words in layer3.0.conv1.**************
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.268066MB
+Time cost: 0.30s
+
+Layer: layer3.0.conv2, layer shape:torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize: 183
+layer shape (after reshape): torch.Size([2304, 256])
+Top1 after quantization: 75.884000, Top5 after quantization: 92.872000
+Loss:0.2460
+reduce the words!
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.893555MB
+Time cost: 0.77s
+
+Layer: layer3.0.conv3, layer shape:torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize: 183
+layer shape (after reshape): torch.Size([1024, 256])
+Top1 after quantization: 75.916000, Top5 after quantization: 92.866000
+Loss:0.2140
+reduce the words!
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.38s
+
+Layer: layer3.0.downsample.0, layer shape:torch.Size([1024, 512, 1, 1]), uncompressed layer size: 2.000000MB. 
+blocksize: 1024
+wordsize: 201
+layer shape (after reshape): torch.Size([1024, 512])
+Top1 after quantization: 75.800000, Top5 after quantization: 92.770000
+Loss:0.3300
+*************modify the words in layer3.0.downsample.0.**************
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.588867MB
+Time cost: 0.89s
+
+Layer: layer3.1.conv1, layer shape:torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize: 183
+layer shape (after reshape): torch.Size([1024, 256])
+Top1 after quantization: 75.784000, Top5 after quantization: 92.778000
+Loss:0.3460
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.83s
+
+Layer: layer3.1.conv2, layer shape:torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize: 183
+layer shape (after reshape): torch.Size([2304, 256])
+Top1 after quantization: 75.774000, Top5 after quantization: 92.766000
+Loss:0.3560
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.893555MB
+Time cost: 0.46s
+
+Layer: layer3.1.conv3, layer shape:torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize: 183
+layer shape (after reshape): torch.Size([1024, 256])
+Top1 after quantization: 75.750000, Top5 after quantization: 92.748000
+Loss:0.3800
+*************modify the words in layer3.1.conv3.**************
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.66s
+
+Layer: layer3.2.conv1, layer shape:torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize: 183
+layer shape (after reshape): torch.Size([1024, 256])
+Top1 after quantization: 75.720000, Top5 after quantization: 92.752000
+Loss:0.4100
+*************modify the words in layer3.2.conv1.**************
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.26s
+
+Layer: layer3.2.conv2, layer shape:torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize: 183
+layer shape (after reshape): torch.Size([2304, 256])
+Top1 after quantization: 75.802000, Top5 after quantization: 92.746000
+Loss:0.3280
+reduce the words!
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.893555MB
+Time cost: 0.74s
+
+Layer: layer3.2.conv3, layer shape:torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize: 183
+layer shape (after reshape): torch.Size([1024, 256])
+Top1 after quantization: 75.776000, Top5 after quantization: 92.732000
+Loss:0.3540
+*************modify the words in layer3.2.conv3.**************
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.38s
+
+Layer: layer3.3.conv1, layer shape:torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize: 183
+layer shape (after reshape): torch.Size([1024, 256])
+Top1 after quantization: 75.768000, Top5 after quantization: 92.742000
+Loss:0.3620
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.71s
+
+Layer: layer3.3.conv2, layer shape:torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize: 183
+layer shape (after reshape): torch.Size([2304, 256])
+Top1 after quantization: 75.784000, Top5 after quantization: 92.754000
+Loss:0.3460
+reduce the words!
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.893555MB
+Time cost: 0.73s
+
+Layer: layer3.3.conv3, layer shape:torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize: 183
+layer shape (after reshape): torch.Size([1024, 256])
+Top1 after quantization: 75.700000, Top5 after quantization: 92.714000
+Loss:0.4300
+*************modify the words in layer3.3.conv3.**************
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.54s
+
+Layer: layer3.4.conv1, layer shape:torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize: 183
+layer shape (after reshape): torch.Size([1024, 256])
+Top1 after quantization: 75.686000, Top5 after quantization: 92.704000
+Loss:0.4440
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.81s
+
+Layer: layer3.4.conv2, layer shape:torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize: 183
+layer shape (after reshape): torch.Size([2304, 256])
+Top1 after quantization: 75.736000, Top5 after quantization: 92.708000
+Loss:0.3940
+reduce the words!
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.893555MB
+Time cost: 0.45s
+
+Layer: layer3.4.conv3, layer shape:torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize: 183
+layer shape (after reshape): torch.Size([1024, 256])
+Top1 after quantization: 75.720000, Top5 after quantization: 92.684000
+Loss:0.4100
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.80s
+
+Layer: layer3.5.conv1, layer shape:torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize: 183
+layer shape (after reshape): torch.Size([1024, 256])
+Top1 after quantization: 75.620000, Top5 after quantization: 92.690000
+Loss:0.5100
+*************modify the words in layer3.5.conv1.**************
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.69s
+
+Layer: layer3.5.conv2, layer shape:torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize: 183
+layer shape (after reshape): torch.Size([2304, 256])
+Top1 after quantization: 75.670000, Top5 after quantization: 92.698000
+Loss:0.4600
+reduce the words!
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.893555MB
+Time cost: 0.33s
+
+Layer: layer3.5.conv3, layer shape:torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize: 183
+layer shape (after reshape): torch.Size([1024, 256])
+Top1 after quantization: 75.610000, Top5 after quantization: 92.656000
+Loss:0.5200
+*************modify the words in layer3.5.conv3.**************
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.37s
+
+Layer: layer4.0.conv1, layer shape:torch.Size([512, 1024, 1, 1]), uncompressed layer size: 2.000000MB. 
+blocksize: 1024
+wordsize: 423
+layer shape (after reshape): torch.Size([1024, 512])
+Top1 after quantization: 75.574000, Top5 after quantization: 92.656000
+Loss:0.5560
+*************modify the words in layer4.0.conv1.**************
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 1.239258MB
+Time cost: 0.67s
+
+Layer: layer4.0.conv2, layer shape:torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 4608
+wordsize: 423
+layer shape (after reshape): torch.Size([4608, 512])
+Top1 after quantization: 75.608000, Top5 after quantization: 92.668000
+Loss:0.5220
+reduce the words!
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 4.130859MB
+Time cost: 1.10s
+
+Layer: layer4.0.conv3, layer shape:torch.Size([2048, 512, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize: 423
+layer shape (after reshape): torch.Size([2048, 512])
+Top1 after quantization: 75.532000, Top5 after quantization: 92.674000
+Loss:0.5980
+*************modify the words in layer4.0.conv3.**************
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 0.98s
+
+Layer: layer4.0.downsample.0, layer shape:torch.Size([2048, 1024, 1, 1]), uncompressed layer size: 8.000000MB. 
+blocksize: 2048
+wordsize: 441
+layer shape (after reshape): torch.Size([2048, 1024])
+Top1 after quantization: 75.460000, Top5 after quantization: 92.638000
+Loss:0.6700
+*************modify the words in layer4.0.downsample.0.**************
+Dictionary Words: 441
+Blocks: 1
+Compressed layer size: 2.583984MB
+Time cost: 0.63s
+
+Layer: layer4.1.conv1, layer shape:torch.Size([512, 2048, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize: 423
+layer shape (after reshape): torch.Size([2048, 512])
+Top1 after quantization: 75.442000, Top5 after quantization: 92.678000
+Loss:0.6880
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 0.75s
+
+Layer: layer4.1.conv2, layer shape:torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 4608
+wordsize: 423
+layer shape (after reshape): torch.Size([4608, 512])
+Top1 after quantization: 75.494000, Top5 after quantization: 92.632000
+Loss:0.6360
+reduce the words!
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 4.130859MB
+Time cost: 0.97s
+
+Layer: layer4.1.conv3, layer shape:torch.Size([2048, 512, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize: 423
+layer shape (after reshape): torch.Size([2048, 512])
+Top1 after quantization: 75.478000, Top5 after quantization: 92.594000
+Loss:0.6520
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 0.75s
+
+Layer: layer4.2.conv1, layer shape:torch.Size([512, 2048, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize: 423
+layer shape (after reshape): torch.Size([2048, 512])
+Top1 after quantization: 75.412000, Top5 after quantization: 92.542000
+Loss:0.7180
+*************modify the words in layer4.2.conv1.**************
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 0.62s
+
+Layer: layer4.2.conv2, layer shape:torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 4068
+wordsize: 423
+layer shape (after reshape): torch.Size([4608, 512])
+Top1 after quantization: 75.424000, Top5 after quantization: 92.562000
+Loss:0.7060
+reduce the words!
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 4.130859MB
+Time cost: 0.86s
+
+Layer: layer4.2.conv3, layer shape:torch.Size([2048, 512, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize: 423
+layer shape (after reshape): torch.Size([2048, 512])
+Top1 after quantization: 75.452000, Top5 after quantization: 92.554000
+Loss:0.6780
+reduce the words!
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 0.67s
+
+Layer: fc, layer shape:torch.Size([1000, 2048]), uncompressed layer size: 7.812500MB. 
+blocksize: 2048
+wordsize: 750
+layer shape (after reshape): torch.Size([2048, 1000])
+Top1 after quantization: 75.440000, Top5 after quantization: 92.554000
+Loss:0.6900
+Dictionary Words: 750
+Blocks: 1
+Compressed layer size: 4.360199MB
+Time cost: 0.97s
+
+#################result####################
+Compressed model size: 44.9424MB
+Compress Coef: 2.17
+Compressed time: 27.40s.
+Test: [0/196]	Acc@1 87.109 (87.109)	Acc@5 97.656 (97.656)
+Test: [1/196]	Acc@1 85.156 (86.133)	Acc@5 94.922 (96.289)
+Test: [2/196]	Acc@1 96.094 (89.453)	Acc@5 99.609 (97.396)
+Test: [3/196]	Acc@1 92.969 (90.332)	Acc@5 96.875 (97.266)
+Test: [4/196]	Acc@1 90.625 (90.391)	Acc@5 98.047 (97.422)
+Test: [5/196]	Acc@1 82.422 (89.062)	Acc@5 95.703 (97.135)
+Test: [6/196]	Acc@1 70.312 (86.384)	Acc@5 92.188 (96.429)
+Test: [7/196]	Acc@1 73.828 (84.814)	Acc@5 98.047 (96.631)
+Test: [8/196]	Acc@1 79.297 (84.201)	Acc@5 91.406 (96.050)
+Test: [9/196]	Acc@1 77.734 (83.555)	Acc@5 92.969 (95.742)
+Test: [10/196]	Acc@1 75.781 (82.848)	Acc@5 94.531 (95.632)
+Test: [11/196]	Acc@1 70.312 (81.803)	Acc@5 90.625 (95.215)
+Test: [12/196]	Acc@1 67.188 (80.679)	Acc@5 91.797 (94.952)
+Test: [13/196]	Acc@1 77.344 (80.441)	Acc@5 94.922 (94.950)
+Test: [14/196]	Acc@1 72.656 (79.922)	Acc@5 98.047 (95.156)
+Test: [15/196]	Acc@1 80.078 (79.932)	Acc@5 93.750 (95.068)
+Test: [16/196]	Acc@1 88.281 (80.423)	Acc@5 97.656 (95.221)
+Test: [17/196]	Acc@1 93.750 (81.163)	Acc@5 96.094 (95.269)
+Test: [18/196]	Acc@1 93.750 (81.826)	Acc@5 97.656 (95.395)
+Test: [19/196]	Acc@1 84.766 (81.973)	Acc@5 96.875 (95.469)
+Test: [20/196]	Acc@1 83.203 (82.031)	Acc@5 91.406 (95.275)
+Test: [21/196]	Acc@1 82.812 (82.067)	Acc@5 95.312 (95.277)
+Test: [22/196]	Acc@1 86.328 (82.252)	Acc@5 95.312 (95.279)
+Test: [23/196]	Acc@1 79.297 (82.129)	Acc@5 97.266 (95.361)
+Test: [24/196]	Acc@1 79.688 (82.031)	Acc@5 92.969 (95.266)
+Test: [25/196]	Acc@1 93.359 (82.467)	Acc@5 98.828 (95.403)
+Test: [26/196]	Acc@1 90.234 (82.755)	Acc@5 98.438 (95.515)
+Test: [27/196]	Acc@1 91.797 (83.078)	Acc@5 97.656 (95.592)
+Test: [28/196]	Acc@1 96.094 (83.526)	Acc@5 98.828 (95.703)
+Test: [29/196]	Acc@1 82.812 (83.503)	Acc@5 95.312 (95.690)
+Test: [30/196]	Acc@1 80.469 (83.405)	Acc@5 94.531 (95.653)
+Test: [31/196]	Acc@1 78.906 (83.264)	Acc@5 94.141 (95.605)
+Test: [32/196]	Acc@1 58.984 (82.528)	Acc@5 91.016 (95.466)
+Test: [33/196]	Acc@1 79.297 (82.433)	Acc@5 94.531 (95.439)
+Test: [34/196]	Acc@1 83.203 (82.455)	Acc@5 97.266 (95.491)
+Test: [35/196]	Acc@1 80.469 (82.400)	Acc@5 95.312 (95.486)
+Test: [36/196]	Acc@1 73.438 (82.158)	Acc@5 96.484 (95.513)
+Test: [37/196]	Acc@1 74.609 (81.959)	Acc@5 94.922 (95.498)
+Test: [38/196]	Acc@1 81.641 (81.951)	Acc@5 96.875 (95.533)
+Test: [39/196]	Acc@1 76.562 (81.816)	Acc@5 98.047 (95.596)
+Test: [40/196]	Acc@1 80.469 (81.784)	Acc@5 96.484 (95.617)
+Test: [41/196]	Acc@1 83.203 (81.817)	Acc@5 95.703 (95.619)
+Test: [42/196]	Acc@1 87.109 (81.940)	Acc@5 98.438 (95.685)
+Test: [43/196]	Acc@1 80.859 (81.916)	Acc@5 95.703 (95.685)
+Test: [44/196]	Acc@1 79.297 (81.858)	Acc@5 93.750 (95.642)
+Test: [45/196]	Acc@1 77.734 (81.768)	Acc@5 96.875 (95.669)
+Test: [46/196]	Acc@1 72.266 (81.566)	Acc@5 96.094 (95.678)
+Test: [47/196]	Acc@1 78.125 (81.494)	Acc@5 96.484 (95.695)
+Test: [48/196]	Acc@1 70.312 (81.266)	Acc@5 96.875 (95.719)
+Test: [49/196]	Acc@1 93.750 (81.516)	Acc@5 99.219 (95.789)
+Test: [50/196]	Acc@1 87.891 (81.641)	Acc@5 97.266 (95.818)
+Test: [51/196]	Acc@1 78.125 (81.573)	Acc@5 96.484 (95.831)
+Test: [52/196]	Acc@1 78.906 (81.523)	Acc@5 95.703 (95.828)
+Test: [53/196]	Acc@1 82.031 (81.532)	Acc@5 94.922 (95.812)
+Test: [54/196]	Acc@1 72.266 (81.364)	Acc@5 95.312 (95.803)
+Test: [55/196]	Acc@1 67.188 (81.110)	Acc@5 93.750 (95.766)
+Test: [56/196]	Acc@1 84.766 (81.175)	Acc@5 96.094 (95.772)
+Test: [57/196]	Acc@1 91.016 (81.344)	Acc@5 98.047 (95.811)
+Test: [58/196]	Acc@1 81.250 (81.343)	Acc@5 95.703 (95.809)
+Test: [59/196]	Acc@1 76.562 (81.263)	Acc@5 98.438 (95.853)
+Test: [60/196]	Acc@1 76.953 (81.192)	Acc@5 95.703 (95.850)
+Test: [61/196]	Acc@1 77.734 (81.137)	Acc@5 93.750 (95.817)
+Test: [62/196]	Acc@1 89.062 (81.262)	Acc@5 98.047 (95.852)
+Test: [63/196]	Acc@1 94.141 (81.464)	Acc@5 97.266 (95.874)
+Test: [64/196]	Acc@1 81.641 (81.466)	Acc@5 95.312 (95.865)
+Test: [65/196]	Acc@1 90.234 (81.599)	Acc@5 96.484 (95.875)
+Test: [66/196]	Acc@1 82.031 (81.606)	Acc@5 96.094 (95.878)
+Test: [67/196]	Acc@1 80.859 (81.595)	Acc@5 97.266 (95.898)
+Test: [68/196]	Acc@1 83.594 (81.624)	Acc@5 99.219 (95.947)
+Test: [69/196]	Acc@1 73.438 (81.507)	Acc@5 96.094 (95.949)
+Test: [70/196]	Acc@1 78.125 (81.459)	Acc@5 95.703 (95.945)
+Test: [71/196]	Acc@1 89.453 (81.570)	Acc@5 96.484 (95.953)
+Test: [72/196]	Acc@1 78.516 (81.528)	Acc@5 92.578 (95.906)
+Test: [73/196]	Acc@1 80.469 (81.514)	Acc@5 93.359 (95.872)
+Test: [74/196]	Acc@1 67.969 (81.333)	Acc@5 92.188 (95.823)
+Test: [75/196]	Acc@1 78.125 (81.291)	Acc@5 95.703 (95.821)
+Test: [76/196]	Acc@1 83.984 (81.326)	Acc@5 93.750 (95.794)
+Test: [77/196]	Acc@1 82.812 (81.345)	Acc@5 93.359 (95.763)
+Test: [78/196]	Acc@1 71.875 (81.225)	Acc@5 92.188 (95.718)
+Test: [79/196]	Acc@1 74.609 (81.143)	Acc@5 93.750 (95.693)
+Test: [80/196]	Acc@1 60.156 (80.883)	Acc@5 87.891 (95.597)
+Test: [81/196]	Acc@1 66.797 (80.712)	Acc@5 89.062 (95.517)
+Test: [82/196]	Acc@1 72.656 (80.615)	Acc@5 95.312 (95.515)
+Test: [83/196]	Acc@1 74.609 (80.543)	Acc@5 92.969 (95.485)
+Test: [84/196]	Acc@1 80.078 (80.538)	Acc@5 92.969 (95.455)
+Test: [85/196]	Acc@1 64.062 (80.346)	Acc@5 87.500 (95.362)
+Test: [86/196]	Acc@1 71.484 (80.244)	Acc@5 92.969 (95.335)
+Test: [87/196]	Acc@1 73.438 (80.167)	Acc@5 91.016 (95.286)
+Test: [88/196]	Acc@1 71.875 (80.074)	Acc@5 90.625 (95.233)
+Test: [89/196]	Acc@1 73.047 (79.996)	Acc@5 88.672 (95.161)
+Test: [90/196]	Acc@1 56.641 (79.739)	Acc@5 87.109 (95.072)
+Test: [91/196]	Acc@1 70.703 (79.641)	Acc@5 87.109 (94.986)
+Test: [92/196]	Acc@1 82.422 (79.671)	Acc@5 92.969 (94.964)
+Test: [93/196]	Acc@1 66.797 (79.534)	Acc@5 88.281 (94.893)
+Test: [94/196]	Acc@1 60.938 (79.338)	Acc@5 93.359 (94.877)
+Test: [95/196]	Acc@1 66.406 (79.203)	Acc@5 89.453 (94.820)
+Test: [96/196]	Acc@1 68.750 (79.096)	Acc@5 85.156 (94.721)
+Test: [97/196]	Acc@1 64.844 (78.950)	Acc@5 85.547 (94.627)
+Test: [98/196]	Acc@1 60.156 (78.760)	Acc@5 87.500 (94.555)
+Test: [99/196]	Acc@1 71.875 (78.691)	Acc@5 91.406 (94.523)
+Test: [100/196]	Acc@1 65.625 (78.562)	Acc@5 91.016 (94.489)
+Test: [101/196]	Acc@1 73.828 (78.516)	Acc@5 91.406 (94.458)
+Test: [102/196]	Acc@1 63.672 (78.372)	Acc@5 91.016 (94.425)
+Test: [103/196]	Acc@1 67.578 (78.268)	Acc@5 90.625 (94.389)
+Test: [104/196]	Acc@1 75.781 (78.244)	Acc@5 92.969 (94.375)
+Test: [105/196]	Acc@1 72.266 (78.188)	Acc@5 90.625 (94.340)
+Test: [106/196]	Acc@1 72.266 (78.132)	Acc@5 90.234 (94.301)
+Test: [107/196]	Acc@1 77.344 (78.125)	Acc@5 93.359 (94.293)
+Test: [108/196]	Acc@1 76.172 (78.107)	Acc@5 88.281 (94.237)
+Test: [109/196]	Acc@1 76.172 (78.089)	Acc@5 91.797 (94.215)
+Test: [110/196]	Acc@1 76.172 (78.072)	Acc@5 93.750 (94.211)
+Test: [111/196]	Acc@1 83.594 (78.122)	Acc@5 96.094 (94.228)
+Test: [112/196]	Acc@1 82.031 (78.156)	Acc@5 94.531 (94.231)
+Test: [113/196]	Acc@1 72.656 (78.108)	Acc@5 93.359 (94.223)
+Test: [114/196]	Acc@1 62.500 (77.972)	Acc@5 82.422 (94.120)
+Test: [115/196]	Acc@1 70.312 (77.906)	Acc@5 86.719 (94.056)
+Test: [116/196]	Acc@1 73.438 (77.868)	Acc@5 92.578 (94.044)
+Test: [117/196]	Acc@1 64.453 (77.754)	Acc@5 85.938 (93.975)
+Test: [118/196]	Acc@1 82.422 (77.793)	Acc@5 90.625 (93.947)
+Test: [119/196]	Acc@1 87.891 (77.878)	Acc@5 95.703 (93.962)
+Test: [120/196]	Acc@1 68.750 (77.802)	Acc@5 87.109 (93.905)
+Test: [121/196]	Acc@1 49.609 (77.571)	Acc@5 82.812 (93.814)
+Test: [122/196]	Acc@1 79.688 (77.588)	Acc@5 92.969 (93.807)
+Test: [123/196]	Acc@1 62.500 (77.467)	Acc@5 83.594 (93.725)
+Test: [124/196]	Acc@1 52.344 (77.266)	Acc@5 91.797 (93.709)
+Test: [125/196]	Acc@1 76.172 (77.257)	Acc@5 92.969 (93.703)
+Test: [126/196]	Acc@1 76.172 (77.248)	Acc@5 90.625 (93.679)
+Test: [127/196]	Acc@1 65.625 (77.158)	Acc@5 87.109 (93.628)
+Test: [128/196]	Acc@1 58.203 (77.011)	Acc@5 87.500 (93.580)
+Test: [129/196]	Acc@1 60.156 (76.881)	Acc@5 89.844 (93.552)
+Test: [130/196]	Acc@1 80.078 (76.905)	Acc@5 95.703 (93.568)
+Test: [131/196]	Acc@1 70.703 (76.858)	Acc@5 91.797 (93.555)
+Test: [132/196]	Acc@1 72.656 (76.827)	Acc@5 83.984 (93.483)
+Test: [133/196]	Acc@1 73.438 (76.802)	Acc@5 91.016 (93.464)
+Test: [134/196]	Acc@1 73.047 (76.774)	Acc@5 90.234 (93.440)
+Test: [135/196]	Acc@1 69.141 (76.718)	Acc@5 88.281 (93.402)
+Test: [136/196]	Acc@1 72.266 (76.685)	Acc@5 90.234 (93.379)
+Test: [137/196]	Acc@1 70.312 (76.639)	Acc@5 92.188 (93.371)
+Test: [138/196]	Acc@1 71.094 (76.599)	Acc@5 88.672 (93.337)
+Test: [139/196]	Acc@1 80.469 (76.627)	Acc@5 91.406 (93.323)
+Test: [140/196]	Acc@1 77.344 (76.632)	Acc@5 92.969 (93.321)
+Test: [141/196]	Acc@1 77.734 (76.640)	Acc@5 92.578 (93.315)
+Test: [142/196]	Acc@1 62.109 (76.538)	Acc@5 82.422 (93.239)
+Test: [143/196]	Acc@1 71.875 (76.506)	Acc@5 91.016 (93.224)
+Test: [144/196]	Acc@1 74.609 (76.492)	Acc@5 89.453 (93.198)
+Test: [145/196]	Acc@1 64.453 (76.410)	Acc@5 90.625 (93.180)
+Test: [146/196]	Acc@1 69.531 (76.363)	Acc@5 90.234 (93.160)
+Test: [147/196]	Acc@1 76.953 (76.367)	Acc@5 92.969 (93.159)
+Test: [148/196]	Acc@1 73.438 (76.348)	Acc@5 86.719 (93.116)
+Test: [149/196]	Acc@1 71.094 (76.312)	Acc@5 86.328 (93.070)
+Test: [150/196]	Acc@1 74.609 (76.301)	Acc@5 89.453 (93.046)
+Test: [151/196]	Acc@1 65.625 (76.231)	Acc@5 88.672 (93.018)
+Test: [152/196]	Acc@1 71.875 (76.203)	Acc@5 93.359 (93.020)
+Test: [153/196]	Acc@1 71.875 (76.174)	Acc@5 86.719 (92.979)
+Test: [154/196]	Acc@1 72.266 (76.149)	Acc@5 88.672 (92.951)
+Test: [155/196]	Acc@1 70.312 (76.112)	Acc@5 87.500 (92.916)
+Test: [156/196]	Acc@1 82.031 (76.149)	Acc@5 91.797 (92.909)
+Test: [157/196]	Acc@1 73.438 (76.132)	Acc@5 90.625 (92.895)
+Test: [158/196]	Acc@1 53.906 (75.993)	Acc@5 83.594 (92.836)
+Test: [159/196]	Acc@1 71.094 (75.962)	Acc@5 88.672 (92.810)
+Test: [160/196]	Acc@1 85.156 (76.019)	Acc@5 94.141 (92.818)
+Test: [161/196]	Acc@1 67.188 (75.965)	Acc@5 87.109 (92.783)
+Test: [162/196]	Acc@1 78.125 (75.978)	Acc@5 92.578 (92.782)
+Test: [163/196]	Acc@1 49.219 (75.815)	Acc@5 77.734 (92.690)
+Test: [164/196]	Acc@1 66.406 (75.758)	Acc@5 87.891 (92.661)
+Test: [165/196]	Acc@1 65.625 (75.697)	Acc@5 90.234 (92.646)
+Test: [166/196]	Acc@1 80.078 (75.723)	Acc@5 95.312 (92.662)
+Test: [167/196]	Acc@1 67.969 (75.677)	Acc@5 88.672 (92.639)
+Test: [168/196]	Acc@1 66.406 (75.622)	Acc@5 89.844 (92.622)
+Test: [169/196]	Acc@1 69.531 (75.586)	Acc@5 89.062 (92.601)
+Test: [170/196]	Acc@1 84.375 (75.637)	Acc@5 97.656 (92.631)
+Test: [171/196]	Acc@1 68.750 (75.597)	Acc@5 91.797 (92.626)
+Test: [172/196]	Acc@1 61.719 (75.517)	Acc@5 84.766 (92.580)
+Test: [173/196]	Acc@1 76.562 (75.523)	Acc@5 92.969 (92.583)
+Test: [174/196]	Acc@1 70.312 (75.493)	Acc@5 89.844 (92.567)
+Test: [175/196]	Acc@1 67.188 (75.446)	Acc@5 89.062 (92.547)
+Test: [176/196]	Acc@1 69.531 (75.413)	Acc@5 83.594 (92.496)
+Test: [177/196]	Acc@1 54.688 (75.296)	Acc@5 87.500 (92.468)
+Test: [178/196]	Acc@1 81.641 (75.332)	Acc@5 95.703 (92.486)
+Test: [179/196]	Acc@1 80.078 (75.358)	Acc@5 91.016 (92.478)
+Test: [180/196]	Acc@1 67.188 (75.313)	Acc@5 93.359 (92.483)
+Test: [181/196]	Acc@1 73.828 (75.305)	Acc@5 94.922 (92.497)
+Test: [182/196]	Acc@1 83.594 (75.350)	Acc@5 95.312 (92.512)
+Test: [183/196]	Acc@1 86.719 (75.412)	Acc@5 97.656 (92.540)
+Test: [184/196]	Acc@1 80.469 (75.439)	Acc@5 96.094 (92.559)
+Test: [185/196]	Acc@1 73.828 (75.431)	Acc@5 94.922 (92.572)
+Test: [186/196]	Acc@1 92.188 (75.520)	Acc@5 97.266 (92.597)
+Test: [187/196]	Acc@1 68.750 (75.484)	Acc@5 86.719 (92.566)
+Test: [188/196]	Acc@1 73.047 (75.471)	Acc@5 89.062 (92.547)
+Test: [189/196]	Acc@1 57.031 (75.374)	Acc@5 83.203 (92.498)
+Test: [190/196]	Acc@1 65.625 (75.323)	Acc@5 94.531 (92.509)
+Test: [191/196]	Acc@1 69.922 (75.295)	Acc@5 88.672 (92.489)
+Test: [192/196]	Acc@1 86.328 (75.352)	Acc@5 97.266 (92.513)
+Test: [193/196]	Acc@1 92.969 (75.443)	Acc@5 98.438 (92.544)
+Test: [194/196]	Acc@1 85.547 (75.495)	Acc@5 96.875 (92.566)
+Test: [195/196]	Acc@1 41.250 (75.440)	Acc@5 85.000 (92.554)
+Top1 after quantization: 75.440, Top5 after quantization: 92.554
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 96
+layer2.0.downsample.0 = 201
+layer2.1.conv1 = 96
+layer2.1.conv2 = 96
+layer2.1.conv3 = 96
+layer2.2.conv1 = 96
+layer2.2.conv2 = 96
+layer2.2.conv3 = 96
+layer2.3.conv1 = 96
+layer2.3.conv2 = 96
+layer2.3.conv3 = 96
+layer3.0.conv1 = 183
+layer3.0.conv2 = 183
+layer3.0.conv3 = 183
+layer3.0.downsample.0 = 201
+layer3.1.conv1 = 183
+layer3.1.conv2 = 183
+layer3.1.conv3 = 183
+layer3.2.conv1 = 183
+layer3.2.conv2 = 183
+layer3.2.conv3 = 183
+layer3.3.conv1 = 183
+layer3.3.conv2 = 183
+layer3.3.conv3 = 183
+layer3.4.conv1 = 183
+layer3.4.conv2 = 183
+layer3.4.conv3 = 183
+layer3.5.conv1 = 183
+layer3.5.conv2 = 183
+layer3.5.conv3 = 183
+layer4.0.conv1 = 423
+layer4.0.conv2 = 423
+layer4.0.conv3 = 423
+layer4.0.downsample.0 = 441
+layer4.1.conv1 = 423
+layer4.1.conv2 = 423
+layer4.1.conv3 = 423
+layer4.2.conv1 = 423
+layer4.2.conv2 = 423
+layer4.2.conv3 = 423
+fc = 750----------------------------------------------------------
+resnet50 Quantization 1
+2021年 06月 10日 星期四 15:25:38 CST
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 44.2256MB
+Compress Coef: 2.20
+Compressed time: 22.13s.
+Top1 after quantization: 75.286, Top5 after quantization: 92.532
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 96
+layer2.0.conv2 = 96
+layer2.0.conv3 = 96
+layer2.0.downsample.0 = 181
+layer2.1.conv1 = 96
+layer2.1.conv2 = 96
+layer2.1.conv3 = 96
+layer2.2.conv1 = 96
+layer2.2.conv2 = 106
+layer2.2.conv3 = 96
+layer2.3.conv1 = 96
+layer2.3.conv2 = 116
+layer2.3.conv3 = 96
+layer3.0.conv1 = 183
+layer3.0.conv2 = 163
+layer3.0.conv3 = 163
+layer3.0.downsample.0 = 221
+layer3.1.conv1 = 183
+layer3.1.conv2 = 183
+layer3.1.conv3 = 183
+layer3.2.conv1 = 183
+layer3.2.conv2 = 163
+layer3.2.conv3 = 183
+layer3.3.conv1 = 183
+layer3.3.conv2 = 163
+layer3.3.conv3 = 203
+layer3.4.conv1 = 183
+layer3.4.conv2 = 163
+layer3.4.conv3 = 183
+layer3.5.conv1 = 203
+layer3.5.conv2 = 163
+layer3.5.conv3 = 203
+layer4.0.conv1 = 433
+layer4.0.conv2 = 403
+layer4.0.conv3 = 423
+layer4.0.downsample.0 = 471
+layer4.1.conv1 = 423
+layer4.1.conv2 = 403
+layer4.1.conv3 = 423
+layer4.2.conv1 = 433
+layer4.2.conv2 = 403
+layer4.2.conv3 = 403
+fc = 760----------------------------------------------------------
+resnet50 Quantization 1
+2021年 06月 10日 星期四 15:37:04 CST
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 45.2107MB
+Compress Coef: 2.16
+Compressed time: 21.22s.
+Top1 after quantization: 75.378, Top5 after quantization: 92.554
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 96
+layer2.0.conv2 = 96
+layer2.0.conv3 = 96
+layer2.0.downsample.0 = 181
+layer2.1.conv1 = 96
+layer2.1.conv2 = 96
+layer2.1.conv3 = 96
+layer2.2.conv1 = 96
+layer2.2.conv2 = 105
+layer2.2.conv3 = 105
+layer2.3.conv1 = 105
+layer2.3.conv2 = 105
+layer2.3.conv3 = 105
+layer3.0.conv1 = 183
+layer3.0.conv2 = 163
+layer3.0.conv3 = 163
+layer3.0.downsample.0 = 231
+layer3.1.conv1 = 183
+layer3.1.conv2 = 183
+layer3.1.conv3 = 183
+layer3.2.conv1 = 183
+layer3.2.conv2 = 183
+layer3.2.conv3 = 183
+layer3.3.conv1 = 183
+layer3.3.conv2 = 183
+layer3.3.conv3 = 201
+layer3.4.conv1 = 201
+layer3.4.conv2 = 201
+layer3.4.conv3 = 201
+layer3.5.conv1 = 201
+layer3.5.conv2 = 201
+layer3.5.conv3 = 201
+layer4.0.conv1 = 423
+layer4.0.conv2 = 423
+layer4.0.conv3 = 423
+layer4.0.downsample.0 = 471
+layer4.1.conv1 = 423
+layer4.1.conv2 = 423
+layer4.1.conv3 = 423
+layer4.2.conv1 = 423
+layer4.2.conv2 = 403
+layer4.2.conv3 = 403
+fc = 760----------------------------------------------------------
+resnet50 Quantization 1
+2021年 06月 10日 星期四 15:44:00 CST
+---------------Dataset: imagenet--------------
+#################result####################
+Compressed model size: 45.4456MB
+Compress Coef: 2.15
+Compressed time: 21.09s.
+Top1 after quantization: 75.262, Top5 after quantization: 92.528
+
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 96
+layer2.0.conv2 = 96
+layer2.0.conv3 = 96
+layer2.0.downsample.0 = 181
+layer2.1.conv1 = 96
+layer2.1.conv2 = 96
+layer2.1.conv3 = 96
+layer2.2.conv1 = 96
+layer2.2.conv2 = 105
+layer2.2.conv3 = 105
+layer2.3.conv1 = 105
+layer2.3.conv2 = 105
+layer2.3.conv3 = 105
+layer3.0.conv1 = 183
+layer3.0.conv2 = 163
+layer3.0.conv3 = 163
+layer3.0.downsample.0 = 231
+layer3.1.conv1 = 183
+layer3.1.conv2 = 183
+layer3.1.conv3 = 183
+layer3.2.conv1 = 183
+layer3.2.conv2 = 183
+layer3.2.conv3 = 183
+layer3.3.conv1 = 183
+layer3.3.conv2 = 183
+layer3.3.conv3 = 201
+layer3.4.conv1 = 201
+layer3.4.conv2 = 201
+layer3.4.conv3 = 201
+layer3.5.conv1 = 201
+layer3.5.conv2 = 201
+layer3.5.conv3 = 201
+layer4.0.conv1 = 423
+layer4.0.conv2 = 423
+layer4.0.conv3 = 423
+layer4.0.downsample.0 = 471
+layer4.1.conv1 = 423
+layer4.1.conv2 = 423
+layer4.1.conv3 = 423
+layer4.2.conv1 = 423
+layer4.2.conv2 = 423
+layer4.2.conv3 = 423
+fc = 750----------------------------------------------------------

@@ -1,0 +1,733 @@
+resnet56 Quantization 1
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+
+Top1 before quantization: 93.270000, Top5 before quantization: 99.700000
+
+Size of uncompressed model : 3.2540MB.
+
+Layer: layer1.0.conv1, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 12
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.270000, Top5 after quantization: 99.700000
+Loss:0.0000
+Dictionary Words: 12
+Blocks: 1
+Compressed layer size: 0.003662MB
+Time cost: 0.19s
+
+Layer: layer1.0.conv2, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 12
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.200000, Top5 after quantization: 99.720000
+Loss:0.0700
+*************modify the words in layer1.0.conv2.**************
+Dictionary Words: 12
+Blocks: 1
+Compressed layer size: 0.003662MB
+Time cost: 0.04s
+
+Layer: layer1.1.conv1, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 16
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.230000, Top5 after quantization: 99.720000
+Loss:0.0400
+reduce the words!
+Dictionary Words: 16
+Blocks: 1
+Compressed layer size: 0.004883MB
+Time cost: 0.03s
+
+Layer: layer1.1.conv2, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 18
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.230000, Top5 after quantization: 99.720000
+Loss:0.0400
+Dictionary Words: 18
+Blocks: 1
+Compressed layer size: 0.005493MB
+Time cost: 0.03s
+
+Layer: layer1.2.conv1, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 16
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.230000, Top5 after quantization: 99.720000
+Loss:0.0400
+Dictionary Words: 16
+Blocks: 1
+Compressed layer size: 0.004883MB
+Time cost: 0.02s
+
+Layer: layer1.2.conv2, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 16
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.220000, Top5 after quantization: 99.720000
+Loss:0.0500
+Dictionary Words: 16
+Blocks: 1
+Compressed layer size: 0.004883MB
+Time cost: 0.05s
+
+Layer: layer1.3.conv1, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 27
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.220000, Top5 after quantization: 99.720000
+Loss:0.0500
+Dictionary Words: 27
+Blocks: 1
+Compressed layer size: 0.008240MB
+Time cost: 0.03s
+
+Layer: layer1.3.conv2, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 27
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.210000, Top5 after quantization: 99.720000
+Loss:0.0600
+Dictionary Words: 27
+Blocks: 1
+Compressed layer size: 0.008240MB
+Time cost: 0.02s
+
+Layer: layer1.4.conv1, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 27
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.200000, Top5 after quantization: 99.720000
+Loss:0.0700
+Dictionary Words: 27
+Blocks: 1
+Compressed layer size: 0.008240MB
+Time cost: 0.02s
+
+Layer: layer1.4.conv2, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 27
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.200000, Top5 after quantization: 99.720000
+Loss:0.0700
+Dictionary Words: 27
+Blocks: 1
+Compressed layer size: 0.008240MB
+Time cost: 0.03s
+
+Layer: layer1.5.conv1, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 25
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.210000, Top5 after quantization: 99.720000
+Loss:0.0600
+reduce the words!
+Dictionary Words: 25
+Blocks: 1
+Compressed layer size: 0.007629MB
+Time cost: 0.02s
+
+Layer: layer1.5.conv2, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 25
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.200000, Top5 after quantization: 99.720000
+Loss:0.0700
+Dictionary Words: 25
+Blocks: 1
+Compressed layer size: 0.007629MB
+Time cost: 0.03s
+
+Layer: layer1.6.conv1, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 25
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.200000, Top5 after quantization: 99.720000
+Loss:0.0700
+Dictionary Words: 25
+Blocks: 1
+Compressed layer size: 0.007629MB
+Time cost: 0.02s
+
+Layer: layer1.6.conv2, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 25
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.200000, Top5 after quantization: 99.720000
+Loss:0.0700
+Dictionary Words: 25
+Blocks: 1
+Compressed layer size: 0.007629MB
+Time cost: 0.03s
+
+Layer: layer1.7.conv1, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 24
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.210000, Top5 after quantization: 99.720000
+Loss:0.0600
+reduce the words!
+Dictionary Words: 24
+Blocks: 1
+Compressed layer size: 0.007324MB
+Time cost: 0.03s
+
+Layer: layer1.7.conv2, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 24
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.210000, Top5 after quantization: 99.720000
+Loss:0.0600
+Dictionary Words: 24
+Blocks: 1
+Compressed layer size: 0.007324MB
+Time cost: 0.03s
+
+Layer: layer1.8.conv1, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 24
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.210000, Top5 after quantization: 99.720000
+Loss:0.0600
+Dictionary Words: 24
+Blocks: 1
+Compressed layer size: 0.007324MB
+Time cost: 0.02s
+
+Layer: layer1.8.conv2, layer shape:torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+blocksize: 144
+wordsize: 24
+layer shape (after reshape): torch.Size([144, 16])
+Top1 after quantization: 93.210000, Top5 after quantization: 99.720000
+Loss:0.0600
+Dictionary Words: 24
+Blocks: 1
+Compressed layer size: 0.007324MB
+Time cost: 0.03s
+
+Layer: layer2.0.conv1, layer shape:torch.Size([32, 16, 3, 3]), uncompressed layer size: 0.017578MB. 
+blocksize: 144
+wordsize: 32
+layer shape (after reshape): torch.Size([144, 32])
+Top1 after quantization: 93.210000, Top5 after quantization: 99.720000
+Loss:0.0600
+Dictionary Words: 32
+Blocks: 1
+Compressed layer size: 0.010742MB
+Time cost: 0.04s
+
+Layer: layer2.0.conv2, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 32
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.200000, Top5 after quantization: 99.720000
+Loss:0.0700
+Dictionary Words: 32
+Blocks: 1
+Compressed layer size: 0.019531MB
+Time cost: 0.03s
+
+Layer: layer2.1.conv1, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 32
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.200000, Top5 after quantization: 99.720000
+Loss:0.0700
+Dictionary Words: 32
+Blocks: 1
+Compressed layer size: 0.019531MB
+Time cost: 0.03s
+
+Layer: layer2.1.conv2, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 28
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.220000, Top5 after quantization: 99.700000
+Loss:0.0500
+reduce the words!
+Dictionary Words: 28
+Blocks: 1
+Compressed layer size: 0.017090MB
+Time cost: 0.05s
+
+Layer: layer2.2.conv1, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 30
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.250000, Top5 after quantization: 99.690000
+Loss:0.0200
+reduce the words!
+Dictionary Words: 30
+Blocks: 1
+Compressed layer size: 0.018311MB
+Time cost: 0.05s
+
+Layer: layer2.2.conv2, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 32
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.240000, Top5 after quantization: 99.700000
+Loss:0.0300
+Dictionary Words: 32
+Blocks: 1
+Compressed layer size: 0.019531MB
+Time cost: 0.05s
+
+Layer: layer2.3.conv1, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 32
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.240000, Top5 after quantization: 99.700000
+Loss:0.0300
+Dictionary Words: 32
+Blocks: 1
+Compressed layer size: 0.019531MB
+Time cost: 0.03s
+
+Layer: layer2.3.conv2, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 32
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.240000, Top5 after quantization: 99.700000
+Loss:0.0300
+Dictionary Words: 32
+Blocks: 1
+Compressed layer size: 0.019531MB
+Time cost: 0.04s
+
+Layer: layer2.4.conv1, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 32
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.240000, Top5 after quantization: 99.700000
+Loss:0.0300
+Dictionary Words: 32
+Blocks: 1
+Compressed layer size: 0.019531MB
+Time cost: 0.04s
+
+Layer: layer2.4.conv2, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 30
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.200000, Top5 after quantization: 99.700000
+Loss:0.0700
+*************modify the words in layer2.4.conv2.**************
+Dictionary Words: 30
+Blocks: 1
+Compressed layer size: 0.018311MB
+Time cost: 0.05s
+
+Layer: layer2.5.conv1, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 32
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.200000, Top5 after quantization: 99.700000
+Loss:0.0700
+Dictionary Words: 32
+Blocks: 1
+Compressed layer size: 0.019531MB
+Time cost: 0.04s
+
+Layer: layer2.5.conv2, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 29
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.230000, Top5 after quantization: 99.700000
+Loss:0.0400
+reduce the words!
+Dictionary Words: 29
+Blocks: 1
+Compressed layer size: 0.017700MB
+Time cost: 0.05s
+
+Layer: layer2.6.conv1, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 32
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.230000, Top5 after quantization: 99.700000
+Loss:0.0400
+Dictionary Words: 32
+Blocks: 1
+Compressed layer size: 0.019531MB
+Time cost: 0.03s
+
+Layer: layer2.6.conv2, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 32
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.220000, Top5 after quantization: 99.700000
+Loss:0.0500
+Dictionary Words: 32
+Blocks: 1
+Compressed layer size: 0.019531MB
+Time cost: 0.04s
+
+Layer: layer2.7.conv1, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 32
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.240000, Top5 after quantization: 99.700000
+Loss:0.0300
+reduce the words!
+Dictionary Words: 32
+Blocks: 1
+Compressed layer size: 0.019531MB
+Time cost: 0.03s
+
+Layer: layer2.7.conv2, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 32
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.250000, Top5 after quantization: 99.700000
+Loss:0.0200
+reduce the words!
+Dictionary Words: 32
+Blocks: 1
+Compressed layer size: 0.019531MB
+Time cost: 0.05s
+
+Layer: layer2.8.conv1, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 30
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.250000, Top5 after quantization: 99.710000
+Loss:0.0200
+Dictionary Words: 30
+Blocks: 1
+Compressed layer size: 0.018311MB
+Time cost: 0.05s
+
+Layer: layer2.8.conv2, layer shape:torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+blocksize: 288
+wordsize: 30
+layer shape (after reshape): torch.Size([288, 32])
+Top1 after quantization: 93.260000, Top5 after quantization: 99.710000
+Loss:0.0100
+reduce the words!
+Dictionary Words: 30
+Blocks: 1
+Compressed layer size: 0.018311MB
+Time cost: 0.06s
+
+Layer: layer3.0.conv1, layer shape:torch.Size([64, 32, 3, 3]), uncompressed layer size: 0.070312MB. 
+blocksize: 288
+wordsize: 61
+layer shape (after reshape): torch.Size([288, 64])
+Top1 after quantization: 93.250000, Top5 after quantization: 99.710000
+Loss:0.0200
+Dictionary Words: 61
+Blocks: 1
+Compressed layer size: 0.040955MB
+Time cost: 0.04s
+
+Layer: layer3.0.conv2, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 61
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.250000, Top5 after quantization: 99.710000
+Loss:0.0200
+Dictionary Words: 61
+Blocks: 1
+Compressed layer size: 0.074463MB
+Time cost: 0.03s
+
+Layer: layer3.1.conv1, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 62
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.230000, Top5 after quantization: 99.710000
+Loss:0.0400
+Dictionary Words: 62
+Blocks: 1
+Compressed layer size: 0.075684MB
+Time cost: 0.05s
+
+Layer: layer3.1.conv2, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 64
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.230000, Top5 after quantization: 99.710000
+Loss:0.0400
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.04s
+
+Layer: layer3.2.conv1, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 60
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.230000, Top5 after quantization: 99.710000
+Loss:0.0400
+Dictionary Words: 60
+Blocks: 1
+Compressed layer size: 0.073242MB
+Time cost: 0.05s
+
+Layer: layer3.2.conv2, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 61
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.240000, Top5 after quantization: 99.680000
+Loss:0.0300
+reduce the words!
+Dictionary Words: 61
+Blocks: 1
+Compressed layer size: 0.074463MB
+Time cost: 0.06s
+
+Layer: layer3.3.conv1, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 63
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.250000, Top5 after quantization: 99.680000
+Loss:0.0200
+reduce the words!
+Dictionary Words: 63
+Blocks: 1
+Compressed layer size: 0.076904MB
+Time cost: 0.04s
+
+Layer: layer3.3.conv2, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 64
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.230000, Top5 after quantization: 99.680000
+Loss:0.0400
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.06s
+
+Layer: layer3.4.conv1, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 64
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.250000, Top5 after quantization: 99.680000
+Loss:0.0200
+reduce the words!
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.03s
+
+Layer: layer3.4.conv2, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 64
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.250000, Top5 after quantization: 99.690000
+Loss:0.0200
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.06s
+
+Layer: layer3.5.conv1, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 64
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.240000, Top5 after quantization: 99.690000
+Loss:0.0300
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.04s
+
+Layer: layer3.5.conv2, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 64
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.280000, Top5 after quantization: 99.690000
+Loss:-0.0100
+reduce the words!
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.05s
+
+Layer: layer3.6.conv1, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 63
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.280000, Top5 after quantization: 99.690000
+Loss:-0.0100
+Dictionary Words: 63
+Blocks: 1
+Compressed layer size: 0.076904MB
+Time cost: 0.04s
+
+Layer: layer3.6.conv2, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 62
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.280000, Top5 after quantization: 99.690000
+Loss:-0.0100
+Dictionary Words: 62
+Blocks: 1
+Compressed layer size: 0.075684MB
+Time cost: 0.06s
+
+Layer: layer3.7.conv1, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 64
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.280000, Top5 after quantization: 99.690000
+Loss:-0.0100
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.04s
+
+Layer: layer3.7.conv2, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 60
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.260000, Top5 after quantization: 99.700000
+Loss:0.0100
+Dictionary Words: 60
+Blocks: 1
+Compressed layer size: 0.073242MB
+Time cost: 0.06s
+
+Layer: layer3.8.conv1, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 60
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.280000, Top5 after quantization: 99.690000
+Loss:-0.0100
+reduce the words!
+Dictionary Words: 60
+Blocks: 1
+Compressed layer size: 0.073242MB
+Time cost: 0.05s
+
+Layer: layer3.8.conv2, layer shape:torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize: 56
+layer shape (after reshape): torch.Size([576, 64])
+Top1 after quantization: 93.270000, Top5 after quantization: 99.690000
+Loss:0.0000
+Dictionary Words: 56
+Blocks: 1
+Compressed layer size: 0.068359MB
+Time cost: 0.06s
+
+Layer: linear, layer shape:torch.Size([10, 64]), uncompressed layer size: 0.002441MB. 
+blocksize: 64
+wordsize: 12
+layer shape (after reshape): torch.Size([64, 10])
+Top1 after quantization: 93.270000, Top5 after quantization: 99.690000
+Loss:0.0000
+Dictionary Words: 12
+Blocks: 1
+Compressed layer size: 0.001694MB
+Time cost: 0.02s
+
+#################result####################
+Compressed model size: 1.8028MB
+Compress Coef: 1.81
+Compressed time: 2.29s.
+Test: [0/40]	Acc@1 92.969 (92.969)	Acc@5 100.000 (100.000)
+Test: [1/40]	Acc@1 93.750 (93.359)	Acc@5 99.609 (99.805)
+Test: [2/40]	Acc@1 94.531 (93.750)	Acc@5 100.000 (99.870)
+Test: [3/40]	Acc@1 92.578 (93.457)	Acc@5 99.609 (99.805)
+Test: [4/40]	Acc@1 94.531 (93.672)	Acc@5 99.609 (99.766)
+Test: [5/40]	Acc@1 94.531 (93.815)	Acc@5 100.000 (99.805)
+Test: [6/40]	Acc@1 94.141 (93.862)	Acc@5 99.609 (99.777)
+Test: [7/40]	Acc@1 92.578 (93.701)	Acc@5 100.000 (99.805)
+Test: [8/40]	Acc@1 92.578 (93.576)	Acc@5 100.000 (99.826)
+Test: [9/40]	Acc@1 94.141 (93.633)	Acc@5 99.609 (99.805)
+Test: [10/40]	Acc@1 95.312 (93.786)	Acc@5 99.609 (99.787)
+Test: [11/40]	Acc@1 92.578 (93.685)	Acc@5 100.000 (99.805)
+Test: [12/40]	Acc@1 94.141 (93.720)	Acc@5 99.609 (99.790)
+Test: [13/40]	Acc@1 93.359 (93.694)	Acc@5 99.609 (99.777)
+Test: [14/40]	Acc@1 94.531 (93.750)	Acc@5 99.609 (99.766)
+Test: [15/40]	Acc@1 96.484 (93.921)	Acc@5 99.609 (99.756)
+Test: [16/40]	Acc@1 90.625 (93.727)	Acc@5 99.609 (99.747)
+Test: [17/40]	Acc@1 92.188 (93.641)	Acc@5 99.219 (99.718)
+Test: [18/40]	Acc@1 93.359 (93.627)	Acc@5 100.000 (99.733)
+Test: [19/40]	Acc@1 91.797 (93.535)	Acc@5 99.219 (99.707)
+Test: [20/40]	Acc@1 94.922 (93.601)	Acc@5 99.609 (99.702)
+Test: [21/40]	Acc@1 93.359 (93.590)	Acc@5 99.609 (99.698)
+Test: [22/40]	Acc@1 91.797 (93.512)	Acc@5 99.609 (99.694)
+Test: [23/40]	Acc@1 90.625 (93.392)	Acc@5 99.219 (99.674)
+Test: [24/40]	Acc@1 94.141 (93.422)	Acc@5 100.000 (99.688)
+Test: [25/40]	Acc@1 93.750 (93.434)	Acc@5 100.000 (99.700)
+Test: [26/40]	Acc@1 93.359 (93.432)	Acc@5 100.000 (99.711)
+Test: [27/40]	Acc@1 91.797 (93.373)	Acc@5 99.609 (99.707)
+Test: [28/40]	Acc@1 93.359 (93.373)	Acc@5 100.000 (99.717)
+Test: [29/40]	Acc@1 93.750 (93.385)	Acc@5 100.000 (99.727)
+Test: [30/40]	Acc@1 93.359 (93.385)	Acc@5 99.219 (99.710)
+Test: [31/40]	Acc@1 90.625 (93.298)	Acc@5 99.609 (99.707)
+Test: [32/40]	Acc@1 93.359 (93.300)	Acc@5 99.219 (99.692)
+Test: [33/40]	Acc@1 94.141 (93.325)	Acc@5 100.000 (99.701)
+Test: [34/40]	Acc@1 92.969 (93.315)	Acc@5 99.219 (99.688)
+Test: [35/40]	Acc@1 90.625 (93.240)	Acc@5 99.219 (99.674)
+Test: [36/40]	Acc@1 94.141 (93.264)	Acc@5 100.000 (99.683)
+Test: [37/40]	Acc@1 93.750 (93.277)	Acc@5 99.609 (99.681)
+Test: [38/40]	Acc@1 94.141 (93.299)	Acc@5 100.000 (99.690)
+Test: [39/40]	Acc@1 75.000 (93.270)	Acc@5 100.000 (99.690)
+Top1 after quantization: 93.270, Top5 after quantization: 99.690
+
+----------------------------------------------------------
+[resnet50]
+conv1 = 0
+layer1.0.conv1 = 64
+layer1.0.conv2 = 64
+layer1.0.conv3 = 64
+layer1.0.downsample.0 = 64
+layer1.1.conv1 = 64
+layer1.1.conv2 = 64
+layer1.1.conv3 = 64
+layer1.2.conv1 = 64
+layer1.2.conv2 = 64
+layer1.2.conv3 = 64
+layer2.0.conv1 = 114
+layer2.0.conv2 = 114
+layer2.0.conv3 = 114
+layer2.0.downsample.0 = 225
+layer2.1.conv1 = 114
+layer2.1.conv2 = 114
+layer2.1.conv3 = 114
+layer2.2.conv1 = 114
+layer2.2.conv2 = 114
+layer2.2.conv3 = 114
+layer2.3.conv1 = 114
+layer2.3.conv2 = 114
+layer2.3.conv3 = 114
+layer3.0.conv1 = 225
+layer3.0.conv2 = 225
+layer3.0.conv3 = 225
+layer3.0.downsample.0 = 225
+layer3.1.conv1 = 225
+layer3.1.conv2 = 225
+layer3.1.conv3 = 225
+layer3.2.conv1 = 225
+layer3.2.conv2 = 225
+layer3.2.conv3 = 225
+layer3.3.conv1 = 225
+layer3.3.conv2 = 225
+layer3.3.conv3 = 225
+layer3.4.conv1 = 225
+layer3.4.conv2 = 225
+layer3.4.conv3 = 225
+layer3.5.conv1 = 225
+layer3.5.conv2 = 225
+layer3.5.conv3 = 225
+layer4.0.conv1 = 460
+layer4.0.conv2 = 460
+layer4.0.conv3 = 460
+layer4.0.downsample.0 = 460
+layer4.1.conv1 = 460
+layer4.1.conv2 = 460
+layer4.1.conv3 = 460
+layer4.2.conv1 = 460
+layer4.2.conv2 = 460
+layer4.2.conv3 = 460
+fc = 800
+
