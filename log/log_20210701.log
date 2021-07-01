@@ -1,0 +1,1689 @@
+resnet50 Quantization 1
+2021年 07月 01日 星期四 16:25:51 CST
+---------------Dataset: imagenet--------------
+Layer:     layer1.0.conv1, layer shape: torch.Size([64, 64, 1, 1]), uncompressed layer size: 0.015625MB. 
+blocksize: 64
+wordsize:  64
+layer shape (after reshape): torch.Size([64, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.015625MB
+Time cost: 0.63s
+
+Layer:     layer1.0.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize:  64
+layer shape (after reshape): torch.Size([576, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.06s
+
+Layer:     layer1.0.conv3, layer shape: torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([64, 256])
+----------------------------------------------------------
+resnet50 Quantization 1
+2021年 07月 01日 星期四 16:26:45 CST
+---------------Dataset: imagenet--------------
+Layer:     layer1.0.conv1, layer shape: torch.Size([64, 64, 1, 1]), uncompressed layer size: 0.015625MB. 
+blocksize: 64
+wordsize:  64
+layer shape (after reshape): torch.Size([64, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.015625MB
+Time cost: 0.27s
+
+Layer:     layer1.0.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize:  64
+layer shape (after reshape): torch.Size([576, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.06s
+
+Layer:     layer1.0.conv3, layer shape: torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.06s
+
+Layer:     layer1.0.downsample.0, layer shape: torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.06s
+
+Layer:     layer1.1.conv1, layer shape: torch.Size([64, 256, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.06s
+
+Layer:     layer1.1.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize:  64
+layer shape (after reshape): torch.Size([576, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.05s
+
+Layer:     layer1.1.conv3, layer shape: torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.06s
+
+Layer:     layer1.2.conv1, layer shape: torch.Size([64, 256, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.06s
+
+Layer:     layer1.2.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize:  64
+layer shape (after reshape): torch.Size([576, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.05s
+
+Layer:     layer1.2.conv3, layer shape: torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.07s
+
+Layer:     layer2.0.conv1, layer shape: torch.Size([128, 256, 1, 1]), uncompressed layer size: 0.125000MB. 
+blocksize: 256
+wordsize:  96
+layer shape (after reshape): torch.Size([256, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.070312MB
+Time cost: 0.07s
+
+Layer:     layer2.0.conv2, layer shape: torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 1152
+wordsize:  96
+layer shape (after reshape): torch.Size([1152, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.234375MB
+Time cost: 0.06s
+
+Layer:     layer2.0.conv3, layer shape: torch.Size([512, 128, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  96
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.06s
+
+Layer:     layer2.0.downsample.0, layer shape: torch.Size([512, 256, 1, 1]), uncompressed layer size: 0.500000MB. 
+blocksize: 512
+wordsize:  181
+layer shape (after reshape): torch.Size([512, 256])
+Dictionary Words: 181
+Blocks: 1
+Compressed layer size: 0.265137MB
+Time cost: 0.11s
+
+Layer:     layer2.1.conv1, layer shape: torch.Size([128, 512, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  96
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.07s
+
+Layer:     layer2.1.conv2, layer shape: torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 1152
+wordsize:  96
+layer shape (after reshape): torch.Size([1152, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.234375MB
+Time cost: 0.06s
+
+Layer:     layer2.1.conv3, layer shape: torch.Size([512, 128, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  96
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.07s
+
+Layer:     layer2.2.conv1, layer shape: torch.Size([128, 512, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  96
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.06s
+
+Layer:     layer2.2.conv2, layer shape: torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 1152
+wordsize:  105
+layer shape (after reshape): torch.Size([1152, 128])
+Dictionary Words: 105
+Blocks: 1
+Compressed layer size: 0.256348MB
+Time cost: 0.07s
+
+Layer:     layer2.2.conv3, layer shape: torch.Size([512, 128, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  105
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 105
+Blocks: 1
+Compressed layer size: 0.128174MB
+Time cost: 0.07s
+
+Layer:     layer2.3.conv1, layer shape: torch.Size([128, 512, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  105
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 105
+Blocks: 1
+Compressed layer size: 0.128174MB
+Time cost: 0.07s
+
+Layer:     layer2.3.conv2, layer shape: torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 1152
+wordsize:  105
+layer shape (after reshape): torch.Size([1152, 128])
+Dictionary Words: 105
+Blocks: 1
+Compressed layer size: 0.256348MB
+Time cost: 0.07s
+
+Layer:     layer2.3.conv3, layer shape: torch.Size([512, 128, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  105
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 105
+Blocks: 1
+Compressed layer size: 0.128174MB
+Time cost: 0.07s
+
+Layer:     layer3.0.conv1, layer shape: torch.Size([256, 512, 1, 1]), uncompressed layer size: 0.500000MB. 
+blocksize: 512
+wordsize:  183
+layer shape (after reshape): torch.Size([512, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.268066MB
+Time cost: 0.11s
+
+Layer:     layer3.0.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  163
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 163
+Blocks: 1
+Compressed layer size: 0.795898MB
+Time cost: 0.11s
+
+Layer:     layer3.0.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  163
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 163
+Blocks: 1
+Compressed layer size: 0.397949MB
+Time cost: 0.08s
+
+Layer:     layer3.0.downsample.0, layer shape: torch.Size([1024, 512, 1, 1]), uncompressed layer size: 2.000000MB. 
+blocksize: 1024
+wordsize:  231
+layer shape (after reshape): torch.Size([1024, 512])
+Dictionary Words: 231
+Blocks: 1
+Compressed layer size: 0.676758MB
+Time cost: 0.12s
+
+Layer:     layer3.1.conv1, layer shape: torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  183
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.10s
+
+Layer:     layer3.1.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  183
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.893555MB
+Time cost: 0.11s
+
+Layer:     layer3.1.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  183
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.09s
+
+Layer:     layer3.2.conv1, layer shape: torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  183
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.13s
+
+Layer:     layer3.2.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  183
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.893555MB
+Time cost: 0.12s
+
+Layer:     layer3.2.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  183
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.09s
+
+Layer:     layer3.3.conv1, layer shape: torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  183
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.10s
+
+Layer:     layer3.3.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  183
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.893555MB
+Time cost: 0.12s
+
+Layer:     layer3.3.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  201
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.490723MB
+Time cost: 0.11s
+
+Layer:     layer3.4.conv1, layer shape: torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  201
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.490723MB
+Time cost: 0.11s
+
+Layer:     layer3.4.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  201
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.981445MB
+Time cost: 0.13s
+
+Layer:     layer3.4.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  201
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.490723MB
+Time cost: 0.11s
+
+Layer:     layer3.5.conv1, layer shape: torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  201
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.490723MB
+Time cost: 0.10s
+
+Layer:     layer3.5.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  201
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.981445MB
+Time cost: 0.12s
+
+Layer:     layer3.5.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  201
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.490723MB
+Time cost: 0.10s
+
+Layer:     layer4.0.conv1, layer shape: torch.Size([512, 1024, 1, 1]), uncompressed layer size: 2.000000MB. 
+blocksize: 1024
+wordsize:  423
+layer shape (after reshape): torch.Size([1024, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 1.239258MB
+Time cost: 0.31s
+
+Layer:     layer4.0.conv2, layer shape: torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 4608
+wordsize:  423
+layer shape (after reshape): torch.Size([4608, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 4.130859MB
+Time cost: 0.66s
+
+Layer:     layer4.0.conv3, layer shape: torch.Size([2048, 512, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize:  423
+layer shape (after reshape): torch.Size([2048, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 0.26s
+
+Layer:     layer4.0.downsample.0, layer shape: torch.Size([2048, 1024, 1, 1]), uncompressed layer size: 8.000000MB. 
+blocksize: 2048
+wordsize:  471
+layer shape (after reshape): torch.Size([2048, 1024])
+Dictionary Words: 471
+Blocks: 1
+Compressed layer size: 2.759766MB
+Time cost: 0.32s
+
+Layer:     layer4.1.conv1, layer shape: torch.Size([512, 2048, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize:  423
+layer shape (after reshape): torch.Size([2048, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 0.33s
+
+Layer:     layer4.1.conv2, layer shape: torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 4608
+wordsize:  423
+layer shape (after reshape): torch.Size([4608, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 4.130859MB
+Time cost: 0.44s
+
+Layer:     layer4.1.conv3, layer shape: torch.Size([2048, 512, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize:  423
+layer shape (after reshape): torch.Size([2048, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 0.32s
+
+Layer:     layer4.2.conv1, layer shape: torch.Size([512, 2048, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize:  423
+layer shape (after reshape): torch.Size([2048, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 0.32s
+
+Layer:     layer4.2.conv2, layer shape: torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 4068
+wordsize:  423
+layer shape (after reshape): torch.Size([4608, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 4.130859MB
+Time cost: 0.45s
+
+Layer:     layer4.2.conv3, layer shape: torch.Size([2048, 512, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize:  423
+layer shape (after reshape): torch.Size([2048, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 0.31s
+
+Layer:     fc, layer shape: torch.Size([1000, 2048]), uncompressed layer size: 7.812500MB. 
+blocksize: 2048
+wordsize:  750
+layer shape (after reshape): torch.Size([2048, 1000])
+Dictionary Words: 750
+Blocks: 1
+Compressed layer size: 4.360199MB
+Time cost: 0.48s
+
+#################result####################
+Compressed model size: 45.4456MB
+Compress Coef: 2.15
+Compressed time: 7.96s.
+vgg16_bn Quantization 1
+2021年 07月 01日 星期四 18:12:06 CST
+---------------Dataset: imagenet--------------
+Layer:     features.3, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([576, 64])
+Dictionary Words: 64
+Blocks: 2
+Compressed layer size: 0.085938MB
+Time cost: 0.41s
+
+Layer:     features.7, layer shape: torch.Size([128, 64, 3, 3]), uncompressed layer size: 0.281250MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([576, 128])
+Dictionary Words: 64
+Blocks: 2
+Compressed layer size: 0.101562MB
+Time cost: 0.10s
+
+Layer:     features.10, layer shape: torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([1152, 128])
+Dictionary Words: 64
+Blocks: 4
+Compressed layer size: 0.203125MB
+Time cost: 0.22s
+
+Layer:     features.14, layer shape: torch.Size([256, 128, 3, 3]), uncompressed layer size: 1.125000MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([1152, 256])
+Dictionary Words: 64
+Blocks: 4
+Compressed layer size: 0.265625MB
+Time cost: 0.21s
+
+Layer:     features.17, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 64
+Blocks: 9
+Compressed layer size: 0.562500MB
+Time cost: 0.49s
+
+Layer:     features.20, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 64
+Blocks: 9
+Compressed layer size: 0.562500MB
+Time cost: 0.50s
+
+Layer:     features.24, layer shape: torch.Size([512, 256, 3, 3]), uncompressed layer size: 4.500000MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([2304, 512])
+Dictionary Words: 64
+Blocks: 9
+Compressed layer size: 0.843750MB
+Time cost: 0.47s
+
+Layer:     features.27, layer shape: torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([4608, 512])
+Dictionary Words: 64
+Blocks: 18
+Compressed layer size: 1.687500MB
+Time cost: 0.98s
+
+Layer:     features.30, layer shape: torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([4608, 512])
+Dictionary Words: 64
+Blocks: 18
+Compressed layer size: 1.687500MB
+Time cost: 0.96s
+
+Layer:     features.34, layer shape: torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([4608, 512])
+Dictionary Words: 64
+Blocks: 18
+Compressed layer size: 1.687500MB
+Time cost: 0.94s
+
+Layer:     features.37, layer shape: torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([4608, 512])
+Dictionary Words: 64
+Blocks: 18
+Compressed layer size: 1.687500MB
+Time cost: 0.95s
+
+Layer:     features.40, layer shape: torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([4608, 512])
+Dictionary Words: 64
+Blocks: 18
+Compressed layer size: 1.687500MB
+Time cost: 0.99s
+
+Layer:     classifier.0, layer shape: torch.Size([4096, 25088]), uncompressed layer size: 392.000000MB. 
+blocksize: 512
+wordsize:  180
+layer shape (after reshape): torch.Size([25088, 4096])
+Dictionary Words: 180
+Blocks: 49
+Compressed layer size: 77.519531MB
+Time cost: 6.23s
+
+Layer:     classifier.3, layer shape: torch.Size([4096, 4096]), uncompressed layer size: 64.000000MB. 
+blocksize: 512
+wordsize:  180
+layer shape (after reshape): torch.Size([4096, 4096])
+Dictionary Words: 180
+Blocks: 8
+Compressed layer size: 12.656250MB
+Time cost: 0.83s
+
+Layer:     classifier.6, layer shape: torch.Size([1000, 4096]), uncompressed layer size: 15.625000MB. 
+blocksize: 512
+wordsize:  180
+layer shape (after reshape): torch.Size([4096, 1000])
+Dictionary Words: 180
+Blocks: 8
+Compressed layer size: 4.152832MB
+Time cost: 0.71s
+
+#################result####################
+Compressed model size: 105.4811MB
+Compress Coef: 5.00
+Compressed time: 14.97s.
+----------------------------------------------------------
+resnet50 Quantization 1
+2021年 07月 01日 星期四 18:19:00 CST
+---------------Dataset: imagenet--------------
+Layer:     layer1.0.conv1, layer shape: torch.Size([64, 64, 1, 1]), uncompressed layer size: 0.015625MB. 
+blocksize: 64
+wordsize:  64
+layer shape (after reshape): torch.Size([64, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.015625MB
+Time cost: 0.35s
+
+Layer:     layer1.0.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize:  64
+layer shape (after reshape): torch.Size([576, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.08s
+
+Layer:     layer1.0.conv3, layer shape: torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.08s
+
+Layer:     layer1.0.downsample.0, layer shape: torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.08s
+
+Layer:     layer1.1.conv1, layer shape: torch.Size([64, 256, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.08s
+
+Layer:     layer1.1.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize:  64
+layer shape (after reshape): torch.Size([576, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.08s
+
+Layer:     layer1.1.conv3, layer shape: torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.08s
+
+Layer:     layer1.2.conv1, layer shape: torch.Size([64, 256, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.07s
+
+Layer:     layer1.2.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize:  64
+layer shape (after reshape): torch.Size([576, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.07s
+
+Layer:     layer1.2.conv3, layer shape: torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.08s
+
+Layer:     layer2.0.conv1, layer shape: torch.Size([128, 256, 1, 1]), uncompressed layer size: 0.125000MB. 
+blocksize: 256
+wordsize:  96
+layer shape (after reshape): torch.Size([256, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.070312MB
+Time cost: 0.09s
+
+Layer:     layer2.0.conv2, layer shape: torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 1152
+wordsize:  96
+layer shape (after reshape): torch.Size([1152, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.234375MB
+Time cost: 0.12s
+
+Layer:     layer2.0.conv3, layer shape: torch.Size([512, 128, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  96
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.09s
+
+Layer:     layer2.0.downsample.0, layer shape: torch.Size([512, 256, 1, 1]), uncompressed layer size: 0.500000MB. 
+blocksize: 512
+wordsize:  181
+layer shape (after reshape): torch.Size([512, 256])
+Dictionary Words: 181
+Blocks: 1
+Compressed layer size: 0.265137MB
+Time cost: 0.19s
+
+Layer:     layer2.1.conv1, layer shape: torch.Size([128, 512, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  96
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.12s
+
+Layer:     layer2.1.conv2, layer shape: torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 1152
+wordsize:  96
+layer shape (after reshape): torch.Size([1152, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.234375MB
+Time cost: 0.12s
+
+Layer:     layer2.1.conv3, layer shape: torch.Size([512, 128, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  96
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.11s
+
+Layer:     layer2.2.conv1, layer shape: torch.Size([128, 512, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  96
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.09s
+
+Layer:     layer2.2.conv2, layer shape: torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 1152
+wordsize:  105
+layer shape (after reshape): torch.Size([1152, 128])
+Dictionary Words: 105
+Blocks: 1
+Compressed layer size: 0.256348MB
+Time cost: 0.13s
+
+Layer:     layer2.2.conv3, layer shape: torch.Size([512, 128, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  105
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 105
+Blocks: 1
+Compressed layer size: 0.128174MB
+Time cost: 0.11s
+
+Layer:     layer2.3.conv1, layer shape: torch.Size([128, 512, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  105
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 105
+Blocks: 1
+Compressed layer size: 0.128174MB
+Time cost: 0.16s
+
+Layer:     layer2.3.conv2, layer shape: torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 1152
+wordsize:  105
+layer shape (after reshape): torch.Size([1152, 128])
+Dictionary Words: 105
+Blocks: 1
+Compressed layer size: 0.256348MB
+Time cost: 0.15s
+
+Layer:     layer2.3.conv3, layer shape: torch.Size([512, 128, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  105
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 105
+Blocks: 1
+Compressed layer size: 0.128174MB
+Time cost: 0.12s
+
+Layer:     layer3.0.conv1, layer shape: torch.Size([256, 512, 1, 1]), uncompressed layer size: 0.500000MB. 
+blocksize: 512
+wordsize:  183
+layer shape (after reshape): torch.Size([512, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.268066MB
+Time cost: 0.22s
+
+Layer:     layer3.0.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  163
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 163
+Blocks: 1
+Compressed layer size: 0.795898MB
+Time cost: 0.26s
+
+Layer:     layer3.0.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  163
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 163
+Blocks: 1
+Compressed layer size: 0.397949MB
+Time cost: 0.18s
+
+Layer:     layer3.0.downsample.0, layer shape: torch.Size([1024, 512, 1, 1]), uncompressed layer size: 2.000000MB. 
+blocksize: 1024
+wordsize:  231
+layer shape (after reshape): torch.Size([1024, 512])
+Dictionary Words: 231
+Blocks: 1
+Compressed layer size: 0.676758MB
+Time cost: 0.25s
+
+Layer:     layer3.1.conv1, layer shape: torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  183
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.16s
+
+Layer:     layer3.1.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  183
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.893555MB
+Time cost: 0.24s
+
+Layer:     layer3.1.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  183
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.16s
+
+Layer:     layer3.2.conv1, layer shape: torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  183
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.19s
+
+Layer:     layer3.2.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  183
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.893555MB
+Time cost: 0.25s
+
+Layer:     layer3.2.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  183
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.16s
+
+Layer:     layer3.3.conv1, layer shape: torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  183
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.17s
+
+Layer:     layer3.3.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  183
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.893555MB
+Time cost: 0.27s
+
+Layer:     layer3.3.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  201
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.490723MB
+Time cost: 0.18s
+
+Layer:     layer3.4.conv1, layer shape: torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  201
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.490723MB
+Time cost: 0.18s
+
+Layer:     layer3.4.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  201
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.981445MB
+Time cost: 0.30s
+
+Layer:     layer3.4.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  201
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.490723MB
+Time cost: 0.19s
+
+Layer:     layer3.5.conv1, layer shape: torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  201
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.490723MB
+Time cost: 0.18s
+
+Layer:     layer3.5.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  201
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.981445MB
+Time cost: 0.27s
+
+Layer:     layer3.5.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  201
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.490723MB
+Time cost: 0.18s
+
+Layer:     layer4.0.conv1, layer shape: torch.Size([512, 1024, 1, 1]), uncompressed layer size: 2.000000MB. 
+blocksize: 1024
+wordsize:  423
+layer shape (after reshape): torch.Size([1024, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 1.239258MB
+Time cost: 0.39s
+
+Layer:     layer4.0.conv2, layer shape: torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 4608
+wordsize:  423
+layer shape (after reshape): torch.Size([4608, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 4.130859MB
+Time cost: 1.01s
+
+Layer:     layer4.0.conv3, layer shape: torch.Size([2048, 512, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize:  423
+layer shape (after reshape): torch.Size([2048, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 0.55s
+
+Layer:     layer4.0.downsample.0, layer shape: torch.Size([2048, 1024, 1, 1]), uncompressed layer size: 8.000000MB. 
+blocksize: 2048
+wordsize:  471
+layer shape (after reshape): torch.Size([2048, 1024])
+Dictionary Words: 471
+Blocks: 1
+Compressed layer size: 2.759766MB
+Time cost: 0.69s
+
+Layer:     layer4.1.conv1, layer shape: torch.Size([512, 2048, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize:  423
+layer shape (after reshape): torch.Size([2048, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 0.56s
+
+Layer:     layer4.1.conv2, layer shape: torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 4608
+wordsize:  423
+layer shape (after reshape): torch.Size([4608, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 4.130859MB
+Time cost: 0.97s
+
+Layer:     layer4.1.conv3, layer shape: torch.Size([2048, 512, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize:  423
+layer shape (after reshape): torch.Size([2048, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 0.54s
+
+Layer:     layer4.2.conv1, layer shape: torch.Size([512, 2048, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize:  423
+layer shape (after reshape): torch.Size([2048, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 0.57s
+
+Layer:     layer4.2.conv2, layer shape: torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 4068
+wordsize:  423
+layer shape (after reshape): torch.Size([4608, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 4.130859MB
+Time cost: 0.97s
+
+Layer:     layer4.2.conv3, layer shape: torch.Size([2048, 512, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize:  423
+layer shape (after reshape): torch.Size([2048, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 0.58s
+
+Layer:     fc, layer shape: torch.Size([1000, 2048]), uncompressed layer size: 7.812500MB. 
+blocksize: 2048
+wordsize:  750
+layer shape (after reshape): torch.Size([2048, 1000])
+Dictionary Words: 750
+Blocks: 1
+Compressed layer size: 4.360199MB
+Time cost: 1.15s
+
+#################result####################
+Compressed model size: 45.4456MB
+Compress Coef: 2.15
+Compressed time: 14.63s.
+----------------------------------------------------------
+resnet50 Quantization 1
+2021年 07月 01日 星期四 18:21:48 CST
+---------------Dataset: imagenet--------------
+Layer:     layer1.0.conv1, layer shape: torch.Size([64, 64, 1, 1]), uncompressed layer size: 0.015625MB. 
+blocksize: 64
+wordsize:  64
+layer shape (after reshape): torch.Size([64, 64])
+tensor([[ 0.1037,  0.1372,  0.1968,  ...,  0.0847,  0.2136,  0.2118],
+        [ 0.1602,  0.1953,  0.0082,  ...,  0.1138,  0.0071,  0.1666],
+        [ 0.0047,  0.1431, -0.0156,  ...,  0.1289,  0.1348,  0.1771],
+        ...,
+        [ 0.0678, -0.0101, -0.0185,  ...,  0.0662,  0.0327,  0.0976],
+        [ 0.1653,  0.1649,  0.2286,  ..., -0.0007,  0.1946,  0.0060],
+        [ 0.0677,  0.1934,  0.1375,  ...,  0.0501,  0.0600,  0.0369]],
+       device='cuda:0', dtype=torch.float16)
+----------------------------------------------------------
+resnet50 Quantization 1
+2021年 07月 01日 星期四 18:23:59 CST
+---------------Dataset: imagenet--------------
+Layer:     layer1.0.conv1, layer shape: torch.Size([64, 64, 1, 1]), uncompressed layer size: 0.015625MB. 
+blocksize: 64
+wordsize:  64
+layer shape (after reshape): torch.Size([64, 64])
+tensor(0.2883, device='cuda:0', dtype=torch.float16)
+tensor(-0.0735, device='cuda:0', dtype=torch.float16)
+----------------------------------------------------------
+resnet50 Quantization 1
+2021年 07月 01日 星期四 18:31:46 CST
+---------------Dataset: imagenet--------------
+Layer:     layer1.0.conv1, layer shape: torch.Size([64, 64, 1, 1]), uncompressed layer size: 0.015625MB. 
+blocksize: 64
+wordsize:  64
+layer shape (after reshape): torch.Size([64, 64])
+----------------------------------------------------------
+resnet50 Quantization 1
+2021年 07月 01日 星期四 18:32:10 CST
+---------------Dataset: imagenet--------------
+Layer:     layer1.0.conv1, layer shape: torch.Size([64, 64, 1, 1]), uncompressed layer size: 0.015625MB. 
+blocksize: 64
+wordsize:  64
+layer shape (after reshape): torch.Size([64, 64])
+----------------------------------------------------------
+resnet50 Quantization 1
+2021年 07月 01日 星期四 18:33:02 CST
+---------------Dataset: imagenet--------------
+Layer:     layer1.0.conv1, layer shape: torch.Size([64, 64, 1, 1]), uncompressed layer size: 0.015625MB. 
+blocksize: 64
+wordsize:  64
+layer shape (after reshape): torch.Size([64, 64])
+----------------------------------------------------------
+resnet50 Quantization 1
+2021年 07月 01日 星期四 18:33:52 CST
+---------------Dataset: imagenet--------------
+Layer:     layer1.0.conv1, layer shape: torch.Size([64, 64, 1, 1]), uncompressed layer size: 0.015625MB. 
+blocksize: 64
+wordsize:  64
+layer shape (after reshape): torch.Size([64, 64])
+----------------------------------------------------------
+resnet50 Quantization 1
+2021年 07月 01日 星期四 18:36:28 CST
+---------------Dataset: imagenet--------------
+Layer:     layer1.0.conv1, layer shape: torch.Size([64, 64, 1, 1]), uncompressed layer size: 0.015625MB. 
+blocksize: 64
+wordsize:  64
+layer shape (after reshape): torch.Size([64, 64])
+----------------------------------------------------------
+resnet50 Quantization 1
+2021年 07月 01日 星期四 18:38:37 CST
+---------------Dataset: imagenet--------------
+Layer:     layer1.0.conv1, layer shape: torch.Size([64, 64, 1, 1]), uncompressed layer size: 0.015625MB. 
+blocksize: 64
+wordsize:  64
+layer shape (after reshape): torch.Size([64, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.015625MB
+Time cost: 0.32s
+
+Layer:     layer1.0.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize:  64
+layer shape (after reshape): torch.Size([576, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.09s
+
+Layer:     layer1.0.conv3, layer shape: torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.08s
+
+Layer:     layer1.0.downsample.0, layer shape: torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.07s
+
+Layer:     layer1.1.conv1, layer shape: torch.Size([64, 256, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.09s
+
+Layer:     layer1.1.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize:  64
+layer shape (after reshape): torch.Size([576, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.09s
+
+Layer:     layer1.1.conv3, layer shape: torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.09s
+
+Layer:     layer1.2.conv1, layer shape: torch.Size([64, 256, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.09s
+
+Layer:     layer1.2.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+blocksize: 576
+wordsize:  64
+layer shape (after reshape): torch.Size([576, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.078125MB
+Time cost: 0.10s
+
+Layer:     layer1.2.conv3, layer shape: torch.Size([256, 64, 1, 1]), uncompressed layer size: 0.062500MB. 
+blocksize: 256
+wordsize:  64
+layer shape (after reshape): torch.Size([256, 64])
+Dictionary Words: 64
+Blocks: 1
+Compressed layer size: 0.039062MB
+Time cost: 0.09s
+
+Layer:     layer2.0.conv1, layer shape: torch.Size([128, 256, 1, 1]), uncompressed layer size: 0.125000MB. 
+blocksize: 256
+wordsize:  96
+layer shape (after reshape): torch.Size([256, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.070312MB
+Time cost: 0.11s
+
+Layer:     layer2.0.conv2, layer shape: torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 1152
+wordsize:  96
+layer shape (after reshape): torch.Size([1152, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.234375MB
+Time cost: 0.18s
+
+Layer:     layer2.0.conv3, layer shape: torch.Size([512, 128, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  96
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.20s
+
+Layer:     layer2.0.downsample.0, layer shape: torch.Size([512, 256, 1, 1]), uncompressed layer size: 0.500000MB. 
+blocksize: 512
+wordsize:  181
+layer shape (after reshape): torch.Size([512, 256])
+Dictionary Words: 181
+Blocks: 1
+Compressed layer size: 0.265137MB
+Time cost: 0.21s
+
+Layer:     layer2.1.conv1, layer shape: torch.Size([128, 512, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  96
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.13s
+
+Layer:     layer2.1.conv2, layer shape: torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 1152
+wordsize:  96
+layer shape (after reshape): torch.Size([1152, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.234375MB
+Time cost: 0.19s
+
+Layer:     layer2.1.conv3, layer shape: torch.Size([512, 128, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  96
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.12s
+
+Layer:     layer2.2.conv1, layer shape: torch.Size([128, 512, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  96
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 96
+Blocks: 1
+Compressed layer size: 0.117188MB
+Time cost: 0.12s
+
+Layer:     layer2.2.conv2, layer shape: torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 1152
+wordsize:  105
+layer shape (after reshape): torch.Size([1152, 128])
+Dictionary Words: 105
+Blocks: 1
+Compressed layer size: 0.256348MB
+Time cost: 0.20s
+
+Layer:     layer2.2.conv3, layer shape: torch.Size([512, 128, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  105
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 105
+Blocks: 1
+Compressed layer size: 0.128174MB
+Time cost: 0.15s
+
+Layer:     layer2.3.conv1, layer shape: torch.Size([128, 512, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  105
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 105
+Blocks: 1
+Compressed layer size: 0.128174MB
+Time cost: 0.15s
+
+Layer:     layer2.3.conv2, layer shape: torch.Size([128, 128, 3, 3]), uncompressed layer size: 0.562500MB. 
+blocksize: 1152
+wordsize:  105
+layer shape (after reshape): torch.Size([1152, 128])
+Dictionary Words: 105
+Blocks: 1
+Compressed layer size: 0.256348MB
+Time cost: 0.21s
+
+Layer:     layer2.3.conv3, layer shape: torch.Size([512, 128, 1, 1]), uncompressed layer size: 0.250000MB. 
+blocksize: 512
+wordsize:  105
+layer shape (after reshape): torch.Size([512, 128])
+Dictionary Words: 105
+Blocks: 1
+Compressed layer size: 0.128174MB
+Time cost: 0.19s
+
+Layer:     layer3.0.conv1, layer shape: torch.Size([256, 512, 1, 1]), uncompressed layer size: 0.500000MB. 
+blocksize: 512
+wordsize:  183
+layer shape (after reshape): torch.Size([512, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.268066MB
+Time cost: 0.21s
+
+Layer:     layer3.0.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  163
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 163
+Blocks: 1
+Compressed layer size: 0.795898MB
+Time cost: 0.51s
+
+Layer:     layer3.0.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  163
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 163
+Blocks: 1
+Compressed layer size: 0.397949MB
+Time cost: 0.30s
+
+Layer:     layer3.0.downsample.0, layer shape: torch.Size([1024, 512, 1, 1]), uncompressed layer size: 2.000000MB. 
+blocksize: 1024
+wordsize:  231
+layer shape (after reshape): torch.Size([1024, 512])
+Dictionary Words: 231
+Blocks: 1
+Compressed layer size: 0.676758MB
+Time cost: 0.47s
+
+Layer:     layer3.1.conv1, layer shape: torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  183
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.37s
+
+Layer:     layer3.1.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  183
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.893555MB
+Time cost: 0.55s
+
+Layer:     layer3.1.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  183
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.33s
+
+Layer:     layer3.2.conv1, layer shape: torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  183
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.30s
+
+Layer:     layer3.2.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  183
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.893555MB
+Time cost: 0.64s
+
+Layer:     layer3.2.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  183
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.30s
+
+Layer:     layer3.3.conv1, layer shape: torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  183
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.446777MB
+Time cost: 0.30s
+
+Layer:     layer3.3.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  183
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 183
+Blocks: 1
+Compressed layer size: 0.893555MB
+Time cost: 0.55s
+
+Layer:     layer3.3.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  201
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.490723MB
+Time cost: 0.33s
+
+Layer:     layer3.4.conv1, layer shape: torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  201
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.490723MB
+Time cost: 0.33s
+
+Layer:     layer3.4.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  201
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.981445MB
+Time cost: 0.57s
+
+Layer:     layer3.4.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  201
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.490723MB
+Time cost: 0.33s
+
+Layer:     layer3.5.conv1, layer shape: torch.Size([256, 1024, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  201
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.490723MB
+Time cost: 0.32s
+
+Layer:     layer3.5.conv2, layer shape: torch.Size([256, 256, 3, 3]), uncompressed layer size: 2.250000MB. 
+blocksize: 2304
+wordsize:  201
+layer shape (after reshape): torch.Size([2304, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.981445MB
+Time cost: 0.57s
+
+Layer:     layer3.5.conv3, layer shape: torch.Size([1024, 256, 1, 1]), uncompressed layer size: 1.000000MB. 
+blocksize: 1024
+wordsize:  201
+layer shape (after reshape): torch.Size([1024, 256])
+Dictionary Words: 201
+Blocks: 1
+Compressed layer size: 0.490723MB
+Time cost: 0.33s
+
+Layer:     layer4.0.conv1, layer shape: torch.Size([512, 1024, 1, 1]), uncompressed layer size: 2.000000MB. 
+blocksize: 1024
+wordsize:  423
+layer shape (after reshape): torch.Size([1024, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 1.239258MB
+Time cost: 0.66s
+
+Layer:     layer4.0.conv2, layer shape: torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 4608
+wordsize:  423
+layer shape (after reshape): torch.Size([4608, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 4.130859MB
+Time cost: 1.98s
+
+Layer:     layer4.0.conv3, layer shape: torch.Size([2048, 512, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize:  423
+layer shape (after reshape): torch.Size([2048, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 1.02s
+
+Layer:     layer4.0.downsample.0, layer shape: torch.Size([2048, 1024, 1, 1]), uncompressed layer size: 8.000000MB. 
+blocksize: 2048
+wordsize:  471
+layer shape (after reshape): torch.Size([2048, 1024])
+Dictionary Words: 471
+Blocks: 1
+Compressed layer size: 2.759766MB
+Time cost: 1.53s
+
+Layer:     layer4.1.conv1, layer shape: torch.Size([512, 2048, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize:  423
+layer shape (after reshape): torch.Size([2048, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 1.13s
+
+Layer:     layer4.1.conv2, layer shape: torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 4608
+wordsize:  423
+layer shape (after reshape): torch.Size([4608, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 4.130859MB
+Time cost: 2.17s
+
+Layer:     layer4.1.conv3, layer shape: torch.Size([2048, 512, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize:  423
+layer shape (after reshape): torch.Size([2048, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 1.10s
+
+Layer:     layer4.2.conv1, layer shape: torch.Size([512, 2048, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize:  423
+layer shape (after reshape): torch.Size([2048, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 1.10s
+
+Layer:     layer4.2.conv2, layer shape: torch.Size([512, 512, 3, 3]), uncompressed layer size: 9.000000MB. 
+blocksize: 4068
+wordsize:  423
+layer shape (after reshape): torch.Size([4608, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 4.130859MB
+Time cost: 1.97s
+
+Layer:     layer4.2.conv3, layer shape: torch.Size([2048, 512, 1, 1]), uncompressed layer size: 4.000000MB. 
+blocksize: 2048
+wordsize:  423
+layer shape (after reshape): torch.Size([2048, 512])
+Dictionary Words: 423
+Blocks: 1
+Compressed layer size: 2.065430MB
+Time cost: 1.05s
+
+Layer:     fc, layer shape: torch.Size([1000, 2048]), uncompressed layer size: 7.812500MB. 
+blocksize: 2048
+wordsize:  750
+layer shape (after reshape): torch.Size([2048, 1000])
+Dictionary Words: 750
+Blocks: 1
+Compressed layer size: 4.360199MB
+Time cost: 1.88s
+
+#################result####################
+Compressed model size: 45.4456MB
+Compress Coef: 2.15
+Compressed time: 26.45s.
+----------------------------------------------------------

@@ -1,8 +1,9 @@
 #!/bin/sh
 model=resnet50 # resnet18 | vgg16_bn | resnet50 | resnet56 | resnet20
 dataset=imagenet # imagenet | cifar10 | cifar100
-config=/home/gaoyangcheng/dev/Quantize_DPL/config/${model}/
-log=/home/gaoyangcheng/dev/Quantize_DPL/log/log_`date +%Y%m%d`.log
+mkdir ./visual/$model
+config=/home/gaoyangcheng/dev/GroupDPL/config/${model}/
+log=/home/gaoyangcheng/dev/GroupDPL/log/log_`date +%Y%m%d`.log
 touch ${log}
 convblocksize=$(expr 72)
 convwords=$(expr 16)
@@ -19,9 +20,9 @@ do
 		echo "${model} Quantization $i" | tee -a ${log}
 		date | tee -a ${log}
 		#echo "convwords: ${convwords}, fcwords: ${fcwords}" | tee -a ${log}
-		python Quantize_DPL.py --dataset ${dataset} --model ${model} \
-		--layer all --device cuda --config ${config} | tee -a ${log} #--pretest True --show True --check True 
-		cat ${config}/word.config | tee -a ${log}
+		python main.py --dataset ${dataset} --model ${model} \
+		--layer all --device cuda --config ${config} --show True | tee -a ${log} #--pretest True --show True --check True 
+		#cat ${config}/word.config | tee -a ${log}
 		#python update_config.py --config ${config} --model=${model} --dataset=${dataset} --init=0 --conv-word=3
 		#convwords=$(expr ${convwords} + 8)
 		#sleep 10
