@@ -1,7 +1,6 @@
 import torch
 import torch.nn.functional as F
 
-
 def reshape_weight(weight):
     """
     C_out x C_in x k x k -> (C_in x k x k) x C_out.
@@ -25,6 +24,34 @@ def reshape_back_weight(weight, k=3, conv=True):
         return weight.t().view(C_out, C_in, k, k)
     else:
         return weight.t()
+
+'''
+# Another version of weight reshape: along the out channel
+
+def reshape_weight(weight):
+    """
+    C_out x C_in x k x k -> (C_out x k x k) x C_in.
+    """
+
+    if len(weight.size()) == 4:
+        C_out, C_in, k, k = weight.size()
+        return weight.view(C_in, C_out * k * k).t()
+    else:
+        return weight.t()
+
+
+def reshape_back_weight(weight, k=3, conv=True):
+    """
+    (C_out x k x k) x C_in -> C_out x C_in x k x k.
+    """
+    if conv:
+        C_out_, C_in = weight.size()
+        C_out = C_out_ // (k * k)
+        return weight.t().reshape(C_out, C_in, k, k)
+    else:
+        return weight.t()
+'''
+
 
 
 def reshape_activations(activations, k=3, stride=(1, 1), padding=(1, 1), groups=1):

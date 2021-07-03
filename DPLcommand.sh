@@ -1,5 +1,5 @@
 #!/bin/sh
-model=resnet56 # resnet18 | vgg16_bn | resnet50 | resnet56 | resnet20
+model=resnet20 # resnet18 | vgg16_bn | resnet50 | resnet56 | resnet20
 dataset=cifar10 # imagenet | cifar10 | cifar100
 mkdir ./visual/$model
 config=/home/gaoyangcheng/dev/GroupDPL/config/${model}/
@@ -21,7 +21,7 @@ do
 		date | tee -a ${log}
 		#echo "convwords: ${convwords}, fcwords: ${fcwords}" | tee -a ${log}
 		python main.py --dataset ${dataset} --model ${model} \
-		--layer all --device cuda --config ${config} --show True | tee -a ${log} #--pretest True --show True --check True 
+		--layer all --device cuda --config ${config} --start=0 --show True | tee -a ${log} #--pretest True --show True --check True 
 		#cat ${config}/word.config | tee -a ${log}
 		#python update_config.py --config ${config} --model=${model} --dataset=${dataset} --init=0 --conv-word=3
 		#convwords=$(expr ${convwords} + 8)
