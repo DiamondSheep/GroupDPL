@@ -2209,3 +2209,350 @@ Test: [78/79]	Acc@1 81.250 (91.350)	Acc@5 100.000 (99.660)
 Top1 after quantization: 91.350, Top5 after quantization: 99.660
 
 ----------------------------------------------------------
+resnet20 Quantization 1
+2021年 07月 03日 星期六 11:05:02 CST
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+layer number: 20
+#################result####################
+Compressed model size: 0.0053MB
+Compress Coef: 194.60
+Compressed time: 0.00s.
+Test: [0/79]	Acc@1 88.281 (88.281)	Acc@5 99.219 (99.219)
+Test: [1/79]	Acc@1 92.969 (90.625)	Acc@5 100.000 (99.609)
+Test: [2/79]	Acc@1 88.281 (89.844)	Acc@5 99.219 (99.479)
+Test: [3/79]	Acc@1 93.750 (90.820)	Acc@5 99.219 (99.414)
+Test: [4/79]	Acc@1 89.062 (90.469)	Acc@5 99.219 (99.375)
+Test: [5/79]	Acc@1 90.625 (90.495)	Acc@5 100.000 (99.479)
+Test: [6/79]	Acc@1 90.625 (90.513)	Acc@5 100.000 (99.554)
+Test: [7/79]	Acc@1 92.188 (90.723)	Acc@5 100.000 (99.609)
+Test: [8/79]	Acc@1 89.062 (90.538)	Acc@5 98.438 (99.479)
+Test: [9/79]	Acc@1 91.406 (90.625)	Acc@5 100.000 (99.531)
+Test: [10/79]	Acc@1 92.969 (90.838)	Acc@5 99.219 (99.503)
+Test: [11/79]	Acc@1 89.844 (90.755)	Acc@5 97.656 (99.349)
+Test: [12/79]	Acc@1 92.969 (90.925)	Acc@5 100.000 (99.399)
+Test: [13/79]	Acc@1 88.281 (90.737)	Acc@5 100.000 (99.442)
+Test: [14/79]	Acc@1 92.188 (90.833)	Acc@5 100.000 (99.479)
+Test: [15/79]	Acc@1 89.844 (90.771)	Acc@5 100.000 (99.512)
+Test: [16/79]	Acc@1 89.062 (90.671)	Acc@5 99.219 (99.494)
+Test: [17/79]	Acc@1 93.750 (90.842)	Acc@5 100.000 (99.523)
+Test: [18/79]	Acc@1 93.750 (90.995)	Acc@5 100.000 (99.548)
+Test: [19/79]	Acc@1 88.281 (90.859)	Acc@5 99.219 (99.531)
+Test: [20/79]	Acc@1 91.406 (90.885)	Acc@5 100.000 (99.554)
+Test: [21/79]	Acc@1 93.750 (91.016)	Acc@5 100.000 (99.574)
+Test: [22/79]	Acc@1 87.500 (90.863)	Acc@5 98.438 (99.524)
+Test: [23/79]	Acc@1 94.531 (91.016)	Acc@5 100.000 (99.544)
+Test: [24/79]	Acc@1 89.844 (90.969)	Acc@5 100.000 (99.562)
+Test: [25/79]	Acc@1 93.750 (91.076)	Acc@5 97.656 (99.489)
+Test: [26/79]	Acc@1 89.844 (91.030)	Acc@5 99.219 (99.479)
+Test: [27/79]	Acc@1 90.625 (91.016)	Acc@5 100.000 (99.498)
+Test: [28/79]	Acc@1 94.531 (91.137)	Acc@5 100.000 (99.515)
+Test: [29/79]	Acc@1 96.094 (91.302)	Acc@5 100.000 (99.531)
+Test: [30/79]	Acc@1 90.625 (91.280)	Acc@5 100.000 (99.546)
+Test: [31/79]	Acc@1 89.062 (91.211)	Acc@5 100.000 (99.561)
+Test: [32/79]	Acc@1 92.969 (91.264)	Acc@5 100.000 (99.574)
+Test: [33/79]	Acc@1 89.844 (91.222)	Acc@5 100.000 (99.586)
+Test: [34/79]	Acc@1 93.750 (91.295)	Acc@5 99.219 (99.576)
+Test: [35/79]	Acc@1 92.969 (91.341)	Acc@5 100.000 (99.588)
+Test: [36/79]	Acc@1 92.188 (91.364)	Acc@5 100.000 (99.599)
+Test: [37/79]	Acc@1 89.844 (91.324)	Acc@5 100.000 (99.609)
+Test: [38/79]	Acc@1 89.844 (91.286)	Acc@5 99.219 (99.599)
+Test: [39/79]	Acc@1 94.531 (91.367)	Acc@5 100.000 (99.609)
+Test: [40/79]	Acc@1 92.969 (91.406)	Acc@5 100.000 (99.619)
+Test: [41/79]	Acc@1 92.188 (91.425)	Acc@5 99.219 (99.609)
+Test: [42/79]	Acc@1 94.531 (91.497)	Acc@5 100.000 (99.618)
+Test: [43/79]	Acc@1 92.188 (91.513)	Acc@5 100.000 (99.627)
+Test: [44/79]	Acc@1 92.188 (91.528)	Acc@5 100.000 (99.635)
+Test: [45/79]	Acc@1 89.062 (91.474)	Acc@5 99.219 (99.626)
+Test: [46/79]	Acc@1 92.969 (91.506)	Acc@5 100.000 (99.634)
+Test: [47/79]	Acc@1 89.844 (91.471)	Acc@5 100.000 (99.642)
+Test: [48/79]	Acc@1 93.750 (91.518)	Acc@5 100.000 (99.649)
+Test: [49/79]	Acc@1 91.406 (91.516)	Acc@5 100.000 (99.656)
+Test: [50/79]	Acc@1 92.188 (91.529)	Acc@5 99.219 (99.648)
+Test: [51/79]	Acc@1 92.969 (91.556)	Acc@5 100.000 (99.654)
+Test: [52/79]	Acc@1 89.844 (91.524)	Acc@5 100.000 (99.661)
+Test: [53/79]	Acc@1 91.406 (91.522)	Acc@5 100.000 (99.667)
+Test: [54/79]	Acc@1 89.844 (91.491)	Acc@5 100.000 (99.673)
+Test: [55/79]	Acc@1 94.531 (91.546)	Acc@5 100.000 (99.679)
+Test: [56/79]	Acc@1 90.625 (91.530)	Acc@5 100.000 (99.685)
+Test: [57/79]	Acc@1 89.844 (91.501)	Acc@5 100.000 (99.690)
+Test: [58/79]	Acc@1 94.531 (91.552)	Acc@5 100.000 (99.695)
+Test: [59/79]	Acc@1 92.969 (91.576)	Acc@5 99.219 (99.688)
+Test: [60/79]	Acc@1 92.969 (91.598)	Acc@5 99.219 (99.680)
+Test: [61/79]	Acc@1 92.969 (91.620)	Acc@5 100.000 (99.685)
+Test: [62/79]	Acc@1 90.625 (91.605)	Acc@5 98.438 (99.665)
+Test: [63/79]	Acc@1 92.969 (91.626)	Acc@5 100.000 (99.670)
+Test: [64/79]	Acc@1 89.844 (91.599)	Acc@5 100.000 (99.675)
+Test: [65/79]	Acc@1 88.281 (91.548)	Acc@5 100.000 (99.680)
+Test: [66/79]	Acc@1 92.969 (91.569)	Acc@5 100.000 (99.685)
+Test: [67/79]	Acc@1 92.969 (91.590)	Acc@5 100.000 (99.690)
+Test: [68/79]	Acc@1 89.062 (91.553)	Acc@5 100.000 (99.694)
+Test: [69/79]	Acc@1 90.625 (91.540)	Acc@5 100.000 (99.699)
+Test: [70/79]	Acc@1 89.062 (91.505)	Acc@5 99.219 (99.692)
+Test: [71/79]	Acc@1 87.500 (91.450)	Acc@5 99.219 (99.685)
+Test: [72/79]	Acc@1 92.188 (91.460)	Acc@5 100.000 (99.690)
+Test: [73/79]	Acc@1 91.406 (91.459)	Acc@5 99.219 (99.683)
+Test: [74/79]	Acc@1 94.531 (91.500)	Acc@5 98.438 (99.667)
+Test: [75/79]	Acc@1 93.750 (91.530)	Acc@5 98.438 (99.650)
+Test: [76/79]	Acc@1 86.719 (91.467)	Acc@5 99.219 (99.645)
+Test: [77/79]	Acc@1 91.406 (91.466)	Acc@5 100.000 (99.649)
+Test: [78/79]	Acc@1 100.000 (91.480)	Acc@5 100.000 (99.650)
+Top1 after quantization: 91.480, Top5 after quantization: 99.650
+
+----------------------------------------------------------
+resnet20 Quantization 1
+2021年 07月 03日 星期六 11:06:15 CST
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+layer number: 20
+Layer: conv1, layer shape: torch.Size([16, 3, 3, 3]), uncompressed layer size: 0.001648MB. 
+layer shape (after reshape): torch.Size([27, 16])
+Dictionary Words:      16
+Blocks:                1
+Compressed layer size: 0.001312MB
+Time cost:             0.29s
+
+Layer: layer1.0.conv1, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Dictionary Words:      14
+Blocks:                1
+Compressed layer size: 0.004272MB
+Time cost:             0.02s
+
+Layer: layer1.0.conv2, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Dictionary Words:      14
+Blocks:                1
+Compressed layer size: 0.004272MB
+Time cost:             0.02s
+
+----------------------------------------------------------
+resnet20 Quantization 1
+2021年 07月 03日 星期六 11:07:09 CST
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+layer number: 20
+Layer: conv1, layer shape: torch.Size([16, 3, 3, 3]), uncompressed layer size: 0.001648MB. 
+layer shape (after reshape): torch.Size([27, 16])
+Dictionary Words:      16
+Blocks:                1
+Compressed layer size: 0.001312MB
+Time cost:             0.29s
+
+Layer: layer1.0.conv1, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Dictionary Words:      14
+Blocks:                1
+Compressed layer size: 0.004272MB
+Time cost:             0.02s
+
+Layer: layer1.0.conv2, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Dictionary Words:      14
+Blocks:                1
+Compressed layer size: 0.004272MB
+Time cost:             0.02s
+
+Layer: layer1.1.conv2, layer shape: torch.Size([32, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 32])
+Dictionary Words:      16
+Blocks:                1
+Compressed layer size: 0.005371MB
+Time cost:             0.03s
+
+Layer: layer1.2.conv2, layer shape: torch.Size([32, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 32])
+----------------------------------------------------------
+resnet20 Quantization 1
+2021年 07月 03日 星期六 11:08:25 CST
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+layer number: 20
+Layer: conv1, layer shape: torch.Size([16, 3, 3, 3]), uncompressed layer size: 0.001648MB. 
+layer shape (after reshape): torch.Size([27, 16])
+Dictionary Words:      16
+Blocks:                1
+Compressed layer size: 0.001312MB
+Time cost:             0.30s
+
+Layer: layer1.0.conv1, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Dictionary Words:      14
+Blocks:                1
+Compressed layer size: 0.004272MB
+Time cost:             0.02s
+
+Layer: layer1.0.conv2, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Dictionary Words:      14
+Blocks:                1
+Compressed layer size: 0.004272MB
+Time cost:             0.02s
+
+Layer: layer1.1.conv2, layer shape: torch.Size([32, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 32])
+Dictionary Words:      16
+Blocks:                1
+Compressed layer size: 0.005371MB
+Time cost:             0.03s
+
+Layer: layer1.2.conv2, layer shape: torch.Size([32, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 32])
+Dictionary Words:      16
+Blocks:                1
+Compressed layer size: 0.005371MB
+Time cost:             0.03s
+
+Layer: layer2.0.conv1, layer shape: torch.Size([32, 16, 3, 3]), uncompressed layer size: 0.017578MB. 
+layer shape (after reshape): torch.Size([144, 32])
+Dictionary Words:      33
+Blocks:                1
+Compressed layer size: 0.011078MB
+Time cost:             0.03s
+
+Layer: layer2.0.conv2, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Dictionary Words:      32
+Blocks:                1
+Compressed layer size: 0.019531MB
+Time cost:             0.02s
+
+Layer: layer2.1.conv2, layer shape: torch.Size([64, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 64])
+Dictionary Words:      32
+Blocks:                1
+Compressed layer size: 0.021484MB
+Time cost:             0.03s
+
+Layer: layer2.2.conv2, layer shape: torch.Size([64, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 64])
+Dictionary Words:      30
+Blocks:                1
+Compressed layer size: 0.020142MB
+Time cost:             0.03s
+
+Layer: layer3.0.conv1, layer shape: torch.Size([64, 32, 3, 3]), uncompressed layer size: 0.070312MB. 
+layer shape (after reshape): torch.Size([288, 64])
+Dictionary Words:      63
+Blocks:                1
+Compressed layer size: 0.042297MB
+Time cost:             0.03s
+
+Layer: layer3.0.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Dictionary Words:      63
+Blocks:                1
+Compressed layer size: 0.076904MB
+Time cost:             0.03s
+
+Layer: layer3.1.conv2, layer shape: torch.Size([128, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 128])
+Dictionary Words:      63
+Blocks:                1
+Compressed layer size: 0.084595MB
+Time cost:             0.04s
+
+Layer: layer3.2.conv2, layer shape: torch.Size([128, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 128])
+Dictionary Words:      60
+Blocks:                1
+Compressed layer size: 0.080566MB
+Time cost:             0.04s
+
+Layer: linear, layer shape: torch.Size([10, 64]), uncompressed layer size: 0.002441MB. 
+layer shape (after reshape): torch.Size([64, 10])
+Dictionary Words:      10
+Blocks:                1
+Compressed layer size: 0.001411MB
+Time cost:             0.03s
+
+#################result####################
+Compressed model size: 0.3839MB
+Compress Coef: 2.68
+Compressed time: 0.68s.
+Test: [0/79]	Acc@1 92.188 (92.188)	Acc@5 100.000 (100.000)
+Test: [1/79]	Acc@1 88.281 (90.234)	Acc@5 100.000 (100.000)
+Test: [2/79]	Acc@1 89.844 (90.104)	Acc@5 99.219 (99.740)
+Test: [3/79]	Acc@1 93.750 (91.016)	Acc@5 100.000 (99.805)
+Test: [4/79]	Acc@1 91.406 (91.094)	Acc@5 99.219 (99.688)
+Test: [5/79]	Acc@1 94.531 (91.667)	Acc@5 100.000 (99.740)
+Test: [6/79]	Acc@1 95.312 (92.188)	Acc@5 100.000 (99.777)
+Test: [7/79]	Acc@1 94.531 (92.480)	Acc@5 100.000 (99.805)
+Test: [8/79]	Acc@1 89.062 (92.101)	Acc@5 100.000 (99.826)
+Test: [9/79]	Acc@1 89.062 (91.797)	Acc@5 99.219 (99.766)
+Test: [10/79]	Acc@1 92.969 (91.903)	Acc@5 99.219 (99.716)
+Test: [11/79]	Acc@1 91.406 (91.862)	Acc@5 99.219 (99.674)
+Test: [12/79]	Acc@1 90.625 (91.767)	Acc@5 100.000 (99.700)
+Test: [13/79]	Acc@1 92.969 (91.853)	Acc@5 100.000 (99.721)
+Test: [14/79]	Acc@1 96.094 (92.135)	Acc@5 100.000 (99.740)
+Test: [15/79]	Acc@1 89.062 (91.943)	Acc@5 98.438 (99.658)
+Test: [16/79]	Acc@1 89.062 (91.774)	Acc@5 100.000 (99.678)
+Test: [17/79]	Acc@1 91.406 (91.753)	Acc@5 100.000 (99.696)
+Test: [18/79]	Acc@1 91.406 (91.735)	Acc@5 100.000 (99.712)
+Test: [19/79]	Acc@1 93.750 (91.836)	Acc@5 100.000 (99.727)
+Test: [20/79]	Acc@1 92.969 (91.890)	Acc@5 98.438 (99.665)
+Test: [21/79]	Acc@1 88.281 (91.726)	Acc@5 98.438 (99.609)
+Test: [22/79]	Acc@1 89.062 (91.610)	Acc@5 99.219 (99.592)
+Test: [23/79]	Acc@1 96.094 (91.797)	Acc@5 99.219 (99.577)
+Test: [24/79]	Acc@1 91.406 (91.781)	Acc@5 99.219 (99.562)
+Test: [25/79]	Acc@1 94.531 (91.887)	Acc@5 99.219 (99.549)
+Test: [26/79]	Acc@1 92.188 (91.898)	Acc@5 100.000 (99.566)
+Test: [27/79]	Acc@1 92.969 (91.936)	Acc@5 100.000 (99.581)
+Test: [28/79]	Acc@1 89.062 (91.837)	Acc@5 99.219 (99.569)
+Test: [29/79]	Acc@1 92.188 (91.849)	Acc@5 100.000 (99.583)
+Test: [30/79]	Acc@1 92.188 (91.860)	Acc@5 100.000 (99.597)
+Test: [31/79]	Acc@1 92.969 (91.895)	Acc@5 100.000 (99.609)
+Test: [32/79]	Acc@1 92.188 (91.903)	Acc@5 99.219 (99.598)
+Test: [33/79]	Acc@1 90.625 (91.866)	Acc@5 99.219 (99.586)
+Test: [34/79]	Acc@1 91.406 (91.853)	Acc@5 100.000 (99.598)
+Test: [35/79]	Acc@1 88.281 (91.753)	Acc@5 98.438 (99.566)
+Test: [36/79]	Acc@1 93.750 (91.807)	Acc@5 100.000 (99.578)
+Test: [37/79]	Acc@1 95.312 (91.900)	Acc@5 99.219 (99.568)
+Test: [38/79]	Acc@1 91.406 (91.887)	Acc@5 100.000 (99.579)
+Test: [39/79]	Acc@1 94.531 (91.953)	Acc@5 100.000 (99.590)
+Test: [40/79]	Acc@1 87.500 (91.845)	Acc@5 100.000 (99.600)
+Test: [41/79]	Acc@1 90.625 (91.815)	Acc@5 100.000 (99.609)
+Test: [42/79]	Acc@1 93.750 (91.860)	Acc@5 100.000 (99.618)
+Test: [43/79]	Acc@1 89.062 (91.797)	Acc@5 100.000 (99.627)
+Test: [44/79]	Acc@1 91.406 (91.788)	Acc@5 100.000 (99.635)
+Test: [45/79]	Acc@1 92.188 (91.797)	Acc@5 100.000 (99.643)
+Test: [46/79]	Acc@1 87.500 (91.705)	Acc@5 99.219 (99.634)
+Test: [47/79]	Acc@1 91.406 (91.699)	Acc@5 100.000 (99.642)
+Test: [48/79]	Acc@1 92.969 (91.725)	Acc@5 98.438 (99.617)
+Test: [49/79]	Acc@1 90.625 (91.703)	Acc@5 100.000 (99.625)
+Test: [50/79]	Acc@1 89.062 (91.651)	Acc@5 100.000 (99.632)
+Test: [51/79]	Acc@1 90.625 (91.632)	Acc@5 100.000 (99.639)
+Test: [52/79]	Acc@1 93.750 (91.672)	Acc@5 99.219 (99.631)
+Test: [53/79]	Acc@1 88.281 (91.609)	Acc@5 99.219 (99.624)
+Test: [54/79]	Acc@1 92.969 (91.634)	Acc@5 100.000 (99.631)
+Test: [55/79]	Acc@1 91.406 (91.629)	Acc@5 99.219 (99.623)
+Test: [56/79]	Acc@1 88.281 (91.571)	Acc@5 99.219 (99.616)
+Test: [57/79]	Acc@1 89.062 (91.527)	Acc@5 99.219 (99.609)
+Test: [58/79]	Acc@1 94.531 (91.578)	Acc@5 100.000 (99.616)
+Test: [59/79]	Acc@1 88.281 (91.523)	Acc@5 100.000 (99.622)
+Test: [60/79]	Acc@1 86.719 (91.445)	Acc@5 99.219 (99.616)
+Test: [61/79]	Acc@1 91.406 (91.444)	Acc@5 100.000 (99.622)
+Test: [62/79]	Acc@1 89.062 (91.406)	Acc@5 100.000 (99.628)
+Test: [63/79]	Acc@1 93.750 (91.443)	Acc@5 100.000 (99.634)
+Test: [64/79]	Acc@1 91.406 (91.442)	Acc@5 99.219 (99.627)
+Test: [65/79]	Acc@1 90.625 (91.430)	Acc@5 100.000 (99.633)
+Test: [66/79]	Acc@1 87.500 (91.371)	Acc@5 100.000 (99.639)
+Test: [67/79]	Acc@1 95.312 (91.429)	Acc@5 100.000 (99.644)
+Test: [68/79]	Acc@1 89.844 (91.406)	Acc@5 100.000 (99.649)
+Test: [69/79]	Acc@1 92.188 (91.417)	Acc@5 99.219 (99.643)
+Test: [70/79]	Acc@1 91.406 (91.417)	Acc@5 100.000 (99.648)
+Test: [71/79]	Acc@1 91.406 (91.417)	Acc@5 99.219 (99.642)
+Test: [72/79]	Acc@1 92.969 (91.438)	Acc@5 100.000 (99.647)
+Test: [73/79]	Acc@1 90.625 (91.427)	Acc@5 100.000 (99.652)
+Test: [74/79]	Acc@1 94.531 (91.469)	Acc@5 100.000 (99.656)
+Test: [75/79]	Acc@1 91.406 (91.468)	Acc@5 98.438 (99.640)
+Test: [76/79]	Acc@1 93.750 (91.498)	Acc@5 100.000 (99.645)
+Test: [77/79]	Acc@1 90.625 (91.486)	Acc@5 100.000 (99.649)
+Test: [78/79]	Acc@1 93.750 (91.490)	Acc@5 100.000 (99.650)
+Top1 after quantization: 91.490, Top5 after quantization: 99.650
+
+----------------------------------------------------------

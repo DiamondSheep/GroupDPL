@@ -7,7 +7,7 @@ import torch.nn as nn
 import torch.backends.cudnn as cudnn
 import torch.utils.model_zoo as model_zoo
 import torchvision.models as models
-from operator import attrgetter, mod
+from operator import attrgetter, concat, mod
 from configparser import ConfigParser
 
 from utils.watcher import ActivationWatcher
@@ -96,6 +96,8 @@ if __name__ == '__main__':
         print('Size of uncompressed model : {:.4f}MB.\n'.format(size_uncompressed))
     
     #load layers from model
+    weight_list = []
+    layer_list = []
     watcher = ActivationWatcher(model)
     layers = [layer for layer in watcher.layers[args.start:]]
     print('layer number: {}'.format(len(layers)))
@@ -105,6 +107,17 @@ if __name__ == '__main__':
         weight = attrgetter(layer+ '.weight.data')(model).detach()
         size_uncompressed_layer = weight.numel() * 4 / 1024 / 1024
         size_other -= size_uncompressed_layer
+
+        # to learn a common dictionary for layers
+        if '.1.conv1' in layer or '.2.conv1' in layer:
+            weight_list.append(weight)
+            layer_list.append(layer)
+            continue
+        if len(weight_list):
+            weight_list.append(weight)
+            layer_list.append(layer)
+            weight = torch.cat(weight_list, dim=0)
+
         #initialization
         size_layer = 0.0
         weight_dpl = []
@@ -148,7 +161,6 @@ if __name__ == '__main__':
 
         #reshape and chunk weight matrix
         weight = reshape_weight(weight).to(args.device)
-        
         if args.model == 'resnet50': 
             if 'conv3' in layer or 'downsample' in layer:
                 weight = weight.t()
@@ -192,7 +204,15 @@ if __name__ == '__main__':
             if 'conv3' in layer or 'downsample' in layer:
                 weight = weight.t()
         weight = reshape_back_weight(weight, k=k, conv=is_conv)
-        attrgetter(layer + '.weight')(model).data = weight
+
+        if len(weight_list):
+            weight_list = weight.chunk(len(weight_list), dim=0)
+            for i, l in enumerate(layer_list):
+                attrgetter(l + '.weight')(model).date = weight_list[i]
+            weight_list = []
+            layer_list = []
+        else:
+            attrgetter(layer + '.weight')(model).data = weight
 
         if args.path_to_save:
             torch.save(weight, os.path.join(args.path_to_save, '{}.pth'.format(layer)))
