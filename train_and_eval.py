@@ -31,7 +31,7 @@ parser.add_argument('--net', default='resnet20_dc', type=str, metavar='NET',
 parser.add_argument('--num-workers', default=4, type=int, metavar='Wks',
                     help='number of workers')
 
-parser.add_argument('--config', default='', type=str,
+parser.add_argument('--config', default='./config/', type=str,
                     help='use configure for words and blocksize')
 parser.add_argument('--path-save', default='./model_path', type=str,
                     help='Path to save model')
@@ -119,7 +119,10 @@ if __name__ == '__main__':
     global args
     args = parser.parse_args()
     wordconfig = ConfigParser()
-    wordconfig.read(os.path.join(args.config, 'word.config'), encoding='UTF-8')
+    wordconfig.read(os.path.join(args.config, 'resnet20/word.config'), encoding='UTF-8')
+    word_list = []
+    for w in wordconfig['resnet20']:
+        word_list.append(int(wordconfig['resnet20'][w]))
     #load dataset
     print('Dataset: {}'.format(args.dataset))
     train_loader, test_loader, num_classes = load_dataset(args.dataset,
@@ -127,7 +130,7 @@ if __name__ == '__main__':
     #load model
     net_name = args.net
     print('Model: {}'.format(net_name))
-    net = model.__dict__[net_name](pretrained=args.eval, num_classes=num_classes)
+    net = model.__dict__[net_name](pretrained=args.eval, wordconfig = word_list, num_classes=num_classes)
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.SGD(net.parameters(), lr=args.learning_rate, momentum=args.momentum, weight_decay=args.weight_decay)
     scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=1, gamma=0.1)
