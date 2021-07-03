@@ -1,24 +1,20 @@
 import argparse
 import torch
-import torchvision
-import torchvision.transforms as transforms
+from configparser import ConfigParser
 import torch.nn as nn
 import torch.optim as optim
 from torch.optim.lr_scheduler import _LRScheduler
 import torch.backends.cudnn as cudnn
 import time
-import sys
 import os
 
 import model
-import utils.get_cifar100
-import utils.get_cifar10
-from utils.get_imagenet import get_train_dataloader, get_val_dataloader
+from utils.utils import load_dataset
 
 parser = argparse.ArgumentParser(description='Train and evaluate models in pytorch')
-parser.add_argument('--data-path', default='/gaoyangcheng/dataset/imagenet/', 
+parser.add_argument('--data-path', default='/mnt/dataset/', 
                     help='Path to dataset', type=str)
-parser.add_argument('--dataset', default='imagenet', type=str,
+parser.add_argument('--dataset', default='cifar10', type=str,
                     help='dataset to train or evaluate')
 parser.add_argument('--learning-rate', default=0.1, type=float, metavar='LR', 
                     help='initial learning rate(default: 0.1)')
@@ -28,18 +24,20 @@ parser.add_argument('--momentum', default=0.9, type=float, metavar='M',
                     help='momentum (default: 0.9)')
 parser.add_argument('--weight-decay', default=5e-4, type=float, metavar='W', 
                     help='weight decay (default: 5e-4)')
-parser.add_argument('--epochs', default=20, type=int, metavar='N',
+parser.add_argument('--epochs', default=200, type=int, metavar='N',
                     help='number of total epochs to run (default: 200)')
-parser.add_argument('--net', default='alexnet', type=str, metavar='NET',
-                    help='net type (default: resnet18)')
-parser.add_argument('--n-workers', default=0, type=int, metavar='Wks',
+parser.add_argument('--net', default='resnet20_dc', type=str, metavar='NET',
+                    help='net type')
+parser.add_argument('--num-workers', default=4, type=int, metavar='Wks',
                     help='number of workers')
 
-parser.add_argument('--path-save', default='/gaoyangcheng/dicts-vs-kmeans/model_path', type=str,
+parser.add_argument('--config', default='', type=str,
+                    help='use configure for words and blocksize')
+parser.add_argument('--path-save', default='./model_path', type=str,
                     help='Path to save model')
 parser.add_argument('--path-model', default='', type=str,
                     help='Path to model pretrained')
-parser.add_argument('--eval', default=True, type=bool,
+parser.add_argument('--eval', default=False, type=bool,
                     help='evaluate model')
 
 def train(net, trainloader, criterion, optimizer):
@@ -60,13 +58,13 @@ def train(net, trainloader, criterion, optimizer):
             print('[{}, {}] loss: {:.3f}'.format(epoch + 1, i + 1, loss.item()))
 
 @torch.no_grad()
-def evaluate(net, val_loader, criterion, showFlag=False):
+def evaluate(net, test_loader, criterion, showFlag=False):
     net.eval()
     top5 = AverageMeter()
     top1 = AverageMeter()
     #losses = AverageMeter()
     
-    for i, data in enumerate(val_loader):
+    for i, data in enumerate(test_loader):
         if torch.cuda.is_available():
             input, label = data[0].cuda(), data[1].cuda()
         else:
@@ -82,7 +80,7 @@ def evaluate(net, val_loader, criterion, showFlag=False):
             print('Test: [{0}/{1}]\t'
             'Acc@1 {top1.val:.3f} ({top1.avg:.3f})\t'
             'Acc@5 {top5.val:.3f} ({top5.avg:.3f})'.format(
-            i, len(val_loader), 
+            i, len(test_loader), 
             top1=top1, top5=top5))
     return top1.avg, top5.avg
 
@@ -120,21 +118,12 @@ def accuracy(output, target, topk=(1,)):
 if __name__ == '__main__':
     global args
     args = parser.parse_args()
+    wordconfig = ConfigParser()
+    wordconfig.read(os.path.join(args.config, 'word.config'), encoding='UTF-8')
     #load dataset
     print('Dataset: {}'.format(args.dataset))
-    if args.dataset == 'cifar10':
-        train_loader = utils.get_cifar10.get_training_dataloader(data_path=args.data_path, batch_size=args.batch_size, num_workers=args.n_workers)
-        val_loader = utils.get_cifar10.get_test_dataloader(data_path=args.data_path, batch_size=args.batch_size, num_workers=args.n_workers)
-        num_classes=10
-    elif args.dataset == 'cifar100':
-        train_loader = utils.get_cifar100.get_training_dataloader(data_path=args.data_path, batch_size=args.batch_size, num_workers=args.n_workers)
-        val_loader = utils.get_cifar100.get_test_dataloader(data_path=args.data_path, batch_size=args.batch_size, num_workers=args.n_workers)
-        num_classes=100
-    elif args.dataset == 'imagenet':
-        train_loader = get_train_dataloader(data_path=args.data_path, batchsize=args.batch_size, num_workers=args.n_workers,
-                                                                    distributed=False)
-        val_loader = get_test_dataloader(data_path=args.data_path, batchsize=args.batch_size, num_workers = args.n_workers)
-        num_classes = 1000
+    train_loader, test_loader, num_classes = load_dataset(args.dataset,
+                                    args.data_path, args.batch_size, args.num_workers)
     #load model
     net_name = args.net
     print('Model: {}'.format(net_name))
@@ -153,9 +142,9 @@ if __name__ == '__main__':
     if args.eval: #evaluate
         print('Evaluating started...')
         if args.path_model:
-            PATH = os.path.join(args.path_model, '{}-{}-best.pth'.format(net_name, args.epochs))
+            PATH = os.path.join(args.path_model, '{}-best.pth'.format(net_name))
             net.load_state_dict(torch.load(PATH))
-        evaluate(net, val_loader, criterion)
+        evaluate(net, test_loader, criterion)
     
     else: #train
         print('Hyperparameters:\nlr: {}, momentum: {}, weight_decay: {}'.format(args.learning_rate, args.momentum, args.weight_decay))
@@ -166,12 +155,11 @@ if __name__ == '__main__':
         time_start = time.time()
         for epoch in range(args.epochs):
             train(net, train_loader, criterion, optimizer)
-            scheduler.step()
-            acc = evaluate(net, val_loader, criterion)
+            acc = evaluate(net, test_loader, criterion)
             if epoch > 10 and best_acc < acc:
                 best_acc = acc
                 torch.save(net.state_dict(), os.path.join(args.path_save, 
-                            '{}-{}-best.pth'.format(net_name, args.epochs)))
+                            '{}-best.pth'.format(net_name)))
         time_end = time.time()
         print('Training finished.')
         print('TrainingTime: {:.3f}s.'.format(time_end - time_start))

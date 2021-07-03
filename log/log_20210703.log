@@ -2556,3 +2556,11 @@ Test: [78/79]	Acc@1 93.750 (91.490)	Acc@5 100.000 (99.650)
 Top1 after quantization: 91.490, Top5 after quantization: 99.650
 
 ----------------------------------------------------------
+Dataset: cifar10
+Files already downloaded and verified
+Files already downloaded and verified
+Model: resnet20_dc
+Dataset: cifar10
+Files already downloaded and verified
+Files already downloaded and verified
+Model: resnet20_dc
