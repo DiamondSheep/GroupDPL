@@ -1,6 +1,6 @@
 #!/bin/sh
-model=resnet50 # resnet18 | vgg16_bn | resnet50 | resnet56 | resnet20
-dataset=imagenet # imagenet | cifar10 | cifar100
+model=resnet56 # resnet18 | vgg16_bn | resnet50 | resnet56 | resnet20
+dataset=cifar10 # imagenet | cifar10 | cifar100
 mkdir ./visual/$model
 config=/home/gaoyangcheng/dev/GroupDPL/config/${model}/
 log=/home/gaoyangcheng/dev/GroupDPL/log/log_`date +%Y%m%d`.log

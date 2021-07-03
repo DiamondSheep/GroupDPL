@@ -1,0 +1,126 @@
+resnet56 Quantization 1
+2021年 07月 03日 星期六 09:21:15 CST
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+----------------------------------------------------------
+resnet56 Quantization 1
+2021年 07月 03日 星期六 09:29:38 CST
+---------------Dataset: cifar10--------------
+Files already downloaded and verified
+Files already downloaded and verified
+Layer: layer1.0.conv1, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.0.conv2, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.1.conv1, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.1.conv2, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.2.conv1, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.2.conv2, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.3.conv1, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.3.conv2, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.4.conv1, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.4.conv2, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.5.conv1, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.5.conv2, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.6.conv1, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.6.conv2, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.7.conv1, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.7.conv2, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.8.conv1, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer1.8.conv2, layer shape: torch.Size([16, 16, 3, 3]), uncompressed layer size: 0.008789MB. 
+layer shape (after reshape): torch.Size([144, 16])
+Layer: layer2.0.conv1, layer shape: torch.Size([32, 16, 3, 3]), uncompressed layer size: 0.017578MB. 
+layer shape (after reshape): torch.Size([144, 32])
+Layer: layer2.0.conv2, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer2.1.conv1, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer2.1.conv2, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer2.2.conv1, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer2.2.conv2, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer2.3.conv1, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer2.3.conv2, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer2.4.conv1, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer2.4.conv2, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer2.5.conv1, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer2.5.conv2, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer2.6.conv1, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer2.6.conv2, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer2.7.conv1, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer2.7.conv2, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer2.8.conv1, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer2.8.conv2, layer shape: torch.Size([32, 32, 3, 3]), uncompressed layer size: 0.035156MB. 
+layer shape (after reshape): torch.Size([288, 32])
+Layer: layer3.0.conv1, layer shape: torch.Size([64, 32, 3, 3]), uncompressed layer size: 0.070312MB. 
+layer shape (after reshape): torch.Size([288, 64])
+Layer: layer3.0.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: layer3.1.conv1, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: layer3.1.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: layer3.2.conv1, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: layer3.2.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: layer3.3.conv1, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: layer3.3.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: layer3.4.conv1, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: layer3.4.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: layer3.5.conv1, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: layer3.5.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: layer3.6.conv1, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: layer3.6.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: layer3.7.conv1, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: layer3.7.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: layer3.8.conv1, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: layer3.8.conv2, layer shape: torch.Size([64, 64, 3, 3]), uncompressed layer size: 0.140625MB. 
+layer shape (after reshape): torch.Size([576, 64])
+Layer: linear, layer shape: torch.Size([10, 64]), uncompressed layer size: 0.002441MB. 
+layer shape (after reshape): torch.Size([64, 10])
+#################result####################
+Compressed model size: 1.8028MB
+Compress Coef: 1.81
+Compressed time: 2.38s.
+----------------------------------------------------------

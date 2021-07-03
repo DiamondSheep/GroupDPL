@@ -90,7 +90,7 @@ class ResNet(nn.Module):
 
 def resnet20(pretrained=False, **kwargs):
     model = ResNet(BasicBlock, [3, 3, 3])
-    state_dict = torch.load("/home/gaoyangcheng/dev/Quantize_DPL/model_path/resnet20-12fca82f.th")['state_dict']
+    state_dict = torch.load("./model_path/resnet20-12fca82f.th")['state_dict']
     new_state_dict = OrderedDict()
     for k, v in state_dict.items():
         if 'module.' in k:
@@ -101,8 +101,15 @@ def resnet20(pretrained=False, **kwargs):
 
 
 def resnet32():
-    return ResNet(BasicBlock, [5, 5, 5])
-
+    model = ResNet(BasicBlock, [5, 5, 5])
+    state_dict = torch.load("./model_path/resnet32-d509ac18.th")['state_dict']
+    new_state_dict = OrderedDict()
+    for k, v in state_dict.items():
+        if 'module.' in k:
+            k = k.replace('module.', '')
+        new_state_dict[k]=v
+    model.load_state_dict(new_state_dict)
+    return model
 
 def resnet44():
     return ResNet(BasicBlock, [7, 7, 7])
@@ -110,7 +117,7 @@ def resnet44():
 
 def resnet56(pretrained=False, **kwargs):
     model = ResNet(BasicBlock, [9, 9, 9], **kwargs)
-    state_dict = torch.load("/home/gaoyangcheng/dev/Quantize_DPL/model_path/resnet56-4bfd9763.th")['state_dict']
+    state_dict = torch.load("./model_path/resnet56-4bfd9763.th")['state_dict']
     new_state_dict = OrderedDict()
     for k, v in state_dict.items():
         if 'module.' in k:

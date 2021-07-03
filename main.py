@@ -25,7 +25,7 @@ parser.add_argument('--dataset', default='imagenet', type=str,
                     help='dataset to train or evaluate')
 parser.add_argument('--model', default='resnet18', type=str, metavar='NET',
                     help='net type (default: resnet18)')
-parser.add_argument('--model-path', default='/home/gaoyangcheng/dev/Quantize_DPL/model_path',
+parser.add_argument('--model-path', default='./model_path',
                     help='Path of pretrained model to quantize', type=str)
 parser.add_argument('--num-workers', default=4, type=int,
                     help='Number of workers for data loading')
@@ -153,6 +153,7 @@ if __name__ == '__main__':
             if 'conv3' in layer or 'downsample' in layer:
                 M = M.t()
                 n_blocks = out_features // int(blockconfig[args.model][layer])
+                
         if args.show:
             print('layer shape (after reshape): {}'.format(M.shape))
         assert M.size(0) % n_blocks == 0
@@ -172,7 +173,8 @@ if __name__ == '__main__':
             visual(M_block, model=args.model, layer=layer, mode ='origin')
             visual(dpl.DictMat, model=args.model, layer=layer, mode='dict')
             visual(dpl.P_Mat, model=args.model, layer=layer, mode='P')
-            visual(torch.matmul(dpl.P_Mat, dpl.DataMat), model=args.model, layer=layer, mode='coef')
+            visual(torch.matmul(dpl.P_Mat, dpl.DataMat), 
+                                model=args.model, layer=layer, mode='coef')
             visual(torch.matmul(dpl.DictMat, torch.matmul(dpl.P_Mat, dpl.DataMat)),
                                 model=args.model, layer=layer, mode='rebuild')
             '''
