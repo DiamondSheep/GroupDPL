@@ -110,7 +110,10 @@ if __name__ == '__main__':
                                                             num_workers=args.n_workers)
         num_classes = 1000
     #model 
-    model = model.__dict__[args.model](pretrained=(args.dataset == 'imagenet'), num_classes=num_classes)
+    if 'dc' in args.model:
+        model = model.__dict__[args.model](pretrained=(args.dataset == 'imagenet'), num_classes=num_classes)
+    else:
+        model = model.__dict__[args.model](pretrained=(args.dataset == 'imagenet'), num_classes=num_classes)
     if args.dataset != 'imagenet':
         model.load_state_dict(torch.load(os.path.join(args.model_path, 
                         '{}_eps{}_{}.pth'.format(args.model, args.epochs, args.dataset))))
@@ -138,7 +141,8 @@ if __name__ == '__main__':
     if args.show:
         #print('\nTop1 before quantization: {:.6f}, Top5 after quantization: {:.6f}\n'.format(top_1_before, top_5_before))
         print('Size of uncompressed model : {:.4f}MB.'.format(size_uncompressed))
-        
+
+    exit(0)
     for layer in layers:
         #get weight of layer
         M = attrgetter(layer+ '.weight.data')(model).detach()

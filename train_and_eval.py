@@ -3,13 +3,12 @@ import torch
 from configparser import ConfigParser
 import torch.nn as nn
 import torch.optim as optim
-from torch.optim.lr_scheduler import _LRScheduler
 import torch.backends.cudnn as cudnn
 import time
 import os
 
 import model
-from utils.utils import load_dataset
+from utils.utils import load_dataset, Visual_data
 
 parser = argparse.ArgumentParser(description='Train and evaluate models in pytorch')
 parser.add_argument('--data-path', default='/mnt/dataset/', 
@@ -24,7 +23,7 @@ parser.add_argument('--momentum', default=0.9, type=float, metavar='M',
                     help='momentum (default: 0.9)')
 parser.add_argument('--weight-decay', default=5e-4, type=float, metavar='W', 
                     help='weight decay (default: 5e-4)')
-parser.add_argument('--epochs', default=200, type=int, metavar='N',
+parser.add_argument('--epochs', default=800, type=int, metavar='N',
                     help='number of total epochs to run (default: 200)')
 parser.add_argument('--net', default='resnet20_dc', type=str, metavar='NET',
                     help='net type')
@@ -35,13 +34,12 @@ parser.add_argument('--config', default='./config/', type=str,
                     help='use configure for words and blocksize')
 parser.add_argument('--path-save', default='./model_path', type=str,
                     help='Path to save model')
-parser.add_argument('--path-model', default='', type=str,
+parser.add_argument('--path-model', default='./model_path', type=str,
                     help='Path to model pretrained')
-parser.add_argument('--eval', default=False, type=bool,
+parser.add_argument('--eval', default=True, type=bool,
                     help='evaluate model')
 
 def train(net, trainloader, criterion, optimizer):
-    running_loss = 0.0
     net.train()
     for i, data in enumerate(trainloader, start=0):
         if torch.cuda.is_available():
@@ -53,9 +51,8 @@ def train(net, trainloader, criterion, optimizer):
         loss = criterion(output, label)
         loss.backward()
         optimizer.step()
+    return loss.item()
 
-        if i % 10 == 9:
-            print('[{}, {}] loss: {:.3f}'.format(epoch + 1, i + 1, loss.item()))
 
 @torch.no_grad()
 def evaluate(net, test_loader, criterion, showFlag=False):
@@ -130,7 +127,10 @@ if __name__ == '__main__':
     #load model
     net_name = args.net
     print('Model: {}'.format(net_name))
-    net = model.__dict__[net_name](pretrained=args.eval, wordconfig = word_list, num_classes=num_classes)
+    if 'dc' in net_name:
+        net = model.__dict__[net_name](pretrained=args.eval, wordconfig = word_list, num_classes=num_classes)
+    else:
+        net = model.__dict__[net_name](pretrained=args.eval, num_classes=num_classes)
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.SGD(net.parameters(), lr=args.learning_rate, momentum=args.momentum, weight_decay=args.weight_decay)
     scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=1, gamma=0.1)
@@ -147,7 +147,8 @@ if __name__ == '__main__':
         if args.path_model:
             PATH = os.path.join(args.path_model, '{}-best.pth'.format(net_name))
             net.load_state_dict(torch.load(PATH))
-        evaluate(net, test_loader, criterion)
+        acc = evaluate(net, test_loader, criterion)
+        print('Top1: {}, Top5: {}'.format(acc[0], acc[1]))
     
     else: #train
         print('Hyperparameters:\nlr: {}, momentum: {}, weight_decay: {}'.format(args.learning_rate, args.momentum, args.weight_decay))
@@ -156,11 +157,14 @@ if __name__ == '__main__':
         
         best_acc = 0.0
         time_start = time.time()
+        vd = Visual_data()
         for epoch in range(args.epochs):
-            train(net, train_loader, criterion, optimizer)
+            loss = train(net, train_loader, criterion, optimizer)
             acc = evaluate(net, test_loader, criterion)
-            if epoch > 10 and best_acc < acc:
-                best_acc = acc
+            print('epoch: {} , top1: {:.2f}, top5: {:.2f}'.format(epoch, acc[0], acc[1]))
+            vd.update(acc[0], loss)
+            if epoch > 10 and best_acc < acc[0]:
+                best_acc = acc[0]
                 torch.save(net.state_dict(), os.path.join(args.path_save, 
                             '{}-best.pth'.format(net_name)))
         time_end = time.time()
@@ -173,4 +177,6 @@ if __name__ == '__main__':
         print('Path: ' + PATH)
         torch.save(net.state_dict(), PATH)
         print('Path Saved.')
+        vd.plot_acc(net_name)
+        vd.plot_loss(net_name)
 

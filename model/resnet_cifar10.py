@@ -21,7 +21,6 @@ class LambdaLayer(nn.Module):
     def forward(self, x):
         return self.lambd(x)
 
-
 class BasicBlock(nn.Module):
     expansion = 1
 

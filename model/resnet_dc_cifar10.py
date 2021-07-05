@@ -24,13 +24,13 @@ class LambdaLayer(nn.Module):
 class decom_conv(nn.Module):
     def __init__(self, in_channels, out_channels, kernel_size, Dictsize, stride=1, padding=0, bias=True):
         super(decom_conv, self).__init__()
-        self.calcu = nn.Sequential(
-                     nn.Conv2d(in_channels, Dictsize, kernel_size=kernel_size, stride=stride, 
-                               padding=padding, bias=bias), #kernel_size // 2
-                     nn.Conv2d(Dictsize, out_channels, kernel_size=1, stride=1, padding=0, bias=bias)
-                )
+        self.dictionary = nn.Conv2d(in_channels, Dictsize, kernel_size=kernel_size, stride=stride, padding=padding, bias=bias) #kernel_size // 2
+        self.coef = nn.Conv2d(Dictsize, out_channels, kernel_size=1, stride=1, padding=0, bias=bias)
+
     def forward(self, x):
-        return self.calcu(x)
+        out = self.dictionary(x)
+        out = self.coef(out)
+        return out
 
 class decom_linear(nn.Module):
     def __init__(self, in_channels, out_channels, Dictsize, bias=True):
@@ -50,7 +50,7 @@ class BasicBlock(nn.Module):
         self.conv1 = decom_conv(in_planes, planes, kernel_size=3, Dictsize=Dictsize, stride=stride, padding=1, bias=False)
         self.bn1 = nn.BatchNorm2d(planes)
         #self.conv2 = nn.Conv2d(planes, planes, kernel_size=3, stride=1, padding=1, bias=False)
-        self.conv2 = decom_conv(in_planes, planes, kernel_size=3, Dictsize=Dictsize, stride=stride, padding=1, bias=False)
+        self.conv2 = decom_conv(planes, planes, kernel_size=3, Dictsize=Dictsize, stride=1, padding=1, bias=False)
         self.bn2 = nn.BatchNorm2d(planes)
 
         self.shortcut = nn.Sequential()
@@ -70,7 +70,7 @@ class BasicBlock(nn.Module):
 
     def forward(self, x):
         out = F.relu(self.bn1(self.conv1(x)))
-        out = self.bn2(self.conv2(out))
+        out = self.bn2(self.conv2(out)) 
         out += self.shortcut(x)
         out = F.relu(out)
         return out
@@ -80,9 +80,9 @@ class ResNet_dc(nn.Module):
     def __init__(self, block, num_blocks, wordconfig, num_classes=10):
         super(ResNet_dc, self).__init__()
         self.in_planes = 16
+        self.layer = 1
         self.wordconfig = wordconfig
         self.conv1 = nn.Conv2d(3, 16, kernel_size=3, stride=1, padding=1, bias=False)
-        self.layer = 1
         self.bn1 = nn.BatchNorm2d(16)
         self.layer1 = self._make_layer(block, 16, num_blocks[0], stride=1)
         self.layer2 = self._make_layer(block, 32, num_blocks[1], stride=2)
@@ -95,10 +95,9 @@ class ResNet_dc(nn.Module):
         strides = [stride] + [1]*(num_blocks-1)
         layers = []
         for stride in strides:
-            layers.append(block(self.in_planes, planes, Dictsize=self.wordconfig[self.layer], stride=stride))
+            layers.append(block(in_planes=self.in_planes, planes=planes, Dictsize=self.wordconfig[self.layer], stride=stride))
             self.in_planes = planes * block.expansion
             self.layer += 1
-
         return nn.Sequential(*layers)
 
     def forward(self, x):
@@ -115,6 +114,8 @@ class ResNet_dc(nn.Module):
 def resnet20_dc(pretrained, wordconfig, **kwargs):
     model = ResNet_dc(BasicBlock, [3, 3, 3], wordconfig, **kwargs)
     if pretrained:
+        pass
+        '''
         state_dict = torch.load("./model_path/resnet20-12fca82f.th")['state_dict']
         new_state_dict = OrderedDict()
         for k, v in state_dict.items():
@@ -122,6 +123,8 @@ def resnet20_dc(pretrained, wordconfig, **kwargs):
                 k = k.replace('module.', '')
             new_state_dict[k]=v
         model.load_state_dict(new_state_dict)
+        '''
+        
     return model
 
 

@@ -5,10 +5,10 @@ mkdir ./visual/$model
 config=/home/gaoyangcheng/dev/GroupDPL/config/${model}/
 log=/home/gaoyangcheng/dev/GroupDPL/log/log_`date +%Y%m%d`.log
 touch ${log}
-convblocksize=$(expr 72)
-convwords=$(expr 16)
-fcblocksize=$(expr 32)
-fcwords=$(expr 10)
+#convblocksize=$(expr 72)
+#convwords=$(expr 16)
+#fcblocksize=$(expr 32)
+#fcwords=$(expr 10)
 #python update_config.py --config ${config} --init=1 --model=${model} --dataset=${dataset} \
 #--conv-word-init=${convwords} --conv-block-init=${convblocksize} 
 
