@@ -17,6 +17,7 @@ class DPL():
         self.DictMat = self.normcol_equal(torch.rand(self.DataMat.shape[0], self.DictSize))
         self.P_Mat = self.normcol_equal(torch.rand(self.DataMat.shape[0], self.DictSize)).t()
         self.CoefMat = torch.zeros(self.DictSize, self.DataMat.shape[1])
+
         if torch.cuda.is_available() and self.using_cuda:
             self.DataMat = self.DataMat.cuda()
             self.DictMat = self.DictMat.cuda()
@@ -35,10 +36,12 @@ class DPL():
             self.UpdateP()
             self.UpdateD(iter_dict = 100)
             self.UpdateA()
+        self.CoefMat = torch.matmul(self.P_Mat, self.DataMat)
         # stored in float16()
         self.DictMat = self.DictMat.half()
         self.P_Mat = self.P_Mat.half()
         self.DataMat = self.DataMat.half()
+        self.CoefMat = self.CoefMat.half()
 
     def UpdateA(self):
         I_Mat = torch.eye(self.DictSize)
@@ -97,35 +100,24 @@ class DPL():
         err = torch.norm(torch.matmul(self.DictMat, torch.matmul(self.P_Mat, self.DataMat)) - self.DataMat)
         return err
 
-class DPL_compress():
-    def __init__(self, weight, n_blocks, n_word, iterations, k, tau):
-        self.n_blocks = n_blocks
-        self.n_word = n_word
-        self.iterations = iterations
-        self.compress_time = 0.0
-        self.size_layer = 0.0
-        self.tau = tau
-        self.k = k
-        #reshape and chunk weight matrix
-        self.M = reshape_weight(weight)
-        assert self.M.size(0) % self.n_blocks == 0
-        self.M_blocks = self.M.chunk(n_blocks, dim=0)
-        self.dpl_blocks = []
+class Decomposition():
+    def __init__(self):
+        self.compression_time = 0.0
+        self.layer_size = 0.0
+        self.CoefMat = torch.Tensor()
+        self.DictMat = torch.Tensor()
 
-    def quantize(self, is_conv):
-        t = time.time()
-        for M_block in self.M_blocks:
-            dpl = DPL(Data=M_block, DictSize=self.n_word, tau=self.tau)
-            dpl.Update(iterations=self.iterations, showFlag=False)
-            self.dpl_blocks.append(torch.matmul(dpl.DictMat, torch.matmul(dpl.P_Mat, dpl.DataMat)))
-            block_size = self.n_word * (M_block.shape[1] + M_block.shape[0]) * 2/1024/1024
-            self.size_layer += block_size
-
-        self.compress_time += time.time() - t
-        self.M = torch.cat(self.dpl_blocks, dim=0)
-        self.M = reshape_back_weight(self.M, k=self.k, conv=is_conv)
-        return self.M
-
+    def decompose(self, weight, k, n_word, iterations=10, tau=0.05, showFlag=False):
+        is_conv = len(weight.shape) == 4
+        weight = reshape_weight(weight)
+        begin = time.time()
+        dpl = DPL(Data = weight, DictSize=n_word, tau=tau)
+        dpl.Update(iterations=iterations, showFlag=showFlag)
+        self.DictMat = reshape_back_weight(dpl.DictMat, k = k, conv=is_conv).float()
+        self.CoefMat = reshape_back_weight(dpl.CoefMat, k = 1, conv=is_conv).float()
+        self.compression_time += (time.time() - begin)
+        self.layer_size = self.CoefMat.numel() * 2/1024/1024 + self.DictMat.numel() * 2/1024/1024
+        
 
 if __name__ == "__main__":
     pass

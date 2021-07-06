@@ -128,7 +128,7 @@ if __name__ == '__main__':
     net_name = args.net
     print('Model: {}'.format(net_name))
     if 'dc' in net_name:
-        net = model.__dict__[net_name](pretrained=args.eval, wordconfig = word_list, num_classes=num_classes)
+        net = model.__dict__[net_name](wordconfig = word_list, num_classes=num_classes)
     else:
         net = model.__dict__[net_name](pretrained=args.eval, num_classes=num_classes)
     criterion = nn.CrossEntropyLoss()

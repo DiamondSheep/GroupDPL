@@ -1,8 +1,10 @@
 import time
 import os
 import argparse
+from typing import Dict
 import numpy as np
 import torch
+from torch._C import device
 import torch.nn as nn
 import torch.backends.cudnn as cudnn
 import torch.utils.model_zoo as model_zoo
@@ -12,7 +14,7 @@ from configparser import ConfigParser
 
 from utils.watcher import ActivationWatcher
 from utils.reshape import reshape_weight, reshape_back_weight
-from utils.utils import compute_size, load_dataset, weight_visual, SizeComputation
+from utils.utils import load_dataset, weight_visual, SizeComputation
 from train_and_eval import evaluate
 import model
 import DPL
@@ -63,19 +65,28 @@ if __name__ == '__main__':
     # config for bloks and words TODO
     blockconfig = ConfigParser()
     wordconfig = ConfigParser()
+    groupconfig = ConfigParser()
     blockconfig.read(os.path.join(args.config, 'block.config'), encoding='UTF-8')
     wordconfig.read(os.path.join(args.config, 'word.config'), encoding='UTF-8')
+    groupconfig.read(os.path.join(args.config, 'group.config'), encoding='UTF-8')
+    word_list = []
+    for word in wordconfig[args.model]:
+        word_list.append(int(wordconfig[args.model][word]))
+
     #load dataset
     print('---------------Dataset: {}--------------'.format(args.dataset))
-    train_loader, test_loader, num_classes = load_dataset(args.dataset,
-                                    args.data_path, args.batch_size, args.num_workers)
+    train_loader, test_loader, num_classes = load_dataset(args.dataset, args.data_path, args.batch_size, args.num_workers)
+    
     #load model 
-    word_list = []
-    for w in wordconfig[args.model]:
-        word_list.append(int(wordconfig[args.model][w]))
-    student_model = model.__dict__[args.model](pretrained=(args.dataset == 'imagenet'), wordconfig=word_list, num_classes=num_classes)
-    teacher_model = model.__dict__[args.model](pretrained=(args.dataset == 'imagenet'), num_classes=num_classes)
-    # TODO: teacher_model.load()
+    teacher_model_name = args.model
+    student_model_name = args.model+'_dc'
+    teacher_model = model.__dict__[teacher_model_name](pretrained=(args.dataset == 'imagenet'), num_classes=num_classes)
+    student_model = model.__dict__[student_model_name](wordlist=word_list, num_classes=num_classes)
+    
+    #load local pretrained model path
+    if args.dataset == 'imagenet' and args.model_path:
+        teacher_model.load(os.path.join(args.model_path, args.model))
+    
     teacher_model.eval()
     criterion = nn.CrossEntropyLoss()
 
@@ -88,43 +99,78 @@ if __name__ == '__main__':
     
     #some variables for compute compression time and model size
     model_size = SizeComputation(teacher_model)
-    size_uncompressed = compute_size(teacher_model)
-    size_reconstruct = 0.0
-    size_other = size_uncompressed
     time_compress = 0.0
     pre_loss = 0.0
-    
+
     #evaluating before compression
     if args.show and args.pretest:
         top_1_before, top_5_before = evaluate(teacher_model, test_loader, criterion, showFlag=False)
         print('\nTop1 before quantization: {:.6f}, Top5 before quantization: {:.6f}\n'.format(top_1_before, top_5_before))
-        print('Size of uncompressed model : {:.4f}MB.\n'.format(size_uncompressed))
+        print('Size of uncompressed model : {:.4f}MB.\n'.format(model_size.uncompressed_size))
 
     #load layers from model
-    watcher = ActivationWatcher(teacher_model)
-    layers = [layer for layer in watcher.layers[args.start:]]
-    print('layer number: {}'.format(len(layers)))
-    '''
-    for layer in layers:
-        teacher_weight = attrgetter(layer+ '.weight.data')(teacher_model).detach()
-        size_uncompressed_layer = weight.numel() * 4 / 1024 / 1024
-        size_other -= size_uncompressed_layer
-        print('layer: {}'.format(layer))
-        print('size of uncompressed layer: {}'.format(size_uncompressed_layer))
-        print('shape: {}'.format(teacher_weight.shape))
-    '''
+    teacher_watcher = ActivationWatcher(teacher_model)
+    teacher_layers = [layer for layer in teacher_watcher.layers[args.start:]]
+    student_watcher = ActivationWatcher(student_model)
+    student_layers = [layer for layer in student_watcher.layers[args.start:]]
+    print('layer number: {}'.format(len(teacher_layers)))
+    
+    compressed_layer_list = []
+    for layer in teacher_layers:
+        teacher_weight = attrgetter(layer+'.weight.data')(teacher_model).detach()
+        uncompressed_layer_size = teacher_weight.numel() * 4 / 1024 / 1024
+        model_size.update_other(uncompressed_layer_size)
+        
+        #initialization
+        layer_size = 0.0
+        is_conv = len(teacher_weight.shape) == 4
+        if args.show:
+            print('------ layer: {} ------'.format(layer))
+            print('size of uncompressed layer: {:.4f}MB'.format(uncompressed_layer_size))
+            print('shape: {}'.format(teacher_weight.shape))
+        #setting words for layers
+        if is_conv:
+            if args.layer == 'fc': # compress conv layer only
+                model_size.update_reconstruct(uncompressed_layer_size)
+                continue
+            out_features, in_features, k, _ = teacher_weight.size()
+        else:
+            if args.layer == 'conv': # compress fc layer only
+                model_size.update_reconstruct(uncompressed_layer_size)
+                continue
+            out_features, in_features = teacher_weight.size()
+            k = 1
+        
+        Decom = DPL.Decomposition()
+        Decom.decompose(teacher_weight, k=k, n_word = int(wordconfig[args.model][layer]))
+        model_size.update_reconstruct(Decom.layer_size)
+        
+        compressed_layer_list.append(Decom.DictMat)
+        compressed_layer_list.append(Decom.CoefMat)
+    assert len(compressed_layer_list) == len(student_layers)
+    
 
-    #exit(0)
+    for i, layer in enumerate(student_layers):
+        weight = compressed_layer_list[i]
+        print(layer)
+        print('compressed layer : {}'.format(weight.shape))
+        print('target layer :     {}\n'.format(attrgetter(layer+'.weight.data')(student_model).shape))
+        assert attrgetter(layer+'.weight.data')(student_model).shape == weight.shape
+        attrgetter(layer + '.weight')(student_model).data = weight
+    
+    top_1, top_5 = evaluate(student_model, test_loader, criterion, showFlag=args.show)
+    print('Top1 after quantization: {:.3f}, Top5 after quantization: {:.3f}\n'.format(top_1, top_5))
+
+    exit(0)
+
 
     weight_list = []
     layer_list = []
-
     #-------------------------------   compression   ------------------------------    
     for layer in layers:
         #get weight of layer
         weight = attrgetter(layer+ '.weight.data')(teacher_model).detach()
         size_uncompressed_layer = weight.numel() * 4 / 1024 / 1024
-        size_other -= size_uncompressed_layer
         model_size.update_other(size_uncompressed_layer)
         # to learn a common dictionary for layers
         if '.1.conv1' in layer or '.2.conv1' in layer:
@@ -135,7 +181,6 @@ if __name__ == '__main__':
             weight_list.append(weight)
             layer_list.append(layer)
             weight = torch.cat(weight_list, dim=0)
-
         #initialization
         size_layer = 0.0
         weight_dpl = []
@@ -213,8 +258,6 @@ if __name__ == '__main__':
         end = time.time()
         time_cost = end - begin
         time_compress += time_cost
-        
-        size_reconstruct += size_layer
         model_size.update_reconstruct(size_layer)
         # reconstruct
         weight = torch.cat(weight_dpl, dim=0).float().to('cuda')

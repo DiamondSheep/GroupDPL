@@ -21,7 +21,7 @@ do
 		date | tee -a ${log}
 		#echo "convwords: ${convwords}, fcwords: ${fcwords}" | tee -a ${log}
 		python main.py --dataset ${dataset} --model ${model} \
-		--layer all --device cuda --config ${config} --start=0 --show True | tee -a ${log} #--pretest True --show True --check True 
+		--device cuda --config ${config} --start=0 --show True | tee -a ${log} #--pretest True --show True --check True 
 		#cat ${config}/word.config | tee -a ${log}
 		#python update_config.py --config ${config} --model=${model} --dataset=${dataset} --init=0 --conv-word=3
 		#convwords=$(expr ${convwords} + 8)
