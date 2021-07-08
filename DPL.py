@@ -1,6 +1,7 @@
 import time
 import torch
 from utils.reshape import reshape_weight, reshape_back_weight
+from utils.utils import weight_visual
 
 
 class DPL():
@@ -106,6 +107,7 @@ class Decomposition():
         self.layer_size = 0.0
         self.CoefMat = torch.Tensor()
         self.DictMat = torch.Tensor()
+        self.reconstruct_weight = torch.Tensor()
 
     def decompose(self, weight, k, n_word, iterations=10, tau=0.05, showFlag=False):
         is_conv = len(weight.shape) == 4
@@ -113,11 +115,24 @@ class Decomposition():
         begin = time.time()
         dpl = DPL(Data = weight, DictSize=n_word, tau=tau)
         dpl.Update(iterations=iterations, showFlag=showFlag)
+        
         self.DictMat = reshape_back_weight(dpl.DictMat, k = k, conv=is_conv).float()
         self.CoefMat = reshape_back_weight(dpl.CoefMat, k = 1, conv=is_conv).float()
         self.compression_time += (time.time() - begin)
         self.layer_size = self.CoefMat.numel() * 2/1024/1024 + self.DictMat.numel() * 2/1024/1024
         
+        self.reconstruct_weight = reshape_back_weight(torch.matmul(dpl.DictMat, torch.matmul(dpl.P_Mat, dpl.DataMat)), 
+                                                      k = k, conv=is_conv).float()
+        '''
+        # Visualization for the weight 
+        weight_visual(weight_block, model=args.model, layer=layer, mode ='origin')
+        weight_visual(dpl.DictMat, model=args.model, layer=layer, mode='dict')
+        weight_visual(dpl.P_Mat, model=args.model, layer=layer, mode='P')
+        weight_visual(torch.matmul(dpl.P_Mat, dpl.DataMat), 
+                            model=args.model, layer=layer, mode='coef')
+        weight_visual(torch.matmul(dpl.DictMat, torch.matmul(dpl.P_Mat, dpl.DataMat)),
+                            model=args.model, layer=layer, mode='rebuild')
+        '''
 
 if __name__ == "__main__":
     pass
